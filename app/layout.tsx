@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -44,6 +45,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
       </body>
+      {/* Loaded only when NEXT_PUBLIC_GA_ID is set, so dev/preview stay clean. */}
+      {SITE.gaId && <GoogleAnalytics gaId={SITE.gaId} />}
     </html>
   );
 }

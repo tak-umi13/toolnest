@@ -11,6 +11,9 @@ export const SITE = {
     "A growing library of fast, free, no-signup tools — converters, calculators, generators, formatters and validators that just work in your browser.",
   twitter: "@toolnest",
   locale: "en_US",
+  // GA4 Measurement ID (G-XXXXXXXXXX). Set NEXT_PUBLIC_GA_ID in the environment.
+  // Empty string ⇒ analytics is skipped entirely (e.g. local dev).
+  gaId: process.env.NEXT_PUBLIC_GA_ID || "",
 };
 
 export function absoluteUrl(path: string): string {
