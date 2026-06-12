@@ -1,0 +1,91 @@
+# Seed keywords for DataForSEO validation — one per line. Lines starting with #
+# are ignored. These are the primary keywords for the current tool registry.
+# Add new tool keywords here before running `npm run validate:keywords`.
+
+# Text
+word counter
+case converter
+remove duplicate lines
+slug generator
+reverse text
+remove line breaks
+text repeater
+lorem ipsum generator
+
+# Developer
+json formatter
+base64 encode
+uuid generator
+url encode
+jwt decoder
+hash generator
+unix timestamp converter
+number base converter
+
+# Color
+hex to rgb
+
+# Unit converters
+length converter
+weight converter
+data storage converter
+speed converter
+time converter
+area converter
+volume converter
+pressure converter
+energy converter
+temperature converter
+
+# Finance
+emi calculator
+sip calculator
+gst calculator
+compound interest calculator
+simple interest calculator
+fd calculator
+percentage calculator
+discount calculator
+
+# SEO
+keyword density checker
+
+# Finance (batch 2)
+gratuity calculator
+hra calculator
+inflation calculator
+lumpsum calculator
+cagr calculator
+swp calculator
+
+# Developer (batch 2)
+regex tester
+password generator
+html entity decoder
+
+# Finance (batch 3 — India)
+income tax calculator
+salary calculator
+in hand salary calculator
+ppf calculator
+rd calculator
+nps calculator
+home loan emi calculator
+car loan emi calculator
+
+# Guides (topical authority — informational keywords)
+what is gst
+gst rates india
+how to calculate gst
+gst for freelancers
+how is emi calculated
+how to reduce home loan emi
+flat vs reducing interest rate
+simple interest vs compound interest
+what is sip
+sip vs lumpsum
+sip vs fd
+what is base64
+what is jwt
+url encoding
+json parse error
