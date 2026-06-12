@@ -73,6 +73,46 @@ nps calculator
 home loan emi calculator
 car loan emi calculator
 
+# === Batch 4 candidates (2026-06-12) — validate before building ===
+# Developer (high-CPC vertical)
+json to csv
+csv to json
+sql formatter
+xml formatter
+yaml to json
+markdown to html
+diff checker
+cron expression generator
+color contrast checker
+qr code generator
+
+# SEO (thin category, marketer audience)
+meta tag generator
+robots txt generator
+utm builder
+open graph generator
+sitemap generator
+
+# Color (thin category)
+rgb to hex
+color palette generator
+gradient generator
+hsl to hex
+
+# Everyday calculators (huge evergreen volume)
+age calculator
+bmi calculator
+date calculator
+tip calculator
+mortgage calculator
+gpa calculator
+
+# Generators
+random number generator
+random password generator
+qr code
+random name generator
+
 # Guides (topical authority — informational keywords)
 what is gst
 gst rates india

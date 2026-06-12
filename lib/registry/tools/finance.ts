@@ -527,4 +527,55 @@ export const financeTools: Tool[] = [
     ],
     related: ["emi-calculator", "home-loan-emi-calculator", "discount-calculator"],
   },
+  {
+    slug: "tip-calculator",
+    category: "finance",
+    name: "Tip Calculator",
+    h1: "Tip Calculator",
+    tagline: "Work out the tip and split the bill between any number of people.",
+    title: "Tip Calculator — Free Online Bill & Gratuity Splitter",
+    description:
+      "Free tip calculator. Enter the bill, choose a tip percentage, and split the total between any number of people. See tip, total and per-person amounts instantly.",
+    intro:
+      "Enter your bill amount, pick a tip percentage (or drag the slider), and choose how many people are splitting. You instantly get the tip, the grand total, and the amount each person owes — perfect for restaurants, cafes and group outings. Everything calculates live in your browser.",
+    keywords: ["tip calculator", "gratuity calculator", "bill split calculator", "how much to tip"],
+    component: "tip-calculator",
+    volumeEstimate: 450000,
+    howTo: [
+      "Enter the bill amount.",
+      "Choose a tip percentage with the buttons or slider.",
+      "Set how many people are splitting the bill.",
+      "Read the tip, total and per-person amounts.",
+    ],
+    faqs: [
+      { q: "What is a standard tip percentage?", a: "In the US, 15–20% is typical for table service, with 18% a common default. Norms vary by country and service type, so adjust to your situation." },
+      { q: "Is the tip calculated before or after tax?", a: "This calculator applies the tip percentage to the amount you enter. If you prefer to tip on the pre-tax subtotal, enter that figure as the bill." },
+    ],
+    related: ["discount-calculator", "percentage-calculator", "gst-calculator"],
+  },
+  {
+    slug: "gpa-calculator",
+    category: "finance",
+    name: "GPA Calculator",
+    h1: "GPA Calculator",
+    tagline: "Calculate your grade point average on the 4.0 scale, weighted by credits.",
+    title: "GPA Calculator — Free Online Grade Point Average Tool",
+    description:
+      "Free GPA calculator. Add your courses, letter grades and credit hours to get your weighted grade point average on the standard 4.0 scale. Instant, private.",
+    intro:
+      "Add each course with its letter grade and credit hours to compute your weighted GPA on the standard US 4.0 scale. Add or remove courses as needed; the average and total credits update instantly. Calculations run entirely in your browser — nothing is saved or uploaded.",
+    keywords: ["gpa calculator", "grade point average calculator", "college gpa calculator", "weighted gpa calculator"],
+    component: "gpa-calculator",
+    volumeEstimate: 823000,
+    howTo: [
+      "Enter each course name, its letter grade and its credit hours.",
+      "Add more courses with the Add course button.",
+      "Read your weighted GPA on the 4.0 scale.",
+    ],
+    faqs: [
+      { q: "How is GPA calculated?", a: "Each grade maps to grade points (A=4.0, B=3.0…). Multiply each course's points by its credits, sum them, and divide by total credits to get the credit-weighted average." },
+      { q: "What grade scale does this use?", a: "The standard US 4.0 scale with +/− grades (A=4.0, A−=3.7, B+=3.3, and so on down to F=0.0)." },
+    ],
+    related: ["percentage-calculator", "tip-calculator"],
+  },
 ];

@@ -186,4 +186,29 @@ export const textTools: Tool[] = [
     ],
     related: ["text-repeater", "word-counter", "case-converter"],
   },
+  {
+    slug: "random-name-generator",
+    category: "text",
+    name: "Random Name Generator",
+    h1: "Random Name Generator",
+    tagline: "Generate random first and full names for testing, characters and more.",
+    title: "Random Name Generator — Free Online Tool",
+    description:
+      "Free random name generator. Create random first or full names by gender, generate up to 100 at once, and copy them all. Great for test data, characters and signups.",
+    intro:
+      "Generate realistic random names instantly. Choose a gender (or any), pick first-name-only or full names, and generate up to 100 at a time. Copy the whole list with one click — handy for test data, sample users, character names and design mockups. Everything runs in your browser.",
+    keywords: ["random name generator", "name generator", "random name picker", "fake name generator"],
+    component: "random-name-generator",
+    volumeEstimate: 201000,
+    howTo: [
+      "Choose a gender and the name style (first or full).",
+      "Set how many names you want (up to 100).",
+      "Click Generate, then copy the list.",
+    ],
+    faqs: [
+      { q: "Are the names real people?", a: "No. Names are assembled randomly from common first- and last-name pools, so any resemblance to a real person is coincidental — ideal for test and sample data." },
+      { q: "Can I generate many names at once?", a: "Yes. Generate up to 100 names per click and copy them all as a newline-separated list." },
+    ],
+    related: ["lorem-ipsum-generator", "slug-generator", "uuid-generator"],
+  },
 ];

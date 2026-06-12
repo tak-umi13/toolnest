@@ -43,6 +43,17 @@ import { SalaryCalculator } from "./SalaryCalculator";
 import { PpfCalculator } from "./PpfCalculator";
 import { RdCalculator } from "./RdCalculator";
 import { NpsCalculator } from "./NpsCalculator";
+import { JsonCsvConverter } from "./JsonCsvConverter";
+import { XmlFormatter } from "./XmlFormatter";
+import { SqlFormatter } from "./SqlFormatter";
+import { MarkdownToHtml } from "./MarkdownToHtml";
+import { RgbToHex } from "./RgbToHex";
+import { GradientGenerator } from "./GradientGenerator";
+import { CronExpressionGenerator } from "./CronExpressionGenerator";
+import { RobotsTxtGenerator } from "./RobotsTxtGenerator";
+import { TipCalculator } from "./TipCalculator";
+import { GpaCalculator } from "./GpaCalculator";
+import { RandomNameGenerator } from "./RandomNameGenerator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -91,6 +102,17 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "ppf-calculator": PpfCalculator,
   "rd-calculator": RdCalculator,
   "nps-calculator": NpsCalculator,
+  "json-csv-converter": JsonCsvConverter,
+  "xml-formatter": XmlFormatter,
+  "sql-formatter": SqlFormatter,
+  "markdown-to-html": MarkdownToHtml,
+  "rgb-to-hex": RgbToHex,
+  "gradient-generator": GradientGenerator,
+  "cron-expression-generator": CronExpressionGenerator,
+  "robots-txt-generator": RobotsTxtGenerator,
+  "tip-calculator": TipCalculator,
+  "gpa-calculator": GpaCalculator,
+  "random-name-generator": RandomNameGenerator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

@@ -27,4 +27,31 @@ export const seoTools: Tool[] = [
     ],
     related: ["slug-generator", "word-counter"],
   },
+  {
+    slug: "robots-txt-generator",
+    category: "seo",
+    name: "Robots.txt Generator",
+    h1: "Robots.txt Generator",
+    tagline: "Create a valid robots.txt to control how crawlers index your site.",
+    title: "Robots.txt Generator — Free Online SEO Tool",
+    description:
+      "Free robots.txt generator. Allow or block crawlers, disallow specific paths, set crawl-delay and add your sitemap URL. Copy a valid robots.txt in one click.",
+    intro:
+      "Generate a correct robots.txt file without memorising the syntax. Choose to allow everything, block everything, or disallow specific paths, optionally set a crawl-delay, and add your sitemap URL. Copy the result to your site root at /robots.txt.",
+    keywords: ["robots txt generator", "robots.txt generator", "create robots txt", "robots txt file"],
+    component: "robots-txt-generator",
+    volumeEstimate: 4400,
+    howTo: [
+      "Pick a rule preset: allow all, block all, or custom.",
+      "For custom, list the paths to disallow, one per line.",
+      "Optionally add a crawl-delay and your sitemap URL.",
+      "Copy the file and upload it to your site root as /robots.txt.",
+    ],
+    faqs: [
+      { q: "Where do I put the robots.txt file?", a: "At the root of your domain, reachable at https://yourdomain.com/robots.txt. Crawlers always look there." },
+      { q: "Does Disallow guarantee a page won't be indexed?", a: "No. Disallow stops crawling, but a blocked URL can still be indexed if linked elsewhere. Use a noindex meta tag to reliably keep a page out of search results." },
+      { q: "Should I add my sitemap here?", a: "Yes — adding a Sitemap line helps search engines discover all your URLs, and it works alongside submitting the sitemap in Search Console." },
+    ],
+    related: ["keyword-density-checker", "slug-generator"],
+  },
 ];

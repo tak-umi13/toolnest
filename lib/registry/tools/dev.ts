@@ -260,4 +260,159 @@ export const devTools: Tool[] = [
     ],
     related: ["url-encode-decode", "base64", "json-formatter"],
   },
+  {
+    slug: "json-to-csv",
+    category: "dev",
+    name: "JSON to CSV Converter",
+    h1: "JSON to CSV Converter",
+    tagline: "Turn a JSON array of objects into clean, spreadsheet-ready CSV.",
+    title: "JSON to CSV Converter — Free Online Tool",
+    description:
+      "Free JSON to CSV converter. Paste a JSON array of objects and get clean CSV with a header row, proper quoting and escaping. Browser-based and private.",
+    intro:
+      "Paste a JSON array of objects to convert it into CSV with a header row built from the object keys. Commas, quotes and newlines inside values are escaped per RFC 4180, and nested values are JSON-encoded so nothing breaks in Excel or Google Sheets. Everything runs in your browser.",
+    keywords: ["json to csv", "json to csv converter", "convert json to csv", "json array to csv"],
+    component: "json-csv-converter",
+    params: { direction: "json-to-csv" },
+    volumeEstimate: 6600,
+    howTo: [
+      "Paste a JSON array of objects into the input box.",
+      "Click Convert to CSV.",
+      "Copy the CSV and open it in Excel or Google Sheets.",
+    ],
+    faqs: [
+      { q: "What JSON shape does it expect?", a: "An array of objects, like [{\"name\":\"Ada\"},{\"name\":\"Linus\"}]. The CSV header is the union of all object keys." },
+      { q: "How are commas and quotes handled?", a: "Any value containing a comma, double quote or line break is wrapped in quotes, with embedded quotes doubled — the standard CSV escaping rules (RFC 4180)." },
+      { q: "Is my data uploaded?", a: "No. The conversion runs entirely in your browser; nothing is sent to a server." },
+    ],
+    related: ["csv-to-json", "json-formatter"],
+  },
+  {
+    slug: "csv-to-json",
+    category: "dev",
+    name: "CSV to JSON Converter",
+    h1: "CSV to JSON Converter",
+    tagline: "Convert CSV (with a header row) into a clean JSON array of objects.",
+    title: "CSV to JSON Converter — Free Online Tool",
+    description:
+      "Free CSV to JSON converter. Paste CSV with a header row and get a typed JSON array of objects. Handles quoted fields, commas and numbers. Private and browser-based.",
+    intro:
+      "Paste CSV where the first row is the header to get a JSON array of objects keyed by column name. Quoted fields, embedded commas and quoted newlines are parsed correctly, and obvious numbers and booleans are typed automatically. The conversion happens locally in your browser.",
+    keywords: ["csv to json", "csv to json converter", "convert csv to json", "csv to json array"],
+    component: "json-csv-converter",
+    params: { direction: "csv-to-json" },
+    volumeEstimate: 4400,
+    howTo: [
+      "Paste CSV with a header row into the input box.",
+      "Click Convert to JSON.",
+      "Copy the JSON array for your code or API.",
+    ],
+    faqs: [
+      { q: "Does the first row need to be a header?", a: "Yes. The first CSV row becomes the object keys; each following row becomes one object." },
+      { q: "Are numbers converted to real numbers?", a: "Yes. Cells that look like numbers or true/false are typed accordingly; everything else stays a string." },
+      { q: "Does it handle quoted fields with commas?", a: "Yes. The parser honours double-quoted fields, escaped quotes (\"\") and newlines inside quotes." },
+    ],
+    related: ["json-to-csv", "json-formatter"],
+  },
+  {
+    slug: "xml-formatter",
+    category: "dev",
+    name: "XML Formatter",
+    h1: "XML Formatter & Beautifier",
+    tagline: "Beautify or minify XML with proper indentation, validated in-browser.",
+    title: "XML Formatter & Beautifier — Free Online Tool",
+    description:
+      "Free XML formatter. Pretty-print (beautify) or minify XML with clean indentation. Well-formedness is checked in your browser. No signup, fully private.",
+    intro:
+      "Paste messy XML to pretty-print it with consistent indentation, or minify it to a single line. The browser's XML parser checks that your document is well-formed and reports the first error if not. Everything runs locally — your data never leaves the page.",
+    keywords: ["xml formatter", "xml beautifier", "format xml online", "xml pretty print", "xml validator"],
+    component: "xml-formatter",
+    volumeEstimate: 22200,
+    howTo: [
+      "Paste your XML into the input box.",
+      "Choose an indent size, then click Beautify or Minify.",
+      "If the XML is malformed, read the error and fix it.",
+      "Copy the formatted output.",
+    ],
+    faqs: [
+      { q: "Does it validate against a schema?", a: "It checks well-formedness (correct nesting and syntax), not validity against a DTD or XSD schema. Most formatting errors are well-formedness issues." },
+      { q: "Is my XML sent anywhere?", a: "No. Parsing and formatting run entirely in your browser." },
+    ],
+    related: ["json-formatter", "sql-formatter", "html-entities"],
+  },
+  {
+    slug: "sql-formatter",
+    category: "dev",
+    name: "SQL Formatter",
+    h1: "SQL Formatter & Beautifier",
+    tagline: "Format messy SQL into readable, indented queries instantly.",
+    title: "SQL Formatter & Beautifier — Free Online Tool",
+    description:
+      "Free SQL formatter. Beautify and indent SQL queries with keywords on new lines and aligned columns. Works in your browser, no signup, nothing uploaded.",
+    intro:
+      "Paste a single-line or messy SQL query to format it with clause keywords (SELECT, FROM, WHERE, JOIN…) on their own lines and the column list indented for readability. Useful for code review, debugging and documentation. Formatting runs locally in your browser.",
+    keywords: ["sql formatter", "sql beautifier", "format sql online", "sql pretty print"],
+    component: "sql-formatter",
+    volumeEstimate: 12100,
+    howTo: [
+      "Paste your SQL query into the input box.",
+      "Choose an indent size and click Format SQL.",
+      "Copy the formatted query.",
+    ],
+    faqs: [
+      { q: "Which SQL dialects are supported?", a: "It formats standard clause keywords common to most dialects (MySQL, PostgreSQL, SQL Server, SQLite). It re-indents rather than rewriting your SQL, so dialect-specific syntax is preserved." },
+      { q: "Does it change my query's meaning?", a: "No. It only adjusts whitespace and capitalises recognised keywords — the query logic is untouched." },
+    ],
+    related: ["json-formatter", "xml-formatter"],
+  },
+  {
+    slug: "markdown-to-html",
+    category: "dev",
+    name: "Markdown to HTML Converter",
+    h1: "Markdown to HTML Converter",
+    tagline: "Convert Markdown to clean HTML with a live preview.",
+    title: "Markdown to HTML Converter — Free Online Tool",
+    description:
+      "Free Markdown to HTML converter. Turn Markdown into clean, safe HTML with a live preview. Supports headings, lists, links, bold, italic, code and blockquotes.",
+    intro:
+      "Type or paste Markdown to get clean HTML and a live preview side by side. Supports headings, bold, italic, inline and fenced code, links, ordered and unordered lists, blockquotes and horizontal rules. Input is HTML-escaped first, so the output is safe to use. Runs entirely in your browser.",
+    keywords: ["markdown to html", "markdown to html converter", "convert markdown to html", "md to html"],
+    component: "markdown-to-html",
+    volumeEstimate: 2400,
+    howTo: [
+      "Type or paste Markdown into the input box.",
+      "Watch the HTML and live preview update as you type.",
+      "Copy the HTML for your blog, CMS or email.",
+    ],
+    faqs: [
+      { q: "Which Markdown features are supported?", a: "Headings, bold, italic, inline code, fenced code blocks, links, ordered/unordered lists, blockquotes and horizontal rules — the common CommonMark basics." },
+      { q: "Is the HTML safe to paste?", a: "Yes. Your input is HTML-escaped before conversion, so raw HTML or scripts in the source are rendered as text, not executed." },
+    ],
+    related: ["html-entities", "json-formatter"],
+  },
+  {
+    slug: "cron-expression-generator",
+    category: "dev",
+    name: "Cron Expression Generator",
+    h1: "Cron Expression Generator",
+    tagline: "Build and understand cron schedules with presets and a plain-English description.",
+    title: "Cron Expression Generator — Free Online Tool",
+    description:
+      "Free cron expression generator. Build cron schedules from presets or fields and get a plain-English description. For crontab, CI pipelines and schedulers.",
+    intro:
+      "Create cron expressions without memorising the five-field syntax. Start from a preset (every 5 minutes, daily at 9am, every Monday…) or set each field, and read a plain-English description of when it runs. Copy the expression for crontab, CI pipelines, Kubernetes CronJobs and other schedulers.",
+    keywords: ["cron expression generator", "cron generator", "crontab generator", "cron schedule generator"],
+    component: "cron-expression-generator",
+    volumeEstimate: 1600,
+    howTo: [
+      "Pick a preset, or set the minute, hour, day, month and weekday fields.",
+      "Read the plain-English description to confirm the schedule.",
+      "Copy the cron expression into your crontab or scheduler.",
+    ],
+    faqs: [
+      { q: "What do the five fields mean?", a: "In order: minute (0–59), hour (0–23), day-of-month (1–31), month (1–12) and day-of-week (0–6, Sunday=0). An asterisk means 'every'." },
+      { q: "What does */5 mean?", a: "A step value: */5 in the minute field means 'every 5 minutes'. The same /N syntax works in other fields." },
+    ],
+    related: ["timestamp-converter", "number-base-converter"],
+  },
 ];
