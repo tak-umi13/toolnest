@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   openGraph: { siteName: SITE.name, type: "website", locale: SITE.locale },
   twitter: { card: "summary", site: SITE.twitter },
   robots: { index: true, follow: true },
+  // Search-engine ownership verification. Next.js renders the correctly-named
+  // <meta google-site-verification> tag from this field.
+  verification: { google: "R2_bFvv38l8bthkqII3RUgtQbIsN9FXwmmFEwB5ydyU" },
 };
 
 export const viewport: Viewport = {
