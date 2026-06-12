@@ -54,6 +54,14 @@ import { RobotsTxtGenerator } from "./RobotsTxtGenerator";
 import { TipCalculator } from "./TipCalculator";
 import { GpaCalculator } from "./GpaCalculator";
 import { RandomNameGenerator } from "./RandomNameGenerator";
+import { StepUpSipCalculator } from "./StepUpSipCalculator";
+import { SsyCalculator } from "./SsyCalculator";
+import { EpfCalculator } from "./EpfCalculator";
+import { FireCalculator } from "./FireCalculator";
+import { NetWorthCalculator } from "./NetWorthCalculator";
+import { PercentageIncreaseCalculator } from "./PercentageIncreaseCalculator";
+import { EmergencyFundCalculator } from "./EmergencyFundCalculator";
+import { TokenCounter } from "./TokenCounter";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -113,6 +121,14 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "tip-calculator": TipCalculator,
   "gpa-calculator": GpaCalculator,
   "random-name-generator": RandomNameGenerator,
+  "step-up-sip-calculator": StepUpSipCalculator,
+  "ssy-calculator": SsyCalculator,
+  "epf-calculator": EpfCalculator,
+  "fire-calculator": FireCalculator,
+  "net-worth-calculator": NetWorthCalculator,
+  "percentage-increase-calculator": PercentageIncreaseCalculator,
+  "emergency-fund-calculator": EmergencyFundCalculator,
+  "token-counter": TokenCounter,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

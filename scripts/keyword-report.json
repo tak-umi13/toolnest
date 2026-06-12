@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T12:39:00.545Z",
+  "generatedAt": "2026-06-12T15:52:32.878Z",
   "filters": {
     "MAX_KD": 35,
     "MIN_VOLUME": 500,
@@ -132,6 +132,30 @@
       "pass": true
     },
     {
+      "keyword": "retirement calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 22200,
+          "cpc": 0.63,
+          "kd": 7,
+          "competition": "LOW",
+          "score": 1748,
+          "verdict": "pass"
+        },
+        "2840": {
+          "search_volume": 368000,
+          "cpc": 3.25,
+          "kd": 55,
+          "competition": "LOW",
+          "score": 21357,
+          "verdict": null
+        }
+      },
+      "bestScore": 21357,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
       "keyword": "discount calculator",
       "locations": {
         "2356": {
@@ -180,6 +204,30 @@
       "pass": true
     },
     {
+      "keyword": "pdf merge",
+      "locations": {
+        "2356": {
+          "search_volume": 1830000,
+          "cpc": 0.23,
+          "kd": 49,
+          "competition": "LOW",
+          "score": 8418,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 135000,
+          "cpc": 1.17,
+          "kd": 34,
+          "competition": "MEDIUM",
+          "score": 4513,
+          "verdict": "jackpot"
+        }
+      },
+      "bestScore": 8418,
+      "verdict": "jackpot",
+      "pass": true
+    },
+    {
       "keyword": "remove line breaks",
       "locations": {
         "2356": {
@@ -224,6 +272,30 @@
         }
       },
       "bestScore": 7568,
+      "verdict": "jackpot",
+      "pass": true
+    },
+    {
+      "keyword": "sukanya samriddhi yojana calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 110000,
+          "cpc": 0.78,
+          "kd": 11,
+          "competition": "LOW",
+          "score": 7150,
+          "verdict": "jackpot"
+        },
+        "2840": {
+          "search_volume": 390,
+          "cpc": 0,
+          "kd": 1,
+          "competition": "LOW",
+          "score": 2,
+          "verdict": null
+        }
+      },
+      "bestScore": 7150,
       "verdict": "jackpot",
       "pass": true
     },
@@ -348,6 +420,30 @@
       "pass": true
     },
     {
+      "keyword": "fire calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 2900,
+          "cpc": 0.27,
+          "kd": 0,
+          "competition": "LOW",
+          "score": 783,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 18100,
+          "cpc": 3.1,
+          "kd": 12,
+          "competition": "LOW",
+          "score": 4316,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 4316,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
       "keyword": "rd calculator",
       "locations": {
         "2356": {
@@ -420,6 +516,30 @@
       "pass": true
     },
     {
+      "keyword": "emergency fund calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 9900,
+          "cpc": 0.29,
+          "kd": 0,
+          "competition": "LOW",
+          "score": 2871,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 6600,
+          "cpc": 0.51,
+          "kd": 22,
+          "competition": "LOW",
+          "score": 146,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 2871,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
       "keyword": "sip vs lumpsum",
       "locations": {
         "2356": {
@@ -468,6 +588,54 @@
       "pass": true
     },
     {
+      "keyword": "capital gains tax calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 2900,
+          "cpc": 0.01,
+          "kd": 0,
+          "competition": "LOW",
+          "score": 29,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 14800,
+          "cpc": 5.17,
+          "kd": 32,
+          "competition": "LOW",
+          "score": 2319,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 2319,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "net worth calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 3600,
+          "cpc": 0.81,
+          "kd": 27,
+          "competition": "LOW",
+          "score": 104,
+          "verdict": "pass"
+        },
+        "2840": {
+          "search_volume": 27100,
+          "cpc": 1.5,
+          "kd": 18,
+          "competition": "LOW",
+          "score": 2139,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 2139,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
       "keyword": "json to csv",
       "locations": {
         "2356": {
@@ -488,6 +656,78 @@
         }
       },
       "bestScore": 1936,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "loan prepayment calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 5400,
+          "cpc": 0.31,
+          "kd": 0,
+          "competition": "LOW",
+          "score": 1674,
+          "verdict": "pass"
+        },
+        "2840": {
+          "search_volume": 480,
+          "cpc": 5.03,
+          "kd": 13,
+          "competition": "LOW",
+          "score": 172,
+          "verdict": null
+        }
+      },
+      "bestScore": 1674,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "percentage increase calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 14800,
+          "cpc": 0.45,
+          "kd": 18,
+          "competition": "LOW",
+          "score": 351,
+          "verdict": "pass"
+        },
+        "2840": {
+          "search_volume": 165000,
+          "cpc": 0.25,
+          "kd": 26,
+          "competition": "LOW",
+          "score": 1528,
+          "verdict": null
+        }
+      },
+      "bestScore": 1528,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "tds calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 8100,
+          "cpc": 0.13,
+          "kd": 0,
+          "competition": "LOW",
+          "score": 1053,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 590,
+          "cpc": 2.56,
+          "kd": 0,
+          "competition": "LOW",
+          "score": 1510,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 1510,
       "verdict": "pass",
       "pass": true
     },
@@ -608,6 +848,30 @@
         }
       },
       "bestScore": 1047,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "step up sip calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 135000,
+          "cpc": 0.11,
+          "kd": 15,
+          "competition": "LOW",
+          "score": 928,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 590,
+          "cpc": 6.47,
+          "kd": 14,
+          "competition": "LOW",
+          "score": 254,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 928,
       "verdict": "pass",
       "pass": true
     },
@@ -876,6 +1140,30 @@
       "pass": true
     },
     {
+      "keyword": "token counter",
+      "locations": {
+        "2356": {
+          "search_volume": 3600,
+          "cpc": 0.02,
+          "kd": 25,
+          "competition": "LOW",
+          "score": 3,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 5400,
+          "cpc": 0.46,
+          "kd": 17,
+          "competition": "LOW",
+          "score": 138,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 138,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
       "keyword": "area converter",
       "locations": {
         "2356": {
@@ -896,6 +1184,30 @@
         }
       },
       "bestScore": 90,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "youtube earnings calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 6600,
+          "cpc": 0,
+          "kd": 16,
+          "competition": "LOW",
+          "score": 4,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 1000,
+          "cpc": 0.45,
+          "kd": 11,
+          "competition": "LOW",
+          "score": 38,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 38,
       "verdict": "pass",
       "pass": true
     },
@@ -1016,6 +1328,54 @@
         }
       },
       "bestScore": 29643,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "age calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 9140000,
+          "cpc": 0.12,
+          "kd": 36,
+          "competition": "LOW",
+          "score": 29643,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 673000,
+          "cpc": 0.26,
+          "kd": 45,
+          "competition": "LOW",
+          "score": 3804,
+          "verdict": null
+        }
+      },
+      "bestScore": 29643,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "invoice generator",
+      "locations": {
+        "2356": {
+          "search_volume": 49500,
+          "cpc": 0.56,
+          "kd": 53,
+          "competition": "LOW",
+          "score": 513,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 90500,
+          "cpc": 16.41,
+          "kd": 50,
+          "competition": "LOW",
+          "score": 29120,
+          "verdict": null
+        }
+      },
+      "bestScore": 29120,
       "verdict": null,
       "pass": false
     },
@@ -1160,6 +1520,30 @@
         }
       },
       "bestScore": 8988,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "image resizer",
+      "locations": {
+        "2356": {
+          "search_volume": 1500000,
+          "cpc": 0.47,
+          "kd": 84,
+          "competition": "LOW",
+          "score": 8294,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 165000,
+          "cpc": 2.03,
+          "kd": 60,
+          "competition": "LOW",
+          "score": 5491,
+          "verdict": null
+        }
+      },
+      "bestScore": 8294,
       "verdict": null,
       "pass": false
     },
@@ -1452,6 +1836,54 @@
       "pass": false
     },
     {
+      "keyword": "mutual fund calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 201000,
+          "cpc": 0.25,
+          "kd": 29,
+          "competition": "LOW",
+          "score": 1675,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 8100,
+          "cpc": 2.72,
+          "kd": 40,
+          "competition": "LOW",
+          "score": 537,
+          "verdict": null
+        }
+      },
+      "bestScore": 1675,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "image compressor",
+      "locations": {
+        "2356": {
+          "search_volume": 1000000,
+          "cpc": 0.05,
+          "kd": 67,
+          "competition": "LOW",
+          "score": 735,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 60500,
+          "cpc": 1.8,
+          "kd": 74,
+          "competition": "LOW",
+          "score": 1452,
+          "verdict": null
+        }
+      },
+      "bestScore": 1452,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "sitemap generator",
       "locations": {
         "2356": {
@@ -1548,6 +1980,30 @@
       "pass": false
     },
     {
+      "keyword": "epf calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 27100,
+          "cpc": 0.26,
+          "kd": 6,
+          "competition": "LOW",
+          "score": 1007,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 170,
+          "cpc": 0,
+          "kd": 14,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 1007,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "password generator",
       "locations": {
         "2356": {
@@ -1568,6 +2024,54 @@
         }
       },
       "bestScore": 808,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "days between dates",
+      "locations": {
+        "2356": {
+          "search_volume": 33100,
+          "cpc": 0,
+          "kd": 36,
+          "competition": "LOW",
+          "score": 9,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 90500,
+          "cpc": 0.17,
+          "kd": 29,
+          "competition": "LOW",
+          "score": 513,
+          "verdict": null
+        }
+      },
+      "bestScore": 513,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "time zone converter",
+      "locations": {
+        "2356": {
+          "search_volume": 27100,
+          "cpc": 0,
+          "kd": 89,
+          "competition": "LOW",
+          "score": 3,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 201000,
+          "cpc": 0.24,
+          "kd": 100,
+          "competition": "LOW",
+          "score": 478,
+          "verdict": null
+        }
+      },
+      "bestScore": 478,
       "verdict": null,
       "pass": false
     },
@@ -1736,6 +2240,54 @@
         }
       },
       "bestScore": 207,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "llm token counter",
+      "locations": {
+        "2356": {
+          "search_volume": 170,
+          "cpc": 3.1,
+          "kd": null,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 320,
+          "cpc": 7.75,
+          "kd": 13,
+          "competition": "LOW",
+          "score": 177,
+          "verdict": null
+        }
+      },
+      "bestScore": 177,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "date difference calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 33100,
+          "cpc": 0.17,
+          "kd": 34,
+          "competition": "LOW",
+          "score": 161,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 9900,
+          "cpc": 0.03,
+          "kd": 47,
+          "competition": "LOW",
+          "score": 6,
+          "verdict": null
+        }
+      },
+      "bestScore": 161,
       "verdict": null,
       "pass": false
     },
@@ -2282,6 +2834,54 @@
           "search_volume": 50,
           "cpc": 0,
           "kd": 32,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 0,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "ai token counter",
+      "locations": {
+        "2356": {
+          "search_volume": 90,
+          "cpc": 0,
+          "kd": null,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 260,
+          "cpc": 0,
+          "kd": 15,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 0,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "words to tokens",
+      "locations": {
+        "2356": {
+          "search_volume": 30,
+          "cpc": 0,
+          "kd": 24,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 90,
+          "cpc": 0,
+          "kd": 22,
           "competition": "LOW",
           "score": 0,
           "verdict": null

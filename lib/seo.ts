@@ -100,6 +100,7 @@ export function softwareAppJsonLd(tool: Tool) {
     // Free, no-signup tools: declaring a $0 price is accurate and unlocks the
     // rich result. Don't fake review ratings — that violates Google's policy.
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    ...(tool.updated ? { dateModified: tool.updated } : {}),
   };
 }
 
@@ -128,5 +129,6 @@ export function articleJsonLd(article: Article) {
     mainEntityOfPage: url,
     author: { "@type": "Organization", name: SITE.name },
     publisher: { "@type": "Organization", name: SITE.name },
+    ...(article.updated ? { dateModified: article.updated } : {}),
   };
 }

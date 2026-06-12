@@ -49,6 +49,8 @@ export interface Article {
   /** Tool slugs this guide supports — rendered as CTAs and sidebar links. */
   relatedTools: string[];
   relatedArticles?: string[];
+  /** ISO date of the last substantive content review (drives dateModified + sitemap). */
+  updated?: string;
 }
 
 export interface Tool {
@@ -81,4 +83,13 @@ export interface Tool {
    * homepage "trending" ordering and build priority.
    */
   volumeEstimate?: number;
+  /**
+   * ISO date of the last rules/content review. Set this whenever rate-, slab-
+   * or rule-dependent logic is verified (tax slabs, scheme interest rates…).
+   * Drives the on-page freshness chip, JSON-LD dateModified and sitemap lastmod
+   * — the freshness moat over set-and-forget competitor sites.
+   */
+  updated?: string;
+  /** Short freshness label shown next to the date, e.g. "FY 2025-26 rules". */
+  updateNote?: string;
 }

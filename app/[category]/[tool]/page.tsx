@@ -53,6 +53,12 @@ export default async function ToolPage({ params }: { params: Promise<{ category:
           <div style={{ flex: "1 1 auto", minWidth: 240 }}>
             <h1>{tool.h1}</h1>
             <p className="lead muted" style={{ margin: 0 }}>{tool.tagline}</p>
+            {tool.updated && (
+              <p className="small" style={{ margin: "8px 0 0", color: "var(--primary)" }}>
+                ✓ {tool.updateNote ? `${tool.updateNote} · ` : ""}updated{" "}
+                {new Date(tool.updated).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
+              </p>
+            )}
           </div>
           <ShareButton title={tool.name} />
         </header>
@@ -63,6 +69,14 @@ export default async function ToolPage({ params }: { params: Promise<{ category:
             <div className="tool-shell">
               <ToolRenderer component={tool.component} params={tool.params} />
             </div>
+
+            {/* YMYL trust signal: finance results are informational, and we say so. */}
+            {cat.id === "finance" && (
+              <p className="muted small" style={{ marginTop: 10 }}>
+                Results are estimates for information only, not financial advice. See{" "}
+                <Link href="/about">how we build and verify our calculators</Link>.
+              </p>
+            )}
 
             <p className="prose" style={{ marginTop: 20 }}>{tool.intro}</p>
 

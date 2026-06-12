@@ -113,6 +113,44 @@ random password generator
 qr code
 random name generator
 
+# === Batch 5 candidates (2026-06-13) — STRUCTURALLY RISING demand ===
+# AI era (rising with LLM adoption)
+token counter
+ai token counter
+llm token counter
+words to tokens
+
+# India finance deepening (formalization + retail investing boom)
+epf calculator
+tds calculator
+capital gains tax calculator
+step up sip calculator
+mutual fund calculator
+retirement calculator
+fire calculator
+net worth calculator
+emergency fund calculator
+sukanya samriddhi yojana calculator
+loan prepayment calculator
+
+# Freelance / creator economy (rising)
+invoice generator
+youtube earnings calculator
+
+# Files & media (client-side privacy moat)
+image compressor
+image resizer
+pdf merge
+
+# Time & date evergreen
+age calculator
+date difference calculator
+days between dates
+time zone converter
+
+# Long-tail of proven winners
+percentage increase calculator
+
 # Guides (topical authority — informational keywords)
 what is gst
 gst rates india

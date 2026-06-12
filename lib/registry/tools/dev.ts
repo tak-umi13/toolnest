@@ -415,4 +415,31 @@ export const devTools: Tool[] = [
     ],
     related: ["timestamp-converter", "number-base-converter"],
   },
+  {
+    slug: "token-counter",
+    category: "dev",
+    name: "AI Token Counter",
+    h1: "AI Token Counter — Estimate LLM Tokens & Cost",
+    tagline: "Estimate how many tokens your prompt uses and what it costs.",
+    title: "Token Counter — Estimate LLM Tokens & API Cost",
+    description:
+      "Free AI token counter. Paste text to estimate its token count for ChatGPT, Claude and other LLMs, plus the API cost at your model's price. Private, in-browser.",
+    intro:
+      "Paste a prompt, document or transcript to estimate its token count — the unit LLM APIs like OpenAI's and Anthropic's bill by — along with word and character counts. Enter your model's price per million tokens to see the estimated cost of the text. Estimates use the standard ~4-characters-per-token heuristic and run entirely in your browser, so your prompts stay private.",
+    keywords: ["token counter", "ai token counter", "llm token counter", "token cost calculator", "chatgpt token counter"],
+    component: "token-counter",
+    volumeEstimate: 5400,
+    updated: "2026-06-13",
+    howTo: [
+      "Paste your prompt or document into the box.",
+      "Read the estimated tokens, words and characters.",
+      "Optionally set your model's price per 1M input tokens to see the estimated cost.",
+    ],
+    faqs: [
+      { q: "What is a token?", a: "The unit LLMs read and bill by — a chunk of characters produced by the model's tokenizer. In English, one token averages about 4 characters or ¾ of a word; 1,000 tokens is roughly 750 words." },
+      { q: "How accurate is this estimate?", a: "Within roughly ±10–15% for typical English prose. Code, dense punctuation and non-Latin scripts use more tokens per character, so for billing-exact numbers use the provider's own tokenizer or token-count API." },
+      { q: "Is my text uploaded anywhere?", a: "No. The estimate is computed locally in your browser — important when your prompts contain confidential material." },
+    ],
+    related: ["word-counter", "json-formatter", "case-converter"],
+  },
 ];
