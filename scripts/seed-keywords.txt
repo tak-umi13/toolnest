@@ -151,6 +151,23 @@ time zone converter
 # Long-tail of proven winners
 percentage increase calculator
 
+# === Batch 6 candidates (2026-06-13) — country-specific needs of top
+# English-speaking populations (PK, NG, PH, UK, BD, CA, AU, ZA) ===
+zakat calculator
+vat calculator
+paye calculator
+take home pay calculator
+stamp duty calculator
+superannuation calculator
+sss contribution calculator
+13th month pay calculator
+philhealth contribution calculator
+national insurance calculator
+student loan repayment calculator
+hecs calculator
+salary to hourly calculator
+overtime pay calculator
+
 # Guides (topical authority — informational keywords)
 what is gst
 gst rates india

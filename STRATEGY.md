@@ -50,6 +50,46 @@ calculator.net / omnicalculator / rapidtables に勝てない。勝ち筋は
 3. 鮮度確認: 金利・税制に変更があれば該当ツールの `updated` を更新
 4. クラスター完成度: 各金融ツールに最低2本の supporting guide を目指す
 
+## 多国展開の実測結果（2026-06-13、英語話者人口の上位10カ国）
+
+136キーワード × 10カ国（US/IN/UK/PK/NG/PH/BD/CA/AU/ZA）を実測。
+77/136通過・17ジャックポット。発見:
+
+### 国別の性格（実測）
+- **UK = 第2の柱**: vat calculator 201k/KD20★、mortgage 450k/KD28★、
+  salary 368k/KD32★、take-home 301k(KD43)。ボリュームも CPC もある
+- **オーストラリア = KDが異常に低い**: gst 110k/KD7★、superannuation
+  40.5k/KD8、salary 60.5k/KD15★、mortgage 90.5k/KD22★。即勝てる市場
+- **パキスタン = 第2のインド**: age calculator 301k/KD34、text repeater
+  33k/KD6、percentage 33k/KD31。CPC は低い（トラフィック市場）
+- **カナダ**: gpa 40.5k/KD24（構築済が刺さる）、zakat KD3、pdf merge 60.5k/KD34
+- **フィリピン**: 13th month pay 8.1k/KD0、sss/philhealth KD0-12 だが
+  CPC ≈ $0 — 容易だが収益性なし（トラフィック専用、低優先）
+- **ナイジェリア/バングラ/南ア**: 単独では弱い。既存ツールの増分のみ
+
+### 最重要発見
+1. **zakat calculator — 8カ国同時パスの普遍ツール**: UK 14.8k/KD3/$6.55、
+   PK 18.1k/KD9/$7.99、IN 22.2k/KD6、US 9.9k/KD3/$8.87、CA KD3、AU KD0。
+   合計 ~73k/月、全地域 KD≤26、CPC $2.6-8.9。ムスリム人口は英語圏で
+   構造的に増加 + 毎年ラマダンで需要スパイク = 恒常的上昇ニーズの典型
+2. **1ツール=多国パターン**: vat（UK20%/ZA15%/NG7.5%/PH12%）、
+   mortgage（UK+AU、既存EMIの数式+償還表を流用）、gst-australia
+   （10%固定、既存GstCalculatorのparams化）
+3. **鮮度の堀が他国にも拡張**: AUのsuper保証率は法定で段階上昇
+   （2025-07から12%）、UKは毎年4月に税年度更新 — インドと同じ
+   年次更新優位が効く
+
+### 多国展開の建設キュー（スコア順）
+1. zakat calculator（8カ国・KD一桁・CPC $8）
+2. vat calculator（UK 201k★ + 4カ国）
+3. mortgage calculator（UK 450k/KD28★ + AU 90.5k/KD22★ — EMI流用）
+4. gst-calculator-australia（110k/KD7★）
+5. superannuation calculator（AU 40.5k/KD8）
+6. age calculator（PK 301k/KD34 ✓ + IN 9.1M/KD36 + US 673k — 世界~10M）
+7. salary-to-hourly（UK KD4）+ overtime pay（US KD15）
+8. UKクラスター（要税制実装・高報酬）: salary/take-home 368k+301k、
+   national insurance 6.6k/KD20、student loan repayment 12.1k/KD28
+
 ## 次の建設候補（検証済み・未着工）
 - tds calculator (India 8.1k/KD0)、capital gains tax calculator (US 14.8k/KD32)、
   retirement calculator (India KD7)、loan prepayment calculator (KD0-13)、

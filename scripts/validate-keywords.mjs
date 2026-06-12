@@ -49,7 +49,10 @@ let LOCATIONS = (process.env.DATAFORSEO_LOCATION_CODES || process.env.DATAFORSEO
   .map((s) => Number(s.trim()))
   .filter(Boolean);
 
-const LOC_NAME = { 2840: "US", 2356: "India", 2826: "UK", 2036: "Australia", 2124: "Canada" };
+const LOC_NAME = {
+  2840: "US", 2356: "India", 2826: "UK", 2036: "Australia", 2124: "Canada",
+  2586: "Pakistan", 2566: "Nigeria", 2608: "Philippines", 2050: "Bangladesh", 2710: "S.Africa",
+};
 const locLabel = (c) => LOC_NAME[c] || `loc-${c}`;
 
 // --cached: rebuild both reports from scripts/keyword-report.json without any
