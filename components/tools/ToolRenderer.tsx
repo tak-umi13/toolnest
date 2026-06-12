@@ -62,6 +62,13 @@ import { NetWorthCalculator } from "./NetWorthCalculator";
 import { PercentageIncreaseCalculator } from "./PercentageIncreaseCalculator";
 import { EmergencyFundCalculator } from "./EmergencyFundCalculator";
 import { TokenCounter } from "./TokenCounter";
+import { ZakatCalculator } from "./ZakatCalculator";
+import { VatCalculator } from "./VatCalculator";
+import { MortgageCalculator } from "./MortgageCalculator";
+import { SuperannuationCalculator } from "./SuperannuationCalculator";
+import { AgeCalculator } from "./AgeCalculator";
+import { SalaryToHourlyCalculator } from "./SalaryToHourlyCalculator";
+import { OvertimePayCalculator } from "./OvertimePayCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -129,6 +136,13 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "percentage-increase-calculator": PercentageIncreaseCalculator,
   "emergency-fund-calculator": EmergencyFundCalculator,
   "token-counter": TokenCounter,
+  "zakat-calculator": ZakatCalculator,
+  "vat-calculator": VatCalculator,
+  "mortgage-calculator": MortgageCalculator,
+  "superannuation-calculator": SuperannuationCalculator,
+  "age-calculator": AgeCalculator,
+  "salary-to-hourly-calculator": SalaryToHourlyCalculator,
+  "overtime-pay-calculator": OvertimePayCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

@@ -1,13 +1,19 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import type { ToolParams } from "./ToolRenderer";
 
-const inr = (n: number) =>
-  new Intl.NumberFormat("en-IN", { maximumFractionDigits: 2 }).format(n);
+// Parametrized: the India page uses the default slabs + CGST/SGST split note;
+// other GST countries (Australia 10%, NZ 15%…) pass their own rates/currency.
+export function GstCalculator({ params }: { params?: ToolParams }) {
+  const rates = String(params?.rates ?? "5,12,18,28,40").split(",").map(Number);
+  const currency = String(params?.currency ?? "₹");
+  const showSplit = params?.splitNote !== false;
+  const fmt = (n: number) =>
+    new Intl.NumberFormat(currency === "₹" ? "en-IN" : undefined, { maximumFractionDigits: 2 }).format(n);
 
-export function GstCalculator() {
   const [amount, setAmount] = useState(1000);
-  const [rate, setRate] = useState(18);
+  const [rate, setRate] = useState(Number(params?.defaultRate ?? 18));
   const [mode, setMode] = useState<"add" | "remove">("add");
 
   const result = useMemo(() => {
@@ -24,12 +30,13 @@ export function GstCalculator() {
   return (
     <div>
       <div className="row">
-        <div className="field"><label>Amount (₹)</label><input className="input" type="number" value={amount} onChange={(e) => setAmount(Number(e.target.value))} /></div>
+        <div className="field"><label>Amount ({currency})</label><input className="input" type="number" value={amount} onChange={(e) => setAmount(Number(e.target.value))} /></div>
         <div className="field"><label>GST rate</label>
           <select className="select" value={rate} onChange={(e) => setRate(Number(e.target.value))}>
-            {/* 5% and 18% are the main slabs since the Sept 2025 rationalisation;
-                12%/28% remain for legacy invoices, 40% is the demerit rate. */}
-            {[5, 12, 18, 28, 40].map((r) => <option key={r} value={r}>{r}%</option>)}
+            {/* India: 5% and 18% are the main slabs since the Sept 2025
+                rationalisation; 12%/28% remain for legacy invoices, 40% is the
+                demerit rate. Other countries pass a single statutory rate. */}
+            {rates.map((r) => <option key={r} value={r}>{r}%</option>)}
           </select>
         </div>
       </div>
@@ -40,13 +47,15 @@ export function GstCalculator() {
       {result ? (
         <>
           <div className="stat-row">
-            <div className="stat"><div className="num">₹{inr(result.base)}</div><div className="lbl">Base amount</div></div>
-            <div className="stat"><div className="num">₹{inr(result.gst)}</div><div className="lbl">GST ({rate}%)</div></div>
-            <div className="stat"><div className="num">₹{inr(result.total)}</div><div className="lbl">Total</div></div>
+            <div className="stat"><div className="num">{currency}{fmt(result.base)}</div><div className="lbl">Base amount</div></div>
+            <div className="stat"><div className="num">{currency}{fmt(result.gst)}</div><div className="lbl">GST ({rate}%)</div></div>
+            <div className="stat"><div className="num">{currency}{fmt(result.total)}</div><div className="lbl">Total</div></div>
           </div>
-          <p className="muted small" style={{ marginTop: 12 }}>
-            Intra-state split: CGST ₹{inr(result.gst / 2)} + SGST ₹{inr(result.gst / 2)} (each {rate / 2}%).
-          </p>
+          {showSplit && (
+            <p className="muted small" style={{ marginTop: 12 }}>
+              Intra-state split: CGST {currency}{fmt(result.gst / 2)} + SGST {currency}{fmt(result.gst / 2)} (each {rate / 2}%).
+            </p>
+          )}
         </>
       ) : (
         <p className="muted">Enter an amount to calculate GST.</p>

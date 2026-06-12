@@ -68,4 +68,31 @@ export const convertTools: Tool[] = [
     ],
     related: ["length-converter", "weight-converter"],
   },
+  {
+    slug: "age-calculator",
+    category: "convert",
+    name: "Age Calculator",
+    h1: "Age Calculator — Exact Age in Years, Months & Days",
+    tagline: "Your exact age from your date of birth, plus days to your next birthday.",
+    title: "Age Calculator — Calculate Exact Age from Date of Birth",
+    description:
+      "Free age calculator. Get your exact age in years, months and days from your date of birth — plus total months, weeks, days and a next-birthday countdown.",
+    intro:
+      "Enter a date of birth (and optionally a different \"as of\" date) to get the exact age in years, months and days, calculated against real calendar month lengths. You also get the age in total months, weeks and days, a countdown to the next birthday, and the day of the week you were born — useful for forms, school cut-offs, retirement dates and anniversaries.",
+    keywords: ["age calculator", "calculate age from date of birth", "how old am i", "age in days calculator"],
+    component: "age-calculator",
+    volumeEstimate: 9140000,
+    updated: "2026-06-13",
+    howTo: [
+      "Enter the date of birth.",
+      "Optionally change the \"as of\" date (defaults to today).",
+      "Read the exact age, totals, and the days until the next birthday.",
+    ],
+    faqs: [
+      { q: "How is exact age calculated?", a: "By calendar borrowing: whole years first, then whole months, then leftover days against the actual length of the months involved — the same way ages are computed for official purposes, not a 365.25-day approximation." },
+      { q: "Can I calculate age at a past or future date?", a: "Yes — set the \"as of\" date to any date on or after the birth date, e.g. an exam cut-off date or a retirement date." },
+      { q: "Does it handle leap years?", a: "Yes. Calculations use real calendar dates, so February 29 birthdays and leap-year day counts come out correctly." },
+    ],
+    related: ["time-converter", "timestamp-converter"],
+  },
 ];
