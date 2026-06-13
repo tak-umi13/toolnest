@@ -624,4 +624,159 @@ export const devTools: Tool[] = [
     ],
     related: ["random-number-generator", "password-generator", "uuid-generator"],
   },
+  {
+    slug: "caesar-cipher",
+    category: "dev",
+    name: "Caesar Cipher",
+    h1: "Caesar Cipher Encoder & Decoder",
+    tagline: "Encrypt and decrypt text with a Caesar shift — or brute-force all 26.",
+    title: "Caesar Cipher — Encode, Decode & Brute-Force Online",
+    description:
+      "Free Caesar cipher tool. Encrypt or decrypt text with any shift, or brute-force all 26 shifts to crack a message. Letters only, case preserved. Runs in your browser.",
+    intro:
+      "Encode and decode text with the classic Caesar cipher, which shifts each letter by a fixed amount. Drag the shift slider to see the encrypted and decrypted text update live. Don't know the key? Tick 'Show all 26 shifts' to brute-force a message and spot the readable line. Letters are shifted; spaces, numbers and punctuation pass through unchanged. A great intro to cryptography. Runs in your browser.",
+    keywords: ["caesar cipher", "caesar cipher decoder", "caesar cipher encoder", "shift cipher"],
+    component: "caesar-cipher",
+    volumeEstimate: 60500,
+    howTo: [
+      "Type the message you want to encrypt or decrypt.",
+      "Set the shift amount with the slider.",
+      "Read the encoded and decoded text, or brute-force all 26 shifts.",
+    ],
+    faqs: [
+      { q: "How do I decode a Caesar cipher without the key?", a: "Tick 'Show all 26 shifts'. The tool lists every possible decoding; the one that reads as plain language is the answer — there are only 25 real shifts to scan." },
+      { q: "Is the Caesar cipher secure?", a: "No. With only 25 possible keys it's trivial to brute-force, so it's used for puzzles and teaching, not real security. For that, use modern encryption." },
+      { q: "What happens to numbers and punctuation?", a: "Only letters A–Z and a–z are shifted; digits, spaces and punctuation are left exactly as they are, and letter case is preserved." },
+    ],
+    related: ["rot13", "base64", "hash-generator"],
+  },
+  {
+    slug: "rot13",
+    category: "dev",
+    name: "ROT13 Encoder / Decoder",
+    h1: "ROT13 Encoder & Decoder",
+    tagline: "Apply ROT13 to hide or reveal text — the same button does both.",
+    title: "ROT13 Encoder / Decoder — Free Online Tool",
+    description:
+      "Free ROT13 tool. Encode or decode text with ROT13 in one click — because ROT13 is its own inverse, the same transform reveals hidden spoilers and puzzle answers.",
+    intro:
+      "Apply ROT13 to any text. ROT13 is a Caesar cipher with a fixed shift of 13, and because the alphabet has 26 letters, running it twice returns the original — so a single button both encodes and decodes. It's the classic way to hide spoilers, puzzle answers and mild jokes in plain sight. Runs entirely in your browser.",
+    keywords: ["rot13", "rot13 decoder", "rot13 encoder", "rot13 translator"],
+    component: "rot13",
+    volumeEstimate: 9900,
+    howTo: [
+      "Type or paste your text.",
+      "Read the ROT13 output instantly.",
+      "Run it again on the output to get back the original.",
+    ],
+    faqs: [
+      { q: "Why does the same tool encode and decode?", a: "ROT13 shifts letters by 13, exactly half of 26. Applying it a second time shifts another 13, which wraps fully around the alphabet back to the start — so encode and decode are identical operations." },
+      { q: "Is ROT13 encryption?", a: "Not in any secure sense — it offers no protection. It's a convention for lightly obscuring text like spoilers so it isn't read by accident." },
+    ],
+    related: ["caesar-cipher", "base64", "url-encode-decode"],
+  },
+  {
+    slug: "unicode-converter",
+    category: "dev",
+    name: "Unicode Converter",
+    h1: "Unicode Converter — Text to Code Points & Back",
+    tagline: "Convert text to Unicode code points (U+XXXX) and escapes, and back.",
+    title: "Unicode Converter — Text to Code Points & Escapes Online",
+    description:
+      "Free Unicode converter. Turn text into Unicode code points (U+XXXX) and JavaScript/JSON escapes, and decode code points back to text. Emoji-safe. Runs in your browser.",
+    intro:
+      "Convert text into its Unicode code points (like U+1F44B for 👋) and into JavaScript/JSON \\u escapes, or decode code points back into readable text. It iterates by code point, so emoji and other astral characters map to a single value instead of a broken surrogate pair. Decoding accepts U+XXXX, raw hex, \\u escapes and HTML entities. Runs in your browser.",
+    keywords: ["unicode converter", "text to unicode", "unicode to text", "unicode code point converter"],
+    component: "unicode-converter",
+    volumeEstimate: 49500,
+    howTo: [
+      "Choose Text → Unicode or Unicode → Text.",
+      "Type your text or code points.",
+      "Copy the code points, escapes, or decoded text.",
+    ],
+    faqs: [
+      { q: "What is a Unicode code point?", a: "A code point is the unique number assigned to a character in the Unicode standard, written as U+ followed by hexadecimal — for example U+0041 is 'A' and U+1F600 is 😀." },
+      { q: "Does it handle emoji correctly?", a: "Yes. It reads text by code point rather than 16-bit unit, so emoji and other characters above U+FFFF convert to a single value and round-trip correctly." },
+      { q: "What input formats can it decode?", a: "U+XXXX, plain hexadecimal, JavaScript \\uXXXX / \\u{XXXX} escapes, and HTML numeric entities like &#128512;." },
+    ],
+    related: ["html-entity-encoder", "base64", "url-encode-decode"],
+  },
+  {
+    slug: "base64-to-image",
+    category: "dev",
+    name: "Base64 to Image",
+    h1: "Base64 to Image (and Image to Base64)",
+    tagline: "Decode Base64 to an image preview, or encode an image to a data URI.",
+    title: "Base64 to Image — Decode & Encode Images Online",
+    description:
+      "Free Base64 to image tool. Paste Base64 or a data URI to preview and download the image, or pick an image to get its Base64 data URI. Private — nothing is uploaded.",
+    intro:
+      "Paste a Base64 string or data URI to instantly preview the image and download it, or switch modes to pick an image file and get its Base64 data URI for embedding in HTML or CSS. Image type is auto-detected from the data. Everything happens in your browser — your images are never uploaded to a server.",
+    keywords: ["base64 to image", "base64 image decoder", "image to base64", "base64 to png"],
+    component: "base64-to-image",
+    volumeEstimate: 12100,
+    howTo: [
+      "Choose Base64 → Image or Image → Base64.",
+      "Paste the Base64/data URI, or pick an image file.",
+      "Preview, then download the image or copy the data URI.",
+    ],
+    faqs: [
+      { q: "Are my images uploaded anywhere?", a: "No. Decoding and encoding run entirely in your browser, so your images never leave your device — safe for private or sensitive files." },
+      { q: "What is a data URI?", a: "A data URI embeds the file directly in a string like data:image/png;base64,…. It lets you inline small images in HTML or CSS without a separate request." },
+      { q: "Should I inline large images as Base64?", a: "No. Base64 adds about 33% size and isn't cached separately, so it's best for tiny icons. Use normal image files for anything larger." },
+    ],
+    related: ["base64", "unicode-converter", "json-formatter"],
+  },
+  {
+    slug: "markdown-table-generator",
+    category: "dev",
+    name: "Markdown Table Generator",
+    h1: "Markdown Table Generator",
+    tagline: "Fill a grid and get a clean GitHub-flavored Markdown table.",
+    title: "Markdown Table Generator — Create Markdown Tables Online",
+    description:
+      "Free Markdown table generator. Enter your data in a grid, set column alignment, and copy a clean GitHub-flavored Markdown table. Runs in your browser.",
+    intro:
+      "Build Markdown tables without fighting the pipe-and-dash syntax. Set the number of rows and columns, fill in the cells, choose left/center/right alignment per column, and copy a clean GitHub-flavored Markdown table ready for READMEs, docs, issues and chat. Especially handy for tidying up tables from AI assistants. Runs in your browser.",
+    keywords: ["markdown table generator", "markdown table maker", "create markdown table", "md table generator"],
+    component: "markdown-table-generator",
+    volumeEstimate: 8100,
+    howTo: [
+      "Set the number of rows and columns.",
+      "Fill in the cells (the first row is the header).",
+      "Choose column alignment and copy the Markdown.",
+    ],
+    faqs: [
+      { q: "Will the table render on GitHub?", a: "Yes. The output is GitHub-flavored Markdown, which renders as a table on GitHub, GitLab, most static-site generators and many chat tools." },
+      { q: "How do I align columns?", a: "Use the per-column dropdowns. Alignment is encoded in the separator row with colons (:---, :---:, ---:) which Markdown renderers honour." },
+      { q: "Can I edit a table I already have?", a: "Re-enter the values in the grid. The generator focuses on building clean tables; paste your data cell by cell to reformat it." },
+    ],
+    related: ["markdown-to-html", "json-to-csv", "html-entity-encoder"],
+  },
+  {
+    slug: "json-repair",
+    category: "dev",
+    name: "JSON Repair",
+    h1: "JSON Repair — Fix Broken JSON",
+    tagline: "Fix common JSON errors: single quotes, trailing commas, unquoted keys.",
+    title: "JSON Repair — Fix & Format Broken JSON Online",
+    description:
+      "Free JSON repair tool. Fix the usual broken JSON from AI output and configs — code fences, single quotes, unquoted keys, trailing commas — then get clean formatted JSON.",
+    intro:
+      "Paste malformed JSON and get it repaired and pretty-printed. It fixes the errors that break JSON in real life — Markdown code fences around the JSON, single quotes, unquoted keys, trailing commas, smart quotes, and Python-style True/False/None — and tells you exactly what it changed. Perfect for cleaning up JSON returned by language models or copied from loose configs. Runs in your browser.",
+    keywords: ["json repair", "fix json online", "json fixer", "repair broken json"],
+    component: "json-repair",
+    volumeEstimate: 2400,
+    howTo: [
+      "Paste the broken JSON.",
+      "Review the list of fixes that were applied.",
+      "Copy the repaired, formatted JSON.",
+    ],
+    faqs: [
+      { q: "What kinds of errors can it fix?", a: "Markdown code fences, single-quoted strings and keys, unquoted object keys, trailing commas, curly 'smart' quotes, and Python literals (True/False/None). Each applied fix is listed." },
+      { q: "Why does AI output produce invalid JSON?", a: "Language models often wrap JSON in ```code fences```, use single quotes, or add trailing commas — small things that valid JSON forbids. This tool strips them automatically." },
+      { q: "What if it still won't parse?", a: "It shows a best-effort output plus the parser error so you can make a quick manual fix. Deeply malformed input may need hand-editing." },
+    ],
+    related: ["json-formatter", "json-to-typescript", "json-escape"],
+  },
 ];

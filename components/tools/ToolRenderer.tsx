@@ -112,6 +112,14 @@ import { MarkupCalculator } from "./MarkupCalculator";
 import { BreakEvenCalculator } from "./BreakEvenCalculator";
 import { SalesTaxCalculator } from "./SalesTaxCalculator";
 import { SavingsGoalCalculator } from "./SavingsGoalCalculator";
+import { CaesarCipher } from "./CaesarCipher";
+import { Rot13 } from "./Rot13";
+import { UnicodeConverter } from "./UnicodeConverter";
+import { Base64ToImage } from "./Base64ToImage";
+import { MarkdownTableGenerator } from "./MarkdownTableGenerator";
+import { EmojiRemover } from "./EmojiRemover";
+import { TextSplitter } from "./TextSplitter";
+import { JsonRepair } from "./JsonRepair";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -229,6 +237,14 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "break-even-calculator": BreakEvenCalculator,
   "sales-tax-calculator": SalesTaxCalculator,
   "savings-goal-calculator": SavingsGoalCalculator,
+  "caesar-cipher": CaesarCipher,
+  "rot13": Rot13,
+  "unicode-converter": UnicodeConverter,
+  "base64-to-image": Base64ToImage,
+  "markdown-table-generator": MarkdownTableGenerator,
+  "emoji-remover": EmojiRemover,
+  "text-splitter": TextSplitter,
+  "json-repair": JsonRepair,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

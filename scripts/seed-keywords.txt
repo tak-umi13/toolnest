@@ -184,3 +184,39 @@ what is base64
 what is jwt
 url encoding
 json parse error
+
+# Batch 7 — AI-era / modern utilities (client-side computable only)
+llm cost calculator
+openai api cost calculator
+gpt token calculator
+claude token counter
+words to tokens
+tokens to words
+json repair
+fix json online
+json fixer
+readability checker
+flesch reading ease
+reading level calculator
+readability score
+text cleaner
+remove formatting from text
+remove markdown
+emoji remover
+remove emoji from text
+remove invisible characters
+zero width space remover
+text to speech online
+split text into chunks
+text splitter
+markdown table generator
+yaml to json
+json to yaml
+image to base64
+base64 to image
+ai prompt generator
+chatgpt prompt generator
+prompt generator
+caesar cipher
+rot13
+unicode converter

@@ -367,4 +367,56 @@ export const textTools: Tool[] = [
     ],
     related: ["case-converter", "character-counter", "slug-generator"],
   },
+  {
+    slug: "emoji-remover",
+    category: "text",
+    name: "Emoji Remover",
+    h1: "Emoji Remover",
+    tagline: "Strip emoji and symbols from text — clean AI output, names and data.",
+    title: "Emoji Remover — Remove Emoji from Text Online",
+    description:
+      "Free emoji remover. Strip emoji, flags and zero-width characters from any text, with options to tidy spaces and remove arrows and misc symbols. Runs in your browser.",
+    intro:
+      "Paste text to remove every emoji, flag and zero-width joiner in one pass, with optional cleanup of leftover double spaces and other decorative symbols. Useful for cleaning AI-generated copy, usernames, file names, spreadsheet data and anything you need in plain text. Everything runs in your browser.",
+    keywords: ["emoji remover", "remove emoji from text", "strip emoji", "delete emoji online"],
+    component: "emoji-remover",
+    volumeEstimate: 5400,
+    howTo: [
+      "Paste the text containing emoji.",
+      "Optionally tidy spaces or also remove arrows and symbols.",
+      "Copy the cleaned, emoji-free text.",
+    ],
+    faqs: [
+      { q: "Does it remove all emoji?", a: "Yes — it targets pictographic emoji, regional-indicator flags and the zero-width joiners that combine them, so multi-part emoji are removed cleanly without leftover fragments." },
+      { q: "Will it remove normal punctuation?", a: "No. Letters, numbers and standard punctuation are kept. Only emoji (and, if you opt in, decorative arrows/symbols) are stripped." },
+      { q: "Is my text uploaded?", a: "No. The cleanup runs entirely in your browser; nothing is sent to a server." },
+    ],
+    related: ["remove-line-breaks", "character-counter", "find-and-replace"],
+  },
+  {
+    slug: "text-splitter",
+    category: "text",
+    name: "Text Splitter",
+    h1: "Text Splitter — Split Text into Chunks",
+    tagline: "Split long text into chunks by characters or words, breaking on spaces.",
+    title: "Text Splitter — Split Long Text into Chunks Online",
+    description:
+      "Free text splitter. Break long text into numbered chunks by character or word limit, splitting on spaces so words stay whole. Ideal for chatbot and API context limits.",
+    intro:
+      "Paste a long document and split it into smaller chunks that fit a size limit — by character count or word count — breaking on whitespace so words aren't cut in half. Each chunk is numbered with its own copy button. Perfect for pasting long text into AI chatbots and APIs that have a context or character limit. Runs in your browser.",
+    keywords: ["text splitter", "split text into chunks", "text chunker", "split long text"],
+    component: "text-splitter",
+    volumeEstimate: 1000,
+    howTo: [
+      "Paste your long text.",
+      "Choose to split by characters or words and set the limit.",
+      "Copy each numbered chunk in order.",
+    ],
+    faqs: [
+      { q: "Does it cut words in half?", a: "No. It prefers to break on a space or line break near the limit, so words and (usually) sentences stay intact across chunks." },
+      { q: "Why split text for AI chatbots?", a: "Chatbots and APIs accept only so much text at once. Splitting a long document into limit-sized chunks lets you feed it in sequentially without errors." },
+      { q: "Character or word chunks — which should I use?", a: "Use characters to match a strict input limit, or words for a rough, more readable split. Tokens are roughly ¾ of a word, so leave headroom under a model's token limit." },
+    ],
+    related: ["character-counter", "word-counter", "token-counter"],
+  },
 ];
