@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: SITE.description,
   applicationName: SITE.name,
   openGraph: { siteName: SITE.name, type: "website", locale: SITE.locale },
-  twitter: { card: "summary", site: SITE.twitter },
+  twitter: { card: "summary_large_image", site: SITE.twitter },
   robots: { index: true, follow: true },
   // Search-engine ownership verification. Next.js renders the correctly-named
   // <meta google-site-verification> tag from this field.

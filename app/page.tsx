@@ -29,18 +29,25 @@ export default function HomePage() {
     <div className="container">
       <JsonLd data={{ "@context": "https://schema.org", "@type": "WebSite", name: SITE.name, url: SITE.url }} />
       <section className="hero">
-        <h1>{TOOLS.length} fast, free tools — no signup</h1>
+        <span className="eyebrow"><span className="eyebrow-dot" />Free online tools · No sign-up · No tracking</span>
+        <h1>{TOOLS.length} fast, free tools,<br />right in your browser</h1>
         <p className="lead">
           Converters, calculators, generators, formatters and validators that run
-          instantly in your browser. {SITE.tagline}.
+          instantly — locally, with nothing uploaded. {SITE.tagline}.
         </p>
+        <ToolSearch items={searchItems} />
         <div className="hero-badges">
           <span className="hero-badge">✓ 100% free</span>
           <span className="hero-badge">✓ No sign-up</span>
           <span className="hero-badge">🔒 Runs in your browser</span>
-          <span className="hero-badge">📚 {ARTICLES.length} guides</span>
+          <span className="hero-badge">⚡ Instant results</span>
         </div>
-        <ToolSearch items={searchItems} />
+        <div className="trust-bar" role="list" aria-label="Site at a glance">
+          <div className="trust-item" role="listitem"><span className="trust-num">{TOOLS.length}</span><span className="trust-lbl">Tools</span></div>
+          <div className="trust-item" role="listitem"><span className="trust-num">{CATEGORIES.length}</span><span className="trust-lbl">Categories</span></div>
+          <div className="trust-item" role="listitem"><span className="trust-num">{ARTICLES.length}</span><span className="trust-lbl">Guides</span></div>
+          <div className="trust-item" role="listitem"><span className="trust-num">100%</span><span className="trust-lbl">Private</span></div>
+        </div>
       </section>
 
       <RecentlyUsed />

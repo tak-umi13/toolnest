@@ -151,7 +151,17 @@ p { margin: 0 0 1em; }
 }
 
 /* ---- Hero ---- */
-.hero { text-align: center; padding: 56px 0 34px; }
+.hero { position: relative; text-align: center; padding: 64px 0 40px; }
+/* Systematic dot-grid backdrop, faded toward the edges — the "design-system" feel. */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 72% at 50% 32%, #000 30%, transparent 76%);
+  mask-image: radial-gradient(ellipse 60% 72% at 50% 32%, #000 30%, transparent 76%);
+  opacity: 0.7;
+}
+.hero > * { position: relative; z-index: 1; }
 .hero p.lead { font-size: 1.15rem; color: var(--text-muted); max-width: 640px; margin: 0 auto 24px; }
 .section { padding: 28px 0; }
 .section h2 { margin-bottom: 16px; }
@@ -249,10 +259,39 @@ select:focus-visible, textarea:focus-visible {
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero-badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 0 0 22px; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 22px 0 0; }
 .hero-badge {
   border: 1px solid var(--border); background: var(--surface); color: var(--text-muted);
   border-radius: 999px; padding: 5px 14px; font-size: 0.85rem; font-weight: 600;
+}
+
+/* Status eyebrow — small trust pill above the headline. */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
+  font-size: 0.8rem; font-weight: 600; color: var(--text-muted);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 999px; padding: 6px 14px; box-shadow: var(--shadow);
+}
+.eyebrow-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--success);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--success) 22%, transparent);
+}
+
+/* Trust bar — concrete, verifiable numbers in a clean divided panel. */
+.trust-bar {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  max-width: 540px; margin: 30px auto 0;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+}
+.trust-item { padding: 16px 8px; border-left: 1px solid var(--border); }
+.trust-item:first-child { border-left: none; }
+.trust-num { display: block; font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
+.trust-lbl { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-top: 2px; }
+@media (max-width: 520px) {
+  .trust-bar { grid-template-columns: repeat(2, 1fr); }
+  .trust-item:nth-child(3) { border-left: none; }
+  .trust-item:nth-child(3), .trust-item:nth-child(4) { border-top: 1px solid var(--border); }
 }
 
 /* Per-category accent color, used as a top bar on category cards. */
