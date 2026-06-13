@@ -442,4 +442,106 @@ export const devTools: Tool[] = [
     ],
     related: ["word-counter", "json-formatter", "case-converter"],
   },
+  {
+    slug: "json-to-typescript",
+    category: "dev",
+    name: "JSON to TypeScript",
+    h1: "JSON to TypeScript Interface Generator",
+    tagline: "Generate TypeScript interfaces from a JSON sample instantly.",
+    title: "JSON to TypeScript — Generate Interfaces from JSON Online",
+    description:
+      "Free JSON to TypeScript converter. Paste a JSON sample to generate typed TypeScript interfaces, including nested objects and arrays. Copy the result instantly.",
+    intro:
+      "Paste a JSON object and get ready-to-use TypeScript interfaces, with nested objects extracted into their own named interfaces and arrays typed from their items. Saves you from hand-typing types for API responses and config files. Everything runs in your browser — your JSON is never uploaded.",
+    keywords: ["json to typescript", "json to typescript interface", "generate typescript types from json", "json to ts"],
+    component: "json-to-typescript",
+    volumeEstimate: 22200,
+    howTo: [
+      "Paste a representative JSON sample.",
+      "Optionally rename the root interface.",
+      "Copy the generated TypeScript interfaces.",
+    ],
+    faqs: [
+      { q: "How are nested objects handled?", a: "Each nested object becomes its own named interface, referenced from the parent — the idiomatic way to model structured data in TypeScript." },
+      { q: "How are arrays typed?", a: "Arrays are typed from their first element, so [\"a\", \"b\"] becomes string[]. For arrays of objects, paste a sample whose first item has every field for the most complete type." },
+      { q: "Is my JSON sent to a server?", a: "No. Parsing and type generation run entirely in your browser." },
+    ],
+    related: ["json-formatter", "json-to-csv", "json-escape"],
+  },
+  {
+    slug: "css-minifier",
+    category: "dev",
+    name: "CSS Minifier",
+    h1: "CSS Minifier",
+    tagline: "Minify CSS by stripping comments and whitespace to shrink file size.",
+    title: "CSS Minifier — Free Online CSS Compressor Tool",
+    description:
+      "Free CSS minifier. Remove comments and unnecessary whitespace to compress your stylesheet and reduce load time. Shows how much smaller it got. Copy instantly.",
+    intro:
+      "Paste your CSS to strip comments and collapse whitespace, producing a smaller file that loads faster. The tool reports the before/after size and the percentage saved, and keeps your rules intact — no renaming or risky restructuring. Runs entirely in your browser.",
+    keywords: ["css minifier", "minify css", "css compressor", "css minify online"],
+    component: "css-minifier",
+    volumeEstimate: 33100,
+    howTo: [
+      "Paste your CSS into the box.",
+      "Read the size saved and review the minified output.",
+      "Copy the minified CSS into your build or stylesheet.",
+    ],
+    faqs: [
+      { q: "Is minified CSS safe to use?", a: "Yes. This minifier only removes comments and redundant whitespace and tightens punctuation; it doesn't rename classes or reorder rules, so behaviour is unchanged." },
+      { q: "How much smaller will my CSS get?", a: "Typically 10–30%, depending on how many comments and how much indentation the source has. The tool shows the exact percentage." },
+      { q: "Should I keep an unminified copy?", a: "Yes — keep your readable source for editing and minify as a build step. Minified CSS is hard to maintain by hand." },
+    ],
+    related: ["json-formatter", "html-entity-encoder", "sql-formatter"],
+  },
+  {
+    slug: "json-escape",
+    category: "dev",
+    name: "JSON Escape / Unescape",
+    h1: "JSON Escape & Unescape",
+    tagline: "Escape text into a JSON string value, or unescape it back.",
+    title: "JSON Escape / Unescape — Free Online Tool",
+    description:
+      "Free JSON escape and unescape tool. Turn any text into a safe JSON string (quotes, newlines, backslashes encoded) or decode an escaped string back to plain text.",
+    intro:
+      "Escape text so it can be safely embedded inside a JSON string — quotes, backslashes, newlines and control characters are encoded correctly — or unescape an existing JSON string back to readable text. Handy for writing JSON config by hand, building API payloads and debugging. Runs in your browser.",
+    keywords: ["json escape", "json escape online", "escape json string", "json unescape"],
+    component: "json-escape",
+    volumeEstimate: 9900,
+    howTo: [
+      "Choose Escape or Unescape.",
+      "Paste your text or escaped string.",
+      "Copy the converted result.",
+    ],
+    faqs: [
+      { q: "What characters get escaped?", a: "Double quotes, backslashes, newlines, tabs and other control characters are encoded with backslash sequences so the result is a valid JSON string value." },
+      { q: "When do I need this?", a: "Whenever you embed arbitrary text inside JSON — config files, API request bodies, or log messages — escaping prevents the text from breaking the JSON syntax." },
+    ],
+    related: ["json-formatter", "json-to-typescript", "html-entity-encoder"],
+  },
+  {
+    slug: "query-string-parser",
+    category: "dev",
+    name: "Query String Parser",
+    h1: "Query String Parser",
+    tagline: "Decode a URL's query string into a readable key/value table and JSON.",
+    title: "Query String Parser — Decode URL Parameters Online",
+    description:
+      "Free query string parser. Paste a URL to decode its query parameters into a clean key/value table and JSON, with URL-decoding and repeated-key handling. Runs in your browser.",
+    intro:
+      "Paste a full URL or a raw query string to see its parameters decoded into a clean table and as JSON. Values are URL-decoded (so %20 and + become spaces) and repeated keys are grouped into arrays. Great for debugging links, analytics URLs and API requests. Everything runs in your browser.",
+    keywords: ["query string parser", "url parameter parser", "parse query string", "decode url parameters"],
+    component: "query-string-parser",
+    volumeEstimate: 5400,
+    howTo: [
+      "Paste a URL or query string.",
+      "Read the decoded key/value table.",
+      "Copy the parameters as JSON if you need them in code.",
+    ],
+    faqs: [
+      { q: "Does it URL-decode the values?", a: "Yes. Percent-encoding like %20 and + are decoded to their real characters, so you see the actual values." },
+      { q: "What happens with repeated keys?", a: "Keys that appear more than once (e.g. tags=a&tags=b) are grouped into an array in the JSON output, matching how most servers interpret them." },
+    ],
+    related: ["url-encode-decode", "json-formatter", "utm-builder"],
+  },
 ];

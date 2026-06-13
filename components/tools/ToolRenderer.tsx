@@ -90,6 +90,12 @@ import { ColorShadesGenerator } from "./ColorShadesGenerator";
 import { ColorBlindnessSimulator } from "./ColorBlindnessSimulator";
 import { HexToHsl } from "./HexToHsl";
 import { CmykToRgb } from "./CmykToRgb";
+import { JsonToTypescript } from "./JsonToTypescript";
+import { CssMinifier } from "./CssMinifier";
+import { JsonEscape } from "./JsonEscape";
+import { QueryStringParser } from "./QueryStringParser";
+import { UtmBuilder } from "./UtmBuilder";
+import { MetaTagGenerator } from "./MetaTagGenerator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -185,6 +191,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "color-blindness-simulator": ColorBlindnessSimulator,
   "hex-to-hsl": HexToHsl,
   "cmyk-to-rgb": CmykToRgb,
+  "json-to-typescript": JsonToTypescript,
+  "css-minifier": CssMinifier,
+  "json-escape": JsonEscape,
+  "query-string-parser": QueryStringParser,
+  "utm-builder": UtmBuilder,
+  "meta-tag-generator": MetaTagGenerator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

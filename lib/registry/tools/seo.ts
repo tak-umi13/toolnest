@@ -54,4 +54,56 @@ export const seoTools: Tool[] = [
     ],
     related: ["keyword-density-checker", "slug-generator"],
   },
+  {
+    slug: "utm-builder",
+    category: "seo",
+    name: "UTM Builder",
+    h1: "UTM Campaign URL Builder",
+    tagline: "Build trackable campaign URLs with UTM parameters for analytics.",
+    title: "UTM Builder — Campaign URL Builder for Google Analytics",
+    description:
+      "Free UTM builder. Add utm_source, utm_medium, utm_campaign and more to any URL to track campaigns in Google Analytics. Live preview and one-click copy.",
+    intro:
+      "Add UTM parameters to any URL so Google Analytics and other tools can attribute traffic to the right campaign, source and medium. Fill in the fields, and the trackable URL builds live with proper encoding. Keep values lowercase and consistent so your reports stay clean. Built entirely in your browser.",
+    keywords: ["utm builder", "utm campaign url builder", "utm link builder", "campaign url builder"],
+    component: "utm-builder",
+    volumeEstimate: 27100,
+    howTo: [
+      "Enter the destination website URL.",
+      "Fill in source, medium and campaign (and optional term/content).",
+      "Copy the generated tracking URL for your links.",
+    ],
+    faqs: [
+      { q: "What do utm_source, utm_medium and utm_campaign mean?", a: "Source is where the traffic comes from (e.g. newsletter), medium is the channel type (e.g. email, cpc, social), and campaign is the specific promotion name (e.g. spring_sale)." },
+      { q: "Should UTM values be lowercase?", a: "Yes. Analytics treats Email and email as different values, so sticking to lowercase with consistent naming prevents your campaign data from splitting." },
+      { q: "Do UTM parameters affect SEO?", a: "Not negatively for the destination page, but avoid putting UTM links in internal navigation — use them for outbound campaign links so analytics stays accurate." },
+    ],
+    related: ["query-string-parser", "url-encode-decode", "meta-tag-generator"],
+  },
+  {
+    slug: "meta-tag-generator",
+    category: "seo",
+    name: "Meta Tag Generator",
+    h1: "Meta Tag Generator",
+    tagline: "Generate SEO, Open Graph and Twitter meta tags for your page.",
+    title: "Meta Tag Generator — SEO, Open Graph & Twitter Tags",
+    description:
+      "Free meta tag generator. Create title, description, canonical, Open Graph and Twitter Card tags from simple inputs, with length warnings. Copy ready for your <head>.",
+    intro:
+      "Fill in your page title, description, URL and social image to generate a complete set of meta tags — SEO basics, Open Graph for Facebook/LinkedIn and Twitter Card tags — ready to paste into your page's <head>. Live character counters warn you when titles or descriptions exceed what search results display. Runs in your browser.",
+    keywords: ["meta tag generator", "open graph generator", "seo meta tags generator", "og tags generator"],
+    component: "meta-tag-generator",
+    volumeEstimate: 18100,
+    howTo: [
+      "Enter the title, description, canonical URL and social image URL.",
+      "Toggle Twitter Card tags on or off.",
+      "Copy the generated tags into your page's <head>.",
+    ],
+    faqs: [
+      { q: "What is the ideal meta title and description length?", a: "Aim for under about 60 characters for the title and 160 for the description, so search engines don't truncate them. The counters turn red past those limits." },
+      { q: "What are Open Graph tags for?", a: "Open Graph (og:) tags control how your page looks when shared on Facebook, LinkedIn and other platforms — the title, description and preview image." },
+      { q: "Do I need both Open Graph and Twitter tags?", a: "Twitter falls back to Open Graph if Twitter tags are missing, but adding twitter:card gives you a large-image preview and more control on X/Twitter." },
+    ],
+    related: ["robots-txt-generator", "utm-builder", "keyword-density-checker"],
+  },
 ];
