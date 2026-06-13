@@ -96,6 +96,10 @@ import { JsonEscape } from "./JsonEscape";
 import { QueryStringParser } from "./QueryStringParser";
 import { UtmBuilder } from "./UtmBuilder";
 import { MetaTagGenerator } from "./MetaTagGenerator";
+import { RomanNumeralConverter } from "./RomanNumeralConverter";
+import { NumberToWords } from "./NumberToWords";
+import { TextToBinary } from "./TextToBinary";
+import { FuelEconomyConverter } from "./FuelEconomyConverter";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -197,6 +201,10 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "query-string-parser": QueryStringParser,
   "utm-builder": UtmBuilder,
   "meta-tag-generator": MetaTagGenerator,
+  "roman-numeral-converter": RomanNumeralConverter,
+  "number-to-words": NumberToWords,
+  "text-to-binary": TextToBinary,
+  "fuel-economy-converter": FuelEconomyConverter,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

@@ -47,6 +47,8 @@ export const convertTools: Tool[] = [
   converter("volume-converter", "Volume", "volume", "liters, gallons, ml, cups", ["volume converter", "liters to gallons", "ml to cups", "gallons to liters"], 720),
   converter("pressure-converter", "Pressure", "pressure", "bar, psi, pascal, atm", ["pressure converter", "bar to psi", "psi to bar", "kpa to psi"], 590),
   converter("energy-converter", "Energy", "energy", "joules, calories, kWh", ["energy converter", "joules to calories", "kwh to joules", "calories to kj"], 1000),
+  converter("power-converter", "Power", "power", "watts, kilowatts, horsepower, BTU/hour", ["power converter", "watts to horsepower", "kw to hp", "hp to kw"], 8100),
+  converter("angle-converter", "Angle", "angle", "degrees, radians, gradians", ["angle converter", "degrees to radians", "radians to degrees", "deg to rad"], 5400),
   {
     slug: "temperature-converter",
     category: "convert",
@@ -122,5 +124,108 @@ export const convertTools: Tool[] = [
       { q: "Does it preserve quality?", a: "Yes. Pages are copied losslessly into the new document — no re-rendering, no compression, no watermarks." },
     ],
     related: ["age-calculator", "temperature-converter"],
+  },
+  {
+    slug: "roman-numeral-converter",
+    category: "convert",
+    name: "Roman Numeral Converter",
+    h1: "Roman Numeral Converter",
+    tagline: "Convert numbers to Roman numerals and Roman numerals back to numbers.",
+    title: "Roman Numeral Converter — Numbers to Roman & Back",
+    description:
+      "Free Roman numeral converter. Convert any number (1–3999) to Roman numerals and decode Roman numerals back to numbers, with validation of subtractive notation.",
+    intro:
+      "Convert a number to Roman numerals or a Roman numeral back to a number, both ways at once. Covers the standard range I (1) to MMMCMXCIX (3999) using correct subtractive notation (IV, IX, XL…), and rejects invalid forms like IIII or VV. Useful for dates, clock faces, names and movie/book numbering. Runs in your browser.",
+    keywords: ["roman numeral converter", "number to roman numerals", "roman numerals to numbers", "roman numeral translator"],
+    component: "roman-numeral-converter",
+    volumeEstimate: 60500,
+    howTo: [
+      "Type a number to see its Roman numeral.",
+      "Or type a Roman numeral to decode it back to a number.",
+      "Copy whichever result you need.",
+    ],
+    faqs: [
+      { q: "What's the largest number in standard Roman numerals?", a: "3999 (MMMCMXCIX). Numbers above that need overlines (vinculum) to multiply by 1,000, which isn't part of the basic notation this tool uses." },
+      { q: "Why is 4 written IV and not IIII?", a: "Standard Roman numerals use subtractive notation: a smaller symbol before a larger one means subtraction, so IV = 5 − 1 = 4. IIII is sometimes seen on clock faces but isn't the standard form." },
+      { q: "Is there a year zero in Roman numerals?", a: "No. Roman numerals have no symbol for zero, so the converter starts at 1." },
+    ],
+    related: ["number-to-words", "number-base-converter", "temperature-converter"],
+  },
+  {
+    slug: "number-to-words",
+    category: "convert",
+    name: "Number to Words",
+    h1: "Number to Words Converter",
+    tagline: "Spell out any number in words — for cheques, contracts and invoices.",
+    title: "Number to Words Converter — Spell Numbers in English",
+    description:
+      "Free number to words converter. Spell out any whole number in English words (lowercase and Title Case) for cheques, contracts and invoices. Runs in your browser.",
+    intro:
+      "Convert a number into its English words — for example 12,345 becomes 'twelve thousand three hundred forty-five'. Get both a lowercase version and a Title Case version, ready for cheques, legal documents, invoices and forms. Handles numbers up to 15 digits using the short scale (thousand, million, billion). Runs in your browser.",
+    keywords: ["number to words", "number to words converter", "spell number in words", "amount in words"],
+    component: "number-to-words",
+    volumeEstimate: 40500,
+    howTo: [
+      "Type or paste a whole number (commas are ignored).",
+      "Read the words in lowercase and Title Case.",
+      "Copy the version you need.",
+    ],
+    faqs: [
+      { q: "What number scale does it use?", a: "The short scale used in US and modern UK English: thousand, million, billion, trillion — where a billion is a thousand million." },
+      { q: "Can it handle negative numbers and zero?", a: "Yes. Zero returns 'zero' and negatives are prefixed with 'negative'. It works on whole numbers up to 15 digits." },
+      { q: "Does it add 'and', like 'one hundred and one'?", a: "It uses the American style without 'and' (one hundred one). You can insert 'and' manually if you prefer British cheque phrasing." },
+    ],
+    related: ["roman-numeral-converter", "number-base-converter", "percentage-calculator"],
+  },
+  {
+    slug: "text-to-binary",
+    category: "convert",
+    name: "Text to Binary",
+    h1: "Text to Binary Converter",
+    tagline: "Convert text to binary and binary back to text (UTF-8, 8-bit).",
+    title: "Text to Binary Converter — Encode & Decode Binary Online",
+    description:
+      "Free text to binary converter. Turn text into 8-bit binary and decode binary back to text, using UTF-8 so emoji and accented characters round-trip correctly.",
+    intro:
+      "Convert text into binary (8 bits per byte) or decode binary groups back into readable text. Encoding uses UTF-8, so emoji and accented letters convert correctly — some characters become several bytes. Great for learning how computers store text, puzzles and CS homework. Runs entirely in your browser.",
+    keywords: ["text to binary", "binary to text", "text to binary converter", "binary translator"],
+    component: "text-to-binary",
+    volumeEstimate: 33100,
+    howTo: [
+      "Choose Text → Binary or Binary → Text.",
+      "Type or paste your text or 8-bit binary groups.",
+      "Copy the converted result.",
+    ],
+    faqs: [
+      { q: "Why are some characters more than 8 bits?", a: "UTF-8 encodes common Latin characters in one byte (8 bits) but uses two to four bytes for accented letters, symbols and emoji — so they appear as multiple 8-bit groups." },
+      { q: "What format should binary input be in?", a: "8-bit groups of 0s and 1s separated by spaces, e.g. 01001000 01101001 for 'Hi'." },
+      { q: "Is my text uploaded?", a: "No. Encoding and decoding run entirely in your browser." },
+    ],
+    related: ["number-base-converter", "base64", "text-repeater"],
+  },
+  {
+    slug: "fuel-economy-converter",
+    category: "convert",
+    name: "Fuel Economy Converter",
+    h1: "Fuel Economy Converter — MPG, km/L & L/100km",
+    tagline: "Convert between MPG (US/UK), km/L and L/100km accurately.",
+    title: "Fuel Economy Converter — MPG to L/100km & km/L",
+    description:
+      "Free fuel economy converter. Convert between US MPG, UK MPG, km/L and L/100km, accounting for the different US and UK gallon sizes. Runs in your browser.",
+    intro:
+      "Convert a fuel economy figure between US MPG, UK (imperial) MPG, kilometres per litre and litres per 100 km — all four at once. It correctly handles the different US and UK gallon sizes and the inverse relationship of L/100km (where lower is better). Useful when comparing cars across regions. Calculated in your browser.",
+    keywords: ["fuel economy converter", "mpg to l/100km", "mpg to km/l", "l/100km to mpg"],
+    component: "fuel-economy-converter",
+    volumeEstimate: 12100,
+    howTo: [
+      "Enter a value and choose its unit.",
+      "Read the equivalent in US MPG, UK MPG, km/L and L/100km.",
+      "Compare figures across regions.",
+    ],
+    faqs: [
+      { q: "Why do US and UK MPG differ?", a: "The US gallon (3.785 L) is smaller than the UK imperial gallon (4.546 L), so the same car shows a lower number in US MPG than in UK MPG even though the fuel use is identical." },
+      { q: "Why is lower better for L/100km?", a: "L/100km measures fuel used per distance, the inverse of MPG. Fewer litres to cover 100 km means a more efficient car." },
+    ],
+    related: ["speed-converter", "volume-converter", "length-converter"],
   },
 ];

@@ -16,6 +16,8 @@ const SETS: Record<string, { units: Record<string, number> }> = {
   volume: { units: { Liters: 1, Milliliters: 0.001, "Cubic meters": 1000, "Gallons (US)": 3.785411784, "Quarts (US)": 0.946352946, "Cups (US)": 0.2365882365, "Fluid ounces (US)": 0.0295735295625 } },
   pressure: { units: { Pascals: 1, Kilopascals: 1000, Bar: 100000, PSI: 6894.757293168, Atmospheres: 101325, "Torr (mmHg)": 133.322368421 } },
   energy: { units: { Joules: 1, Kilojoules: 1000, Calories: 4.184, Kilocalories: 4184, "Watt-hours": 3600, "Kilowatt-hours": 3600000 } },
+  power: { units: { Watts: 1, Kilowatts: 1000, Megawatts: 1e6, "Horsepower (mechanical)": 745.699872, "Horsepower (metric)": 735.49875, "BTU/hour": 0.29307107, "Foot-pounds/sec": 1.3558179483 } },
+  angle: { units: { Degrees: 1, Radians: 57.29577951308232, Gradians: 0.9, Turns: 360, Arcminutes: 1 / 60, Arcseconds: 1 / 3600 } },
 };
 
 export function UnitConverter({ params }: { params?: ToolParams }) {
