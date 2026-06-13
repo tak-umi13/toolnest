@@ -419,4 +419,84 @@ export const textTools: Tool[] = [
     ],
     related: ["character-counter", "word-counter", "token-counter"],
   },
+  {
+    slug: "ai-prompt-generator",
+    category: "text",
+    name: "AI Prompt Generator",
+    h1: "AI Prompt Generator",
+    tagline: "Build clear, structured prompts for ChatGPT, Claude and other AI tools.",
+    title: "AI Prompt Generator — Build Better ChatGPT Prompts",
+    description:
+      "Free AI prompt generator. Turn a role, task, tone and format into a clear, structured prompt for ChatGPT, Claude or Gemini. Copy and paste — no signup, runs in your browser.",
+    intro:
+      "Build a well-structured AI prompt from simple inputs: a role for the assistant to take on, the task, your audience, tone, output format and length. The tool assembles them into a clear prompt that reliably gets better answers from ChatGPT, Claude, Gemini and other assistants. It builds the prompt template locally — it doesn't call any AI itself — so it's instant and private. Copy and paste into your chatbot of choice.",
+    keywords: ["ai prompt generator", "prompt generator", "chatgpt prompt generator", "ai prompt builder"],
+    component: "ai-prompt-generator",
+    volumeEstimate: 60500,
+    updated: "2026-06-13",
+    updateNote: "Prompt structure best practices",
+    howTo: [
+      "Set a role/persona and describe the task.",
+      "Choose audience, tone, output format and length.",
+      "Copy the generated prompt into ChatGPT, Claude or another AI tool.",
+    ],
+    faqs: [
+      { q: "Does this tool use AI to write the prompt?", a: "No. It assembles a structured prompt template from your inputs entirely in your browser — nothing is sent to any AI. You then paste the prompt into the assistant you want to use." },
+      { q: "Why does prompt structure matter?", a: "Giving an AI a clear role, audience, tone and output format reduces vague or off-target answers. A structured prompt is one of the simplest ways to get noticeably better results." },
+      { q: "Which AI tools does it work with?", a: "Any of them — ChatGPT, Claude, Gemini, Copilot and others. The prompt is plain text, so it's not tied to a specific model." },
+    ],
+    related: ["token-counter", "text-splitter", "word-counter"],
+  },
+  {
+    slug: "text-cleaner",
+    category: "text",
+    name: "Text Cleaner",
+    h1: "Text Cleaner — Tidy Up Messy Text",
+    tagline: "Clean messy text: fix spacing, strip HTML, normalise quotes and more.",
+    title: "Text Cleaner — Remove Formatting & Tidy Text Online",
+    description:
+      "Free text cleaner. Fix messy spacing, strip HTML tags, remove special characters, normalise smart quotes and join lines — toggle exactly what you need. Runs in your browser.",
+    intro:
+      "Paste text from PDFs, web pages, emails or AI assistants and clean it up with toggleable options: trim lines, collapse extra spaces, remove blank lines, strip HTML tags, turn curly quotes and dashes into plain ones, remove special characters, or join everything into a single line. Pick only the fixes you want and copy the tidy result. Runs entirely in your browser.",
+    keywords: ["text cleaner", "clean text online", "remove formatting from text", "text cleanup tool"],
+    component: "text-cleaner",
+    volumeEstimate: 2400,
+    howTo: [
+      "Paste your messy text.",
+      "Tick the cleanup options you want.",
+      "Copy the cleaned text.",
+    ],
+    faqs: [
+      { q: "What does 'strip HTML tags' do?", a: "It removes anything between angle brackets (like <b> or <div>), leaving just the readable text — handy when you copy content out of a web page." },
+      { q: "Why turn smart quotes into plain ones?", a: "Curly 'smart' quotes and em dashes from word processors and AI output can break code, CSV files and some forms. Converting them to straight quotes and hyphens avoids those issues." },
+      { q: "Is my text uploaded?", a: "No. All cleaning runs in your browser; your text never leaves your device." },
+    ],
+    related: ["emoji-remover", "remove-line-breaks", "find-and-replace"],
+  },
+  {
+    slug: "reading-level-calculator",
+    category: "text",
+    name: "Reading Level Calculator",
+    h1: "Reading Level Calculator",
+    tagline: "Check readability with Flesch Reading Ease and grade level scores.",
+    title: "Reading Level Calculator — Flesch Readability Score",
+    description:
+      "Free reading level calculator. Get the Flesch Reading Ease score and Flesch–Kincaid grade level of any text, plus word, sentence and syllable counts. Runs in your browser.",
+    intro:
+      "Paste text to measure how easy it is to read. The calculator returns the Flesch Reading Ease score (0–100, higher is easier) and the Flesch–Kincaid grade level, with a plain-English interpretation and the word, sentence and syllable counts behind them. Useful for writing clear web content, emails and documents — and for checking AI-generated copy isn't too dense. Runs in your browser.",
+    keywords: ["reading level calculator", "readability calculator", "flesch reading ease", "readability score checker"],
+    component: "reading-level-calculator",
+    volumeEstimate: 5400,
+    howTo: [
+      "Paste the text you want to check.",
+      "Read the Flesch Reading Ease and grade-level scores.",
+      "Simplify long sentences and words to raise the ease score.",
+    ],
+    faqs: [
+      { q: "What is a good Flesch Reading Ease score?", a: "Aim for 60 or above for a general audience — that's plain English readable by most adults. Marketing and web copy often target 60–70; technical writing scores lower." },
+      { q: "What does the grade level mean?", a: "The Flesch–Kincaid grade level estimates the US school grade needed to understand the text. A grade of 8 means a typical 13–14-year-old could read it comfortably." },
+      { q: "How are syllables counted?", a: "By a vowel-group heuristic that handles most words well. A few unusual words may be off by a syllable, so treat the scores as a close guide rather than an exact measure." },
+    ],
+    related: ["word-counter", "word-frequency-counter", "text-cleaner"],
+  },
 ];

@@ -120,6 +120,9 @@ import { MarkdownTableGenerator } from "./MarkdownTableGenerator";
 import { EmojiRemover } from "./EmojiRemover";
 import { TextSplitter } from "./TextSplitter";
 import { JsonRepair } from "./JsonRepair";
+import { AiPromptGenerator } from "./AiPromptGenerator";
+import { TextCleaner } from "./TextCleaner";
+import { ReadingLevelCalculator } from "./ReadingLevelCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -245,6 +248,9 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "emoji-remover": EmojiRemover,
   "text-splitter": TextSplitter,
   "json-repair": JsonRepair,
+  "ai-prompt-generator": AiPromptGenerator,
+  "text-cleaner": TextCleaner,
+  "reading-level-calculator": ReadingLevelCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {
