@@ -544,4 +544,84 @@ export const devTools: Tool[] = [
     ],
     related: ["url-encode-decode", "json-formatter", "utm-builder"],
   },
+  {
+    slug: "random-number-generator",
+    category: "dev",
+    name: "Random Number Generator",
+    h1: "Random Number Generator",
+    tagline: "Generate random numbers in a range, with no-duplicates and sort options.",
+    title: "Random Number Generator — Pick Random Numbers Online",
+    description:
+      "Free random number generator. Pick random numbers between any min and max, generate many at once, with optional no-duplicates and sorting. Runs in your browser.",
+    intro:
+      "Generate one or many random numbers between any minimum and maximum (both inclusive). Choose how many you need, optionally force them to be unique (great for raffles and lottery-style draws), and sort the results. Everything runs in your browser with no signup.",
+    keywords: ["random number generator", "random number picker", "number generator", "pick a random number"],
+    component: "random-number-generator",
+    volumeEstimate: 246000,
+    howTo: [
+      "Set the minimum, maximum and how many numbers you want.",
+      "Optionally tick no-duplicates or sort ascending.",
+      "Click Generate and copy the result.",
+    ],
+    faqs: [
+      { q: "Are both the minimum and maximum included?", a: "Yes. The range is inclusive on both ends, so a 1–6 range can return 1 or 6." },
+      { q: "Can I get numbers with no repeats?", a: "Tick 'No duplicates'. The generator then draws unique values — as long as the range is at least as large as the count you ask for." },
+      { q: "Is it good enough for a giveaway?", a: "Yes for casual raffles and games. It uses the browser's pseudo-random generator, which isn't suitable for cryptographic or high-stakes gambling use." },
+    ],
+    related: ["password-generator", "dice-roller", "uuid-generator"],
+  },
+  {
+    slug: "password-strength-checker",
+    category: "dev",
+    name: "Password Strength Checker",
+    h1: "Password Strength Checker",
+    tagline: "Estimate password entropy and crack time — privately, in your browser.",
+    title: "Password Strength Checker — Test Password Security Online",
+    description:
+      "Free password strength checker. See your password's entropy in bits, a strength rating and an estimated crack time. Runs entirely in your browser — nothing is sent.",
+    intro:
+      "Type a password to see how strong it really is: its entropy in bits, a clear strength rating, and an estimated time to crack it against a fast offline attacker. It flags weak spots like repeated characters and common sequences. Your password is never uploaded — all analysis happens in your browser. Length beats complexity, so a long passphrase wins.",
+    keywords: ["password strength checker", "password strength test", "how strong is my password", "password entropy calculator"],
+    component: "password-strength-checker",
+    volumeEstimate: 33100,
+    updated: "2026-06-13",
+    updateNote: "Entropy + crack-time model",
+    howTo: [
+      "Type or paste the password you want to test.",
+      "Read the strength rating, entropy and estimated crack time.",
+      "Lengthen it or add character types to improve the score.",
+    ],
+    faqs: [
+      { q: "Is my password sent anywhere?", a: "No. The check runs entirely in your browser with JavaScript — your password never leaves your device or touches a server." },
+      { q: "What is entropy?", a: "Entropy, measured in bits, estimates how unpredictable a password is. Each extra bit doubles the number of guesses needed; around 60+ bits is considered strong for most accounts." },
+      { q: "Why does length matter more than symbols?", a: "Adding length multiplies the search space faster than swapping a letter for a symbol. A long, memorable passphrase usually beats a short complex string." },
+    ],
+    related: ["password-generator", "hash-generator", "random-number-generator"],
+  },
+  {
+    slug: "dice-roller",
+    category: "dev",
+    name: "Dice Roller",
+    h1: "Online Dice Roller",
+    tagline: "Roll dice with standard notation like 2d6+3 — for RPGs and games.",
+    title: "Dice Roller — Roll Virtual Dice Online (d20, 2d6 & More)",
+    description:
+      "Free online dice roller. Roll virtual dice using standard notation like d20, 2d6 or 3d8+2, see each die and the total. Great for tabletop RPGs and board games.",
+    intro:
+      "Roll virtual dice using standard tabletop notation: d20 for a single twenty-sided die, 2d6 for two six-sided dice, or 3d8+2 with a modifier. Each die and the total are shown, with quick presets for the common polyhedral dice. Perfect for Dungeons & Dragons, board games and any time you need a fair roll. Runs in your browser.",
+    keywords: ["dice roller", "roll dice online", "d20 roller", "virtual dice"],
+    component: "dice-roller",
+    volumeEstimate: 60500,
+    howTo: [
+      "Type dice notation like 2d6+3, or tap a preset.",
+      "Click Roll to roll the dice.",
+      "Read each die and the total (with any modifier applied).",
+    ],
+    faqs: [
+      { q: "What does 2d6+3 mean?", a: "Roll two six-sided dice (2d6), add them together, then add a modifier of 3. The notation is NdM±X: N dice with M sides, plus or minus X." },
+      { q: "What dice are supported?", a: "Any from d2 up to d1000, and from 1 to 100 dice at a time — covering all standard polyhedral dice (d4, d6, d8, d10, d12, d20) and more." },
+      { q: "Are the rolls fair?", a: "Each die uses the browser's pseudo-random generator, giving an even chance to every face — fair for games, though not cryptographically random." },
+    ],
+    related: ["random-number-generator", "password-generator", "uuid-generator"],
+  },
 ];

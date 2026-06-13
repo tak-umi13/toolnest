@@ -100,6 +100,12 @@ import { RomanNumeralConverter } from "./RomanNumeralConverter";
 import { NumberToWords } from "./NumberToWords";
 import { TextToBinary } from "./TextToBinary";
 import { FuelEconomyConverter } from "./FuelEconomyConverter";
+import { RandomNumberGenerator } from "./RandomNumberGenerator";
+import { PasswordStrengthChecker } from "./PasswordStrengthChecker";
+import { DiceRoller } from "./DiceRoller";
+import { DateDifferenceCalculator } from "./DateDifferenceCalculator";
+import { BusinessDaysCalculator } from "./BusinessDaysCalculator";
+import { TimeDurationCalculator } from "./TimeDurationCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -205,6 +211,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "number-to-words": NumberToWords,
   "text-to-binary": TextToBinary,
   "fuel-economy-converter": FuelEconomyConverter,
+  "random-number-generator": RandomNumberGenerator,
+  "password-strength-checker": PasswordStrengthChecker,
+  "dice-roller": DiceRoller,
+  "date-difference-calculator": DateDifferenceCalculator,
+  "business-days-calculator": BusinessDaysCalculator,
+  "time-duration-calculator": TimeDurationCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {
