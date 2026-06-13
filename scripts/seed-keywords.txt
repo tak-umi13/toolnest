@@ -247,3 +247,54 @@ weeks between dates
 months between dates
 sleep calculator
 time card calculator
+
+# Batch 9 — Math category candidates (universal, multi-geo)
+average calculator
+mean median mode calculator
+fraction calculator
+simplify fractions
+fraction to decimal
+decimal to fraction
+ratio calculator
+gcd calculator
+lcm calculator
+percentage difference calculator
+square root calculator
+exponent calculator
+scientific notation converter
+prime number checker
+factorial calculator
+rounding calculator
+standard deviation calculator
+modulo calculator
+
+# Batch 9 — Education / grades (universal high-volume)
+final grade calculator
+grade calculator
+test grade calculator
+gpa to percentage
+eer calculator
+
+# Batch 9 — Country-specific finance (under-mined geos: NG/ZA/PH/PK/BD)
+paye calculator nigeria
+salary calculator nigeria
+uif calculator
+paye calculator south africa
+income tax calculator south africa
+withholding tax philippines
+pag ibig contribution calculator
+income tax calculator pakistan
+provident fund calculator
+gratuity calculator
+
+# Batch 9 — Design / dev utilities (multi-geo)
+aspect ratio calculator
+px to rem
+px to em
+em to px
+percentage off calculator
+
+# Batch 9 — Date & time extras
+military time converter
+time calculator
+hours to minutes

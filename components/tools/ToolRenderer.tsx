@@ -128,6 +128,14 @@ import { DaysUntilCalculator } from "./DaysUntilCalculator";
 import { DayOfWeekCalculator } from "./DayOfWeekCalculator";
 import { WeekNumberCalculator } from "./WeekNumberCalculator";
 import { LeapYearCalculator } from "./LeapYearCalculator";
+import { DecimalToFraction } from "./DecimalToFraction";
+import { FractionCalculator } from "./FractionCalculator";
+import { PercentageDifferenceCalculator } from "./PercentageDifferenceCalculator";
+import { MeanMedianModeCalculator } from "./MeanMedianModeCalculator";
+import { LcmGcdCalculator } from "./LcmGcdCalculator";
+import { PrimeNumberChecker } from "./PrimeNumberChecker";
+import { SquareRootCalculator } from "./SquareRootCalculator";
+import { RoundingCalculator } from "./RoundingCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -261,6 +269,14 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "day-of-week-calculator": DayOfWeekCalculator,
   "week-number-calculator": WeekNumberCalculator,
   "leap-year-calculator": LeapYearCalculator,
+  "decimal-to-fraction": DecimalToFraction,
+  "fraction-calculator": FractionCalculator,
+  "percentage-difference-calculator": PercentageDifferenceCalculator,
+  "mean-median-mode-calculator": MeanMedianModeCalculator,
+  "lcm-gcd-calculator": LcmGcdCalculator,
+  "prime-number-checker": PrimeNumberChecker,
+  "square-root-calculator": SquareRootCalculator,
+  "rounding-calculator": RoundingCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

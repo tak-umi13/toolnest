@@ -301,6 +301,7 @@ select:focus-visible, textarea:focus-visible {
 [data-cat="color"] { --cat-accent: #ec4899; }
 [data-cat="convert"] { --cat-accent: #10b981; }
 [data-cat="datetime"] { --cat-accent: #14b8a6; }
+[data-cat="math"] { --cat-accent: #6366f1; }
 [data-cat="finance"] { --cat-accent: #f59e0b; }
 [data-cat="seo"] { --cat-accent: #3b82f6; }
 

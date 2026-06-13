@@ -61,6 +61,17 @@ export const categories: Category[] = [
     monetization: { tier: "Medium", method: "AdSense (display)", note: "Evergreen, high-volume utility searches; cross-link to finance (payroll) and convert tools." },
   },
   {
+    id: "math",
+    name: "Math & Numbers",
+    title: "Free Math Calculators — Fractions, Averages, Primes & More",
+    description:
+      "Free math tools: fraction calculator, decimal to fraction, mean/median/mode, percentage difference, LCM & GCD, prime checker, square root and rounding. Instant, in your browser.",
+    intro:
+      "Everyday number crunching without the manual arithmetic — work with fractions, averages and statistics, percentages, factors and roots. Each tool shows the result clearly and runs instantly in your browser.",
+    emoji: "🔢",
+    monetization: { tier: "Medium", method: "AdSense (display)", note: "Huge evergreen student/教育 volume at very low competition; display-ad play with cross-links to finance." },
+  },
+  {
     id: "finance",
     name: "Finance Calculators",
     title: "Free Finance Calculators (India) — EMI, SIP, GST & More",
