@@ -106,6 +106,12 @@ import { DiceRoller } from "./DiceRoller";
 import { DateDifferenceCalculator } from "./DateDifferenceCalculator";
 import { BusinessDaysCalculator } from "./BusinessDaysCalculator";
 import { TimeDurationCalculator } from "./TimeDurationCalculator";
+import { RoiCalculator } from "./RoiCalculator";
+import { ProfitMarginCalculator } from "./ProfitMarginCalculator";
+import { MarkupCalculator } from "./MarkupCalculator";
+import { BreakEvenCalculator } from "./BreakEvenCalculator";
+import { SalesTaxCalculator } from "./SalesTaxCalculator";
+import { SavingsGoalCalculator } from "./SavingsGoalCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -217,6 +223,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "date-difference-calculator": DateDifferenceCalculator,
   "business-days-calculator": BusinessDaysCalculator,
   "time-duration-calculator": TimeDurationCalculator,
+  "roi-calculator": RoiCalculator,
+  "profit-margin-calculator": ProfitMarginCalculator,
+  "markup-calculator": MarkupCalculator,
+  "break-even-calculator": BreakEvenCalculator,
+  "sales-tax-calculator": SalesTaxCalculator,
+  "savings-goal-calculator": SavingsGoalCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

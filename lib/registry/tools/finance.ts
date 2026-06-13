@@ -1202,4 +1202,159 @@ export const financeTools: Tool[] = [
     ],
     related: ["percentage-calculator", "salary-to-hourly-calculator", "cagr-calculator"],
   },
+  {
+    slug: "roi-calculator",
+    category: "finance",
+    name: "ROI Calculator",
+    h1: "ROI Calculator — Return on Investment",
+    tagline: "Calculate return on investment, net gain and annualized return.",
+    title: "ROI Calculator — Return on Investment & Annualized Return",
+    description:
+      "Free ROI calculator. Enter your initial and final amounts to get net gain, total return on investment (%) and the annualized return over your holding period.",
+    intro:
+      "Work out the return on investment from what you put in and what it became. The calculator shows the net gain, the total ROI as a percentage, and the annualized return (CAGR) so you can fairly compare investments held for different lengths of time. Useful for stocks, property, marketing campaigns and side projects. Runs in your browser.",
+    keywords: ["roi calculator", "return on investment calculator", "roi formula calculator", "annualized return calculator"],
+    component: "roi-calculator",
+    volumeEstimate: 60500,
+    howTo: [
+      "Enter the initial investment and the final value.",
+      "Enter the holding period in years for an annualized figure.",
+      "Read the net gain, total ROI and annualized return.",
+    ],
+    faqs: [
+      { q: "What is the ROI formula?", a: "ROI = (final value − initial investment) ÷ initial investment × 100. A result of 35% means you gained 35% on top of what you put in." },
+      { q: "What's the difference between ROI and annualized return?", a: "Total ROI is the whole-period gain. Annualized return (CAGR) converts it to an equivalent steady yearly rate, so a 35% return over 3 years is about 10.5% per year — the fair way to compare different holding periods." },
+      { q: "Can ROI be negative?", a: "Yes. If the final value is below the initial investment, ROI is negative, showing a loss." },
+    ],
+    related: ["cagr-calculator", "lumpsum-calculator", "profit-margin-calculator"],
+  },
+  {
+    slug: "profit-margin-calculator",
+    category: "finance",
+    name: "Profit Margin Calculator",
+    h1: "Profit Margin Calculator",
+    tagline: "Calculate profit, profit margin and markup from cost and selling price.",
+    title: "Profit Margin Calculator — Margin & Markup from Cost",
+    description:
+      "Free profit margin calculator. Enter cost and selling price to get profit, profit margin (%) and markup (%). Understand the difference between margin and markup.",
+    intro:
+      "Enter a product's cost and selling price to instantly see the profit, the profit margin (profit as a share of the selling price) and the markup (profit as a share of the cost). Margin and markup are easy to confuse — a 50% markup is only a 33.3% margin — so the tool shows both. Ideal for retail, e-commerce and freelance pricing. Runs in your browser.",
+    keywords: ["profit margin calculator", "margin calculator", "gross margin calculator", "profit calculator"],
+    component: "profit-margin-calculator",
+    volumeEstimate: 90500,
+    howTo: [
+      "Enter the cost price.",
+      "Enter the selling price (revenue).",
+      "Read the profit, profit margin and markup.",
+    ],
+    faqs: [
+      { q: "What is the difference between margin and markup?", a: "Margin is profit ÷ selling price; markup is profit ÷ cost. For the same prices, markup is always the larger percentage. Be sure which one a client or supplier means." },
+      { q: "What is a good profit margin?", a: "It varies hugely by industry — grocery retail runs on single-digit margins while software can exceed 80%. Compare against typical figures for your sector." },
+      { q: "How do I calculate gross margin?", a: "Gross margin = (selling price − cost of goods) ÷ selling price × 100. That's exactly the 'profit margin' this tool reports." },
+    ],
+    related: ["markup-calculator", "discount-calculator", "break-even-calculator"],
+  },
+  {
+    slug: "markup-calculator",
+    category: "finance",
+    name: "Markup Calculator",
+    h1: "Markup Calculator",
+    tagline: "Set a selling price from cost and a target markup percentage.",
+    title: "Markup Calculator — Selling Price from Cost & Markup",
+    description:
+      "Free markup calculator. Enter a cost and target markup percentage to get the selling price, profit per unit and the equivalent profit margin. Runs in your browser.",
+    intro:
+      "Enter a product's cost and the markup percentage you want to apply to get the selling price, the profit per unit, and the equivalent profit margin. Markup is added on top of cost — price = cost × (1 + markup%) — which is how most retailers and wholesalers set prices. Runs in your browser.",
+    keywords: ["markup calculator", "markup percentage calculator", "cost plus markup calculator", "selling price calculator"],
+    component: "markup-calculator",
+    volumeEstimate: 33100,
+    howTo: [
+      "Enter the cost price.",
+      "Enter the markup percentage you want.",
+      "Read the selling price, profit and equivalent margin.",
+    ],
+    faqs: [
+      { q: "How is markup applied to cost?", a: "Selling price = cost × (1 + markup ÷ 100). A 50% markup on a $60 cost gives a $90 price and $30 profit." },
+      { q: "Why is the margin lower than the markup?", a: "Markup is measured against the smaller base (cost) while margin is measured against the larger base (selling price), so the margin percentage is always lower." },
+    ],
+    related: ["profit-margin-calculator", "discount-calculator", "break-even-calculator"],
+  },
+  {
+    slug: "break-even-calculator",
+    category: "finance",
+    name: "Break-Even Calculator",
+    h1: "Break-Even Point Calculator",
+    tagline: "Find how many units you must sell to cover your costs.",
+    title: "Break-Even Calculator — Break-Even Point in Units & Revenue",
+    description:
+      "Free break-even calculator. Enter fixed costs, price per unit and variable cost per unit to find the break-even point in units and revenue, plus contribution margin.",
+    intro:
+      "Find your break-even point: how many units you need to sell before you start making a profit. Enter your total fixed costs, the price per unit and the variable cost per unit, and the calculator returns the break-even units, the revenue at that point, and the contribution margin per unit. Essential for business plans, pricing and product launches. Runs in your browser.",
+    keywords: ["break even calculator", "break even point calculator", "break even analysis", "breakeven calculator"],
+    component: "break-even-calculator",
+    volumeEstimate: 33100,
+    howTo: [
+      "Enter your total fixed costs.",
+      "Enter the price and variable cost per unit.",
+      "Read the break-even units, revenue and contribution margin.",
+    ],
+    faqs: [
+      { q: "What is the break-even formula?", a: "Break-even units = fixed costs ÷ (price per unit − variable cost per unit). The denominator is the contribution margin — what each sale adds toward covering fixed costs." },
+      { q: "What are fixed vs variable costs?", a: "Fixed costs (rent, salaries, software) stay the same regardless of sales. Variable costs (materials, shipping, transaction fees) rise with each unit sold." },
+      { q: "Why can't I break even sometimes?", a: "If the price per unit is at or below the variable cost per unit, every sale loses money, so there's no break-even point — you must raise the price or cut variable costs." },
+    ],
+    related: ["profit-margin-calculator", "markup-calculator", "roi-calculator"],
+  },
+  {
+    slug: "sales-tax-calculator",
+    category: "finance",
+    name: "Sales Tax Calculator",
+    h1: "Sales Tax Calculator",
+    tagline: "Add or remove US sales tax and see the net, tax and total.",
+    title: "Sales Tax Calculator — Add or Remove Sales Tax (US)",
+    description:
+      "Free sales tax calculator. Add sales tax to a price or work backwards from a tax-inclusive total to find the net amount and tax portion at any rate. Runs in your browser.",
+    intro:
+      "Add sales tax to a pre-tax price, or remove it from a tax-inclusive total to find the net amount and the tax portion. Enter your combined state-plus-local rate (US sales tax varies by location) and see the net, tax and total at a glance. Handy for invoices, receipts and budgeting. Runs in your browser.",
+    keywords: ["sales tax calculator", "sales tax calculator us", "add sales tax", "reverse sales tax calculator"],
+    component: "sales-tax-calculator",
+    volumeEstimate: 90500,
+    howTo: [
+      "Choose to add tax or remove it.",
+      "Enter the amount and your sales tax rate.",
+      "Read the net amount, the tax and the total.",
+    ],
+    faqs: [
+      { q: "How do I remove sales tax from a total?", a: "Divide the tax-inclusive total by (1 + rate ÷ 100). The calculator does this in 'Remove tax' mode and also shows the tax portion." },
+      { q: "What rate should I use?", a: "In the US, use your combined rate — the state rate plus any county or city sales tax for the purchase location, since rates differ by jurisdiction." },
+      { q: "Is sales tax the same as VAT?", a: "They're similar consumption taxes but applied differently: VAT is collected at each stage of the supply chain, while US sales tax is charged once at the final retail sale." },
+    ],
+    related: ["vat-calculator", "discount-calculator", "tip-calculator"],
+  },
+  {
+    slug: "savings-goal-calculator",
+    category: "finance",
+    name: "Savings Goal Calculator",
+    h1: "Savings Goal Calculator",
+    tagline: "See how long it takes to reach a savings goal with monthly deposits.",
+    title: "Savings Goal Calculator — Time to Reach Your Target",
+    description:
+      "Free savings goal calculator. Enter your target, current savings, monthly contribution and expected return to see how long it takes to reach your goal. Runs in your browser.",
+    intro:
+      "Find out how long it will take to reach a savings goal. Enter your target amount, what you've saved so far, how much you add each month and an expected annual return, and the calculator shows the time to reach the goal, how much you contribute, and how much comes from compound growth. Great for emergency funds, deposits and big purchases. Runs in your browser.",
+    keywords: ["savings goal calculator", "savings calculator", "how long to save calculator", "saving goal planner"],
+    component: "savings-goal-calculator",
+    volumeEstimate: 27100,
+    howTo: [
+      "Enter your savings goal and current savings.",
+      "Enter your monthly contribution and expected annual return.",
+      "Read how long it takes and how much comes from returns.",
+    ],
+    faqs: [
+      { q: "How is the time to goal calculated?", a: "The calculator compounds your balance monthly and adds your contribution at the end of each month, counting the months until the balance reaches your target." },
+      { q: "What return should I assume?", a: "For a savings account use its interest rate; for investments, a conservative long-run estimate. Lower assumptions give a safer plan since real returns vary." },
+      { q: "Does it account for inflation?", a: "No — it works in today's money. To target a future cost, raise your goal amount to reflect expected inflation." },
+    ],
+    related: ["fire-calculator", "emergency-fund-calculator", "compound-interest-calculator"],
+  },
 ];
