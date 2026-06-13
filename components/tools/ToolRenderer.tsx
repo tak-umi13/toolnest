@@ -78,6 +78,12 @@ import { CapitalGainsTaxCalculator } from "./CapitalGainsTaxCalculator";
 import { RetirementCalculator } from "./RetirementCalculator";
 import { LoanPrepaymentCalculator } from "./LoanPrepaymentCalculator";
 import { YoutubeEarningsCalculator } from "./YoutubeEarningsCalculator";
+import { CharacterCounter } from "./CharacterCounter";
+import { TextDiffChecker } from "./TextDiffChecker";
+import { SortTextLines } from "./SortTextLines";
+import { FindAndReplace } from "./FindAndReplace";
+import { WordFrequencyCounter } from "./WordFrequencyCounter";
+import { TitleCaseConverter } from "./TitleCaseConverter";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -161,6 +167,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "retirement-calculator": RetirementCalculator,
   "loan-prepayment-calculator": LoanPrepaymentCalculator,
   "youtube-earnings-calculator": YoutubeEarningsCalculator,
+  "character-counter": CharacterCounter,
+  "text-diff-checker": TextDiffChecker,
+  "sort-text-lines": SortTextLines,
+  "find-and-replace": FindAndReplace,
+  "word-frequency-counter": WordFrequencyCounter,
+  "title-case-converter": TitleCaseConverter,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

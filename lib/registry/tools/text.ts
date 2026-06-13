@@ -211,4 +211,160 @@ export const textTools: Tool[] = [
     ],
     related: ["lorem-ipsum-generator", "slug-generator", "uuid-generator"],
   },
+  {
+    slug: "character-counter",
+    category: "text",
+    name: "Character Counter",
+    h1: "Character Counter",
+    tagline: "Count characters live and check against Twitter, SEO and SMS limits.",
+    title: "Character Counter — Count Characters with Platform Limits",
+    description:
+      "Free character counter. Count characters, words and lines live, and see how many you have left for tweets, SMS, meta titles, meta descriptions and more.",
+    intro:
+      "Type or paste text to count characters (with and without spaces), words and lines in real time. Unlike a plain counter, it also shows how many characters you have left — or are over — for the limits that matter: X/Twitter posts, single SMS, SEO meta title and description, Instagram captions, LinkedIn headlines and YouTube titles. Everything runs in your browser.",
+    keywords: ["character counter", "letter counter", "count characters online", "character count tool"],
+    component: "character-counter",
+    volumeEstimate: 246000,
+    howTo: [
+      "Type or paste your text into the box.",
+      "Read the live character, word and line counts.",
+      "Check the platform limit list to see how many characters remain.",
+    ],
+    faqs: [
+      { q: "Does it count characters with or without spaces?", a: "Both. The counter shows characters including spaces and a separate count excluding spaces, so you can match whichever limit a platform uses." },
+      { q: "Which platform limits are shown?", a: "X/Twitter (280), single SMS (160), SEO meta title (60), meta description (160), Instagram caption (2,200), Facebook post, LinkedIn headline (220) and YouTube title (100)." },
+      { q: "Is my text uploaded anywhere?", a: "No. All counting runs locally in your browser with JavaScript — nothing is sent to a server." },
+    ],
+    related: ["word-counter", "title-case-converter", "remove-line-breaks"],
+  },
+  {
+    slug: "text-diff-checker",
+    category: "text",
+    name: "Text Diff Checker",
+    h1: "Text Diff Checker — Compare Two Texts",
+    tagline: "Compare two blocks of text and highlight added and removed lines.",
+    title: "Text Diff Checker — Compare Text & Find Differences Online",
+    description:
+      "Free text diff checker. Paste two versions of any text to see added and removed lines highlighted side by side. Runs in your browser — nothing uploaded.",
+    intro:
+      "Paste an original and a changed version of any text to see exactly what differs. A line-level diff aligns matching lines and highlights additions in green and deletions in red, so real changes stand out instead of being buried. Useful for comparing drafts, config files, code snippets, contracts and translations. Everything runs locally in your browser.",
+    keywords: ["text diff checker", "compare text online", "text comparison tool", "find difference between two texts"],
+    component: "text-diff-checker",
+    volumeEstimate: 60500,
+    howTo: [
+      "Paste the original text in the left box.",
+      "Paste the changed version in the right box.",
+      "Read the diff: green lines were added, red lines were removed.",
+    ],
+    faqs: [
+      { q: "How does the diff decide what changed?", a: "It uses a longest-common-subsequence algorithm to align unchanged lines first, then marks the remaining lines as added or removed — the same approach code-diff tools use, so inserts don't shift everything below them." },
+      { q: "Can I compare code or config files?", a: "Yes. The diff is line-based and works on any plain text — code, JSON, CSV, contracts or prose." },
+      { q: "Is my text sent to a server?", a: "No. The comparison runs entirely in your browser; neither version leaves your device." },
+    ],
+    related: ["remove-duplicate-lines", "word-counter", "find-and-replace"],
+  },
+  {
+    slug: "sort-text-lines",
+    category: "text",
+    name: "Sort Text Lines",
+    h1: "Sort Text Lines Alphabetically & Numerically",
+    tagline: "Sort lines A–Z, numerically, by length, reverse or shuffle them.",
+    title: "Sort Text Lines — Alphabetical & Numerical Line Sorter",
+    description:
+      "Free online line sorter. Sort text lines alphabetically, numerically, by length, reverse or shuffle them, with options to remove duplicates and empty lines.",
+    intro:
+      "Paste a list and sort the lines instantly: alphabetically (A–Z or Z–A), numerically, by length, in reverse, or shuffled randomly. Toggle case sensitivity, remove duplicate lines and strip empty lines in the same pass. Great for cleaning lists, keywords, names, CSV columns and any line-separated data — all in your browser.",
+    keywords: ["sort text lines", "alphabetical order tool", "line sorter", "sort list alphabetically"],
+    component: "sort-text-lines",
+    volumeEstimate: 33100,
+    howTo: [
+      "Paste your line-separated list into the box.",
+      "Pick a sort order: A–Z, numeric, by length, reverse or shuffle.",
+      "Optionally remove duplicates or empty lines, then copy the result.",
+    ],
+    faqs: [
+      { q: "Can it sort numbers correctly?", a: "Yes. The numeric sort reads the first number on each line, so '10' comes after '9' instead of before it as a plain text sort would do." },
+      { q: "Does it remove duplicates while sorting?", a: "If you enable 'Remove duplicates', repeated lines are dropped (respecting the case-sensitivity setting) before the result is shown." },
+      { q: "Is the random shuffle truly random?", a: "It uses a Fisher–Yates shuffle, which gives an unbiased random order. Click Shuffle again to re-roll." },
+    ],
+    related: ["remove-duplicate-lines", "remove-line-breaks", "word-counter"],
+  },
+  {
+    slug: "find-and-replace",
+    category: "text",
+    name: "Find and Replace",
+    h1: "Find and Replace Text Online",
+    tagline: "Find and replace text in bulk, with case, whole-word and regex options.",
+    title: "Find and Replace Text Online — Bulk Replace with Regex",
+    description:
+      "Free find and replace tool. Replace text in bulk with options for ignore case, whole word and regular expressions. Shows the match count. Runs in your browser.",
+    intro:
+      "Paste text and replace every occurrence of a word or pattern at once. Choose case-insensitive matching, whole-word only, or full regular expressions with capture groups in the replacement. The match count shows how many replacements were made. Useful for cleaning data, editing code and reformatting lists — all locally in your browser.",
+    keywords: ["find and replace online", "replace text tool", "bulk find replace", "regex find and replace"],
+    component: "find-and-replace",
+    volumeEstimate: 14800,
+    howTo: [
+      "Paste your text into the box.",
+      "Enter the text to find and what to replace it with.",
+      "Toggle ignore case, whole word or regex, then copy the result.",
+    ],
+    faqs: [
+      { q: "Does it support regular expressions?", a: "Yes. Enable Regex to use patterns like \\d+ or [A-Z], and reference capture groups as $1, $2 in the replacement field." },
+      { q: "What does 'whole word' do?", a: "It only matches your term when it stands alone — so replacing 'cat' won't touch 'category'. It's available for plain (non-regex) searches." },
+      { q: "Is my text uploaded?", a: "No. All find-and-replace runs in your browser; your text never leaves your device." },
+    ],
+    related: ["text-diff-checker", "remove-duplicate-lines", "case-converter"],
+  },
+  {
+    slug: "word-frequency-counter",
+    category: "text",
+    name: "Word Frequency Counter",
+    h1: "Word Frequency Counter",
+    tagline: "Count how often each word appears, ranked most-common first.",
+    title: "Word Frequency Counter — Count Word Occurrences Online",
+    description:
+      "Free word frequency counter. See how many times each word appears in your text, ranked by frequency, with options to ignore case and remove common stop words.",
+    intro:
+      "Paste text to see how often each word appears, ranked from most to least common with percentages. Ignore case, set a minimum word length, and remove common stop words (the, and, of…) to surface the meaningful keywords — handy for SEO content analysis, writing reviews and keyword research. Copy the full table as TSV. Everything runs in your browser.",
+    keywords: ["word frequency counter", "word frequency analyzer", "count word occurrences", "most common words tool"],
+    component: "word-frequency-counter",
+    volumeEstimate: 9900,
+    howTo: [
+      "Paste your text into the box.",
+      "Optionally remove common words or set a minimum word length.",
+      "Read the ranked frequency table and copy it as a table.",
+    ],
+    faqs: [
+      { q: "What are 'common words' / stop words?", a: "Stop words are high-frequency function words like 'the', 'and', 'of' and 'to' that carry little topical meaning. Removing them highlights the words your text is actually about." },
+      { q: "How is the percentage calculated?", a: "Each word's count is divided by the total number of counted words (after any filters you apply), so the percentages reflect the filtered set." },
+      { q: "Is there a word limit?", a: "No hard limit — it handles long articles easily since all processing happens locally in your browser." },
+    ],
+    related: ["word-counter", "keyword-density-checker", "character-counter"],
+  },
+  {
+    slug: "title-case-converter",
+    category: "text",
+    name: "Title Case Converter",
+    h1: "Title Case Converter",
+    tagline: "Convert headlines to proper title case with correct small-word rules.",
+    title: "Title Case Converter — Capitalize Titles Correctly Online",
+    description:
+      "Free title case converter. Capitalize headlines properly — small words like a, the, of and and stay lowercase unless first or last. Also UPPERCASE, lowercase and sentence case.",
+    intro:
+      "Convert headlines and titles to proper title case, where small words (a, an, the, of, and, to…) stay lowercase unless they begin or end the line — the rule plain 'capitalize each word' tools get wrong. Switch between Title Case, Sentence case, UPPERCASE and lowercase in one click. Ideal for article headlines, book and song titles, and headings. Runs in your browser.",
+    keywords: ["title case converter", "capitalize title", "title case generator", "headline capitalization tool"],
+    component: "title-case-converter",
+    volumeEstimate: 27100,
+    howTo: [
+      "Type or paste your title into the box.",
+      "Choose Title Case (or Sentence, UPPER, lower).",
+      "Copy the correctly capitalized result.",
+    ],
+    faqs: [
+      { q: "What is title case?", a: "Title case capitalizes the first letter of major words while keeping minor words — articles, short conjunctions and prepositions — lowercase, except when they are the first or last word of the title." },
+      { q: "Which words stay lowercase?", a: "Short function words such as a, an, the, and, but, or, for, of, to, in, on, at, by and with — unless they fall at the start or end of the line, where they're always capitalized." },
+      { q: "Does it handle multiple lines?", a: "Yes. Each line is treated as its own title, so the first and last word of every line is capitalized." },
+    ],
+    related: ["case-converter", "character-counter", "slug-generator"],
+  },
 ];
