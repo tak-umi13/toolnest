@@ -84,6 +84,12 @@ import { SortTextLines } from "./SortTextLines";
 import { FindAndReplace } from "./FindAndReplace";
 import { WordFrequencyCounter } from "./WordFrequencyCounter";
 import { TitleCaseConverter } from "./TitleCaseConverter";
+import { ColorPicker } from "./ColorPicker";
+import { ColorContrastChecker } from "./ColorContrastChecker";
+import { ColorShadesGenerator } from "./ColorShadesGenerator";
+import { ColorBlindnessSimulator } from "./ColorBlindnessSimulator";
+import { HexToHsl } from "./HexToHsl";
+import { CmykToRgb } from "./CmykToRgb";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -173,6 +179,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "find-and-replace": FindAndReplace,
   "word-frequency-counter": WordFrequencyCounter,
   "title-case-converter": TitleCaseConverter,
+  "color-picker": ColorPicker,
+  "color-contrast-checker": ColorContrastChecker,
+  "color-shades-generator": ColorShadesGenerator,
+  "color-blindness-simulator": ColorBlindnessSimulator,
+  "hex-to-hsl": HexToHsl,
+  "cmyk-to-rgb": CmykToRgb,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {
