@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T02:16:53.703Z",
+  "generatedAt": "2026-06-13T04:30:52.982Z",
   "filters": {
     "MAX_KD": 35,
     "MIN_VOLUME": 500,
@@ -84,6 +84,30 @@
       "pass": true
     },
     {
+      "keyword": "hours calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 110000,
+          "cpc": 0,
+          "kd": 16,
+          "competition": "LOW",
+          "score": 65,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 368000,
+          "cpc": 4.98,
+          "kd": 30,
+          "competition": "LOW",
+          "score": 59117,
+          "verdict": "jackpot"
+        }
+      },
+      "bestScore": 59117,
+      "verdict": "jackpot",
+      "pass": true
+    },
+    {
       "keyword": "percentage calculator",
       "locations": {
         "2356": {
@@ -132,6 +156,30 @@
       "pass": true
     },
     {
+      "keyword": "time card calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 1900,
+          "cpc": 0,
+          "kd": 39,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 201000,
+          "cpc": 4.87,
+          "kd": 32,
+          "competition": "LOW",
+          "score": 29663,
+          "verdict": "jackpot"
+        }
+      },
+      "bestScore": 29663,
+      "verdict": "jackpot",
+      "pass": true
+    },
+    {
       "keyword": "zakat calculator",
       "locations": {
         "2356": {
@@ -176,6 +224,54 @@
         }
       },
       "bestScore": 21357,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
+      "keyword": "work hours calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 5400,
+          "cpc": 0.58,
+          "kd": 19,
+          "competition": "LOW",
+          "score": 157,
+          "verdict": "pass"
+        },
+        "2840": {
+          "search_volume": 135000,
+          "cpc": 3,
+          "kd": 19,
+          "competition": "LOW",
+          "score": 20250,
+          "verdict": "jackpot"
+        }
+      },
+      "bestScore": 20250,
+      "verdict": "jackpot",
+      "pass": true
+    },
+    {
+      "keyword": "business days calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 5400,
+          "cpc": 0,
+          "kd": 42,
+          "competition": "LOW",
+          "score": 1,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 40500,
+          "cpc": 14.88,
+          "kd": 31,
+          "competition": "LOW",
+          "score": 18833,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 18833,
       "verdict": "pass",
       "pass": true
     },
@@ -248,6 +344,30 @@
         }
       },
       "bestScore": 15497,
+      "verdict": "jackpot",
+      "pass": true
+    },
+    {
+      "keyword": "time duration calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 60500,
+          "cpc": 1.36,
+          "kd": 26,
+          "competition": "LOW",
+          "score": 3047,
+          "verdict": "jackpot"
+        },
+        "2840": {
+          "search_volume": 135000,
+          "cpc": 2.77,
+          "kd": 29,
+          "competition": "LOW",
+          "score": 12465,
+          "verdict": "jackpot"
+        }
+      },
+      "bestScore": 12465,
       "verdict": "jackpot",
       "pass": true
     },
@@ -1068,6 +1188,30 @@
       "pass": true
     },
     {
+      "keyword": "minutes to hours calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 1300,
+          "cpc": 0,
+          "kd": 18,
+          "competition": "LOW",
+          "score": 1,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 1900,
+          "cpc": 0.78,
+          "kd": 1,
+          "competition": "LOW",
+          "score": 741,
+          "verdict": "pass"
+        }
+      },
+      "bestScore": 741,
+      "verdict": "pass",
+      "pass": true
+    },
+    {
       "keyword": "overtime pay calculator",
       "locations": {
         "2356": {
@@ -1596,6 +1740,30 @@
       "pass": false
     },
     {
+      "keyword": "age calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 9140000,
+          "cpc": 0.12,
+          "kd": 36,
+          "competition": "LOW",
+          "score": 29643,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 673000,
+          "cpc": 0.26,
+          "kd": 45,
+          "competition": "LOW",
+          "score": 3804,
+          "verdict": null
+        }
+      },
+      "bestScore": 29643,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "invoice generator",
       "locations": {
         "2356": {
@@ -1621,6 +1789,54 @@
     },
     {
       "keyword": "date calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 673000,
+          "cpc": 0.35,
+          "kd": 50,
+          "competition": "LOW",
+          "score": 4619,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 673000,
+          "cpc": 2.06,
+          "kd": 47,
+          "competition": "LOW",
+          "score": 28883,
+          "verdict": null
+        }
+      },
+      "bestScore": 28883,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "date calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 673000,
+          "cpc": 0.35,
+          "kd": 50,
+          "competition": "LOW",
+          "score": 4619,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 673000,
+          "cpc": 2.06,
+          "kd": 47,
+          "competition": "LOW",
+          "score": 28883,
+          "verdict": null
+        }
+      },
+      "bestScore": 28883,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "date to date calculator",
       "locations": {
         "2356": {
           "search_volume": 673000,
@@ -1688,6 +1904,30 @@
         }
       },
       "bestScore": 27025,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "sleep calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 12100,
+          "cpc": 0.99,
+          "kd": 51,
+          "competition": "LOW",
+          "score": 230,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 135000,
+          "cpc": 4.69,
+          "kd": 42,
+          "competition": "LOW",
+          "score": 14724,
+          "verdict": null
+        }
+      },
+      "bestScore": 14724,
       "verdict": null,
       "pass": false
     },
@@ -2316,6 +2556,30 @@
       "pass": false
     },
     {
+      "keyword": "countdown timer",
+      "locations": {
+        "2356": {
+          "search_volume": 12100,
+          "cpc": 0.16,
+          "kd": 67,
+          "competition": "LOW",
+          "score": 28,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 90500,
+          "cpc": 0.54,
+          "kd": 46,
+          "competition": "LOW",
+          "score": 1040,
+          "verdict": null
+        }
+      },
+      "bestScore": 1040,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "epf calculator",
       "locations": {
         "2356": {
@@ -2408,6 +2672,30 @@
         }
       },
       "bestScore": 581,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "days between dates",
+      "locations": {
+        "2356": {
+          "search_volume": 33100,
+          "cpc": 0,
+          "kd": 36,
+          "competition": "LOW",
+          "score": 9,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 90500,
+          "cpc": 0.17,
+          "kd": 29,
+          "competition": "LOW",
+          "score": 513,
+          "verdict": null
+        }
+      },
+      "bestScore": 513,
       "verdict": null,
       "pass": false
     },
@@ -2796,6 +3084,30 @@
       "pass": false
     },
     {
+      "keyword": "date difference calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 33100,
+          "cpc": 0.17,
+          "kd": 34,
+          "competition": "LOW",
+          "score": 161,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 9900,
+          "cpc": 0.03,
+          "kd": 47,
+          "competition": "LOW",
+          "score": 6,
+          "verdict": null
+        }
+      },
+      "bestScore": 161,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "llm cost calculator",
       "locations": {
         "2356": {
@@ -3036,6 +3348,30 @@
       "pass": false
     },
     {
+      "keyword": "how many days until",
+      "locations": {
+        "2356": {
+          "search_volume": 590,
+          "cpc": 0,
+          "kd": 36,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 14800,
+          "cpc": 0.06,
+          "kd": 34,
+          "competition": "LOW",
+          "score": 25,
+          "verdict": null
+        }
+      },
+      "bestScore": 25,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "openai api cost calculator",
       "locations": {
         "2356": {
@@ -3074,6 +3410,30 @@
           "search_volume": 320,
           "cpc": 1.24,
           "kd": 20,
+          "competition": "LOW",
+          "score": 19,
+          "verdict": null
+        }
+      },
+      "bestScore": 19,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "week number calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 140,
+          "cpc": 0,
+          "kd": 39,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 1900,
+          "cpc": 0,
+          "kd": 0,
           "competition": "LOW",
           "score": 19,
           "verdict": null
@@ -3252,6 +3612,30 @@
       "pass": false
     },
     {
+      "keyword": "weeks between dates",
+      "locations": {
+        "2356": {
+          "search_volume": 170,
+          "cpc": 0,
+          "kd": 37,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 5400,
+          "cpc": 0.03,
+          "kd": 19,
+          "competition": "LOW",
+          "score": 8,
+          "verdict": null
+        }
+      },
+      "bestScore": 8,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "speed converter",
       "locations": {
         "2356": {
@@ -3420,6 +3804,54 @@
       "pass": false
     },
     {
+      "keyword": "add days to date",
+      "locations": {
+        "2356": {
+          "search_volume": 5400,
+          "cpc": 0.01,
+          "kd": 38,
+          "competition": "LOW",
+          "score": 1,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 9900,
+          "cpc": 0.02,
+          "kd": 47,
+          "competition": "LOW",
+          "score": 4,
+          "verdict": null
+        }
+      },
+      "bestScore": 4,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "day of the week calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 480,
+          "cpc": 0,
+          "kd": 36,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 2400,
+          "cpc": 0,
+          "kd": 7,
+          "competition": "LOW",
+          "score": 3,
+          "verdict": null
+        }
+      },
+      "bestScore": 3,
+      "verdict": null,
+      "pass": false
+    },
+    {
       "keyword": "number base converter",
       "locations": {
         "2356": {
@@ -3482,6 +3914,30 @@
           "search_volume": 210,
           "cpc": 0,
           "kd": 0,
+          "competition": "LOW",
+          "score": 2,
+          "verdict": null
+        }
+      },
+      "bestScore": 2,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "what week is it",
+      "locations": {
+        "2356": {
+          "search_volume": 210,
+          "cpc": 0,
+          "kd": 59,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 9900,
+          "cpc": 0,
+          "kd": 41,
           "competition": "LOW",
           "score": 2,
           "verdict": null
@@ -3602,6 +4058,54 @@
           "search_volume": 1000,
           "cpc": 0,
           "kd": 9,
+          "competition": "LOW",
+          "score": 1,
+          "verdict": null
+        }
+      },
+      "bestScore": 1,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "what day of the week was i born",
+      "locations": {
+        "2356": {
+          "search_volume": 10,
+          "cpc": 0,
+          "kd": null,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 1000,
+          "cpc": 0,
+          "kd": 7,
+          "competition": "LOW",
+          "score": 1,
+          "verdict": null
+        }
+      },
+      "bestScore": 1,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "months between dates",
+      "locations": {
+        "2356": {
+          "search_volume": 110,
+          "cpc": 0,
+          "kd": 68,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 1900,
+          "cpc": 0.02,
+          "kd": 29,
           "competition": "LOW",
           "score": 1,
           "verdict": null
@@ -4082,6 +4586,102 @@
           "search_volume": 10,
           "cpc": 0,
           "kd": null,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 0,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "days until date",
+      "locations": {
+        "2356": {
+          "search_volume": 170,
+          "cpc": 0.01,
+          "kd": 45,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 590,
+          "cpc": 0.02,
+          "kd": 31,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 0,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "days ago calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 90,
+          "cpc": 0,
+          "kd": null,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 880,
+          "cpc": 0,
+          "kd": 25,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 0,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "leap year calculator",
+      "locations": {
+        "2356": {
+          "search_volume": 1000,
+          "cpc": 0,
+          "kd": 22,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 320,
+          "cpc": 0,
+          "kd": 9,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        }
+      },
+      "bestScore": 0,
+      "verdict": null,
+      "pass": false
+    },
+    {
+      "keyword": "subtract days from date",
+      "locations": {
+        "2356": {
+          "search_volume": 320,
+          "cpc": 0,
+          "kd": 30,
+          "competition": "LOW",
+          "score": 0,
+          "verdict": null
+        },
+        "2840": {
+          "search_volume": 720,
+          "cpc": 0,
+          "kd": 20,
           "competition": "LOW",
           "score": 0,
           "verdict": null

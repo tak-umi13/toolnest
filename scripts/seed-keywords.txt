@@ -220,3 +220,30 @@ prompt generator
 caesar cipher
 rot13
 unicode converter
+
+# Batch 8 — Date & Time category candidates
+countdown timer
+days until date
+how many days until
+days ago calculator
+week number calculator
+what week is it
+leap year calculator
+add days to date
+subtract days from date
+date calculator
+day of the week calculator
+what day of the week was i born
+date to date calculator
+hours calculator
+minutes to hours calculator
+work hours calculator
+days between dates
+age calculator
+time duration calculator
+business days calculator
+date difference calculator
+weeks between dates
+months between dates
+sleep calculator
+time card calculator

@@ -123,6 +123,11 @@ import { JsonRepair } from "./JsonRepair";
 import { AiPromptGenerator } from "./AiPromptGenerator";
 import { TextCleaner } from "./TextCleaner";
 import { ReadingLevelCalculator } from "./ReadingLevelCalculator";
+import { HoursCalculator } from "./HoursCalculator";
+import { DaysUntilCalculator } from "./DaysUntilCalculator";
+import { DayOfWeekCalculator } from "./DayOfWeekCalculator";
+import { WeekNumberCalculator } from "./WeekNumberCalculator";
+import { LeapYearCalculator } from "./LeapYearCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -251,6 +256,11 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "ai-prompt-generator": AiPromptGenerator,
   "text-cleaner": TextCleaner,
   "reading-level-calculator": ReadingLevelCalculator,
+  "hours-calculator": HoursCalculator,
+  "days-until-calculator": DaysUntilCalculator,
+  "day-of-week-calculator": DayOfWeekCalculator,
+  "week-number-calculator": WeekNumberCalculator,
+  "leap-year-calculator": LeapYearCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

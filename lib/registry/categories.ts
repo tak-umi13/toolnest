@@ -50,6 +50,17 @@ export const categories: Category[] = [
     monetization: { tier: "Medium", method: "AdSense (display)", note: "Steady evergreen volume; cross-link to finance and dev tools for higher RPM." },
   },
   {
+    id: "datetime",
+    name: "Date & Time",
+    title: "Free Date & Time Calculators — Days, Hours, Age & More",
+    description:
+      "Free date and time tools: hours calculator, days until a date, age calculator, day of the week, business days, week number and leap year. Instant, in your browser.",
+    intro:
+      "Work out durations, deadlines and dates without the mental arithmetic — add up worked hours, count the days between two dates, find which day of the week a date falls on, and more. Each tool runs instantly in your browser.",
+    emoji: "📅",
+    monetization: { tier: "Medium", method: "AdSense (display)", note: "Evergreen, high-volume utility searches; cross-link to finance (payroll) and convert tools." },
+  },
+  {
     id: "finance",
     name: "Finance Calculators",
     title: "Free Finance Calculators (India) — EMI, SIP, GST & More",

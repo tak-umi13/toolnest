@@ -71,33 +71,6 @@ export const convertTools: Tool[] = [
     related: ["length-converter", "weight-converter"],
   },
   {
-    slug: "age-calculator",
-    category: "convert",
-    name: "Age Calculator",
-    h1: "Age Calculator — Exact Age in Years, Months & Days",
-    tagline: "Your exact age from your date of birth, plus days to your next birthday.",
-    title: "Age Calculator — Calculate Exact Age from Date of Birth",
-    description:
-      "Free age calculator. Get your exact age in years, months and days from your date of birth — plus total months, weeks, days and a next-birthday countdown.",
-    intro:
-      "Enter a date of birth (and optionally a different \"as of\" date) to get the exact age in years, months and days, calculated against real calendar month lengths. You also get the age in total months, weeks and days, a countdown to the next birthday, and the day of the week you were born — useful for forms, school cut-offs, retirement dates and anniversaries.",
-    keywords: ["age calculator", "calculate age from date of birth", "how old am i", "age in days calculator"],
-    component: "age-calculator",
-    volumeEstimate: 9140000,
-    updated: "2026-06-13",
-    howTo: [
-      "Enter the date of birth.",
-      "Optionally change the \"as of\" date (defaults to today).",
-      "Read the exact age, totals, and the days until the next birthday.",
-    ],
-    faqs: [
-      { q: "How is exact age calculated?", a: "By calendar borrowing: whole years first, then whole months, then leftover days against the actual length of the months involved — the same way ages are computed for official purposes, not a 365.25-day approximation." },
-      { q: "Can I calculate age at a past or future date?", a: "Yes — set the \"as of\" date to any date on or after the birth date, e.g. an exam cut-off date or a retirement date." },
-      { q: "Does it handle leap years?", a: "Yes. Calculations use real calendar dates, so February 29 birthdays and leap-year day counts come out correctly." },
-    ],
-    related: ["time-converter", "timestamp-converter"],
-  },
-  {
     slug: "pdf-merge",
     category: "convert",
     name: "PDF Merge",
@@ -227,83 +200,5 @@ export const convertTools: Tool[] = [
       { q: "Why is lower better for L/100km?", a: "L/100km measures fuel used per distance, the inverse of MPG. Fewer litres to cover 100 km means a more efficient car." },
     ],
     related: ["speed-converter", "volume-converter", "length-converter"],
-  },
-  {
-    slug: "date-difference-calculator",
-    category: "convert",
-    name: "Date Difference Calculator",
-    h1: "Date Difference Calculator — Days Between Dates",
-    tagline: "Count the days, weeks, months and years between two dates.",
-    title: "Date Difference Calculator — Days Between Two Dates",
-    description:
-      "Free date difference calculator. Find the exact number of days, weeks, months and years between two dates, with an option to include the end day. Runs in your browser.",
-    intro:
-      "Pick two dates to get the exact gap between them: total days, whole weeks, and a calendar breakdown in years, months and days that respects real month lengths and leap years. An option counts both endpoints — useful for hotel nights, leave days and project durations. Everything runs in your browser.",
-    keywords: ["date difference calculator", "days between dates", "days between two dates", "date duration calculator"],
-    component: "date-difference-calculator",
-    volumeEstimate: 165000,
-    howTo: [
-      "Pick the start date and the end date.",
-      "Optionally include the end day in the count.",
-      "Read the total days, weeks and the years/months/days breakdown.",
-    ],
-    faqs: [
-      { q: "Does it count the end date?", a: "By default it counts the gap between the dates. Tick 'Include the end day' to count both endpoints — for example, the number of nights vs days for a booking." },
-      { q: "Does it handle leap years?", a: "Yes. It uses real calendar dates, so February 29 and leap-year day counts are handled correctly." },
-      { q: "How is the months breakdown calculated?", a: "By calendar borrowing against the actual length of each month, the same way ages are computed — not by assuming every month is 30 days." },
-    ],
-    related: ["age-calculator", "business-days-calculator", "time-duration-calculator"],
-  },
-  {
-    slug: "business-days-calculator",
-    category: "convert",
-    name: "Business Days Calculator",
-    h1: "Business Days Calculator",
-    tagline: "Count working days (Mon–Fri) between two dates, minus holidays.",
-    title: "Business Days Calculator — Working Days Between Dates",
-    description:
-      "Free business days calculator. Count working days (Monday–Friday) between two dates, exclude weekends and subtract public holidays. Runs in your browser.",
-    intro:
-      "Count the working days between two dates — Monday to Friday, with weekends excluded automatically. Enter the number of public holidays in the range to subtract them too. Useful for delivery estimates, SLA deadlines, notice periods and leave planning. Both dates are included. Runs in your browser.",
-    keywords: ["business days calculator", "working days calculator", "weekdays between dates", "working days between two dates"],
-    component: "business-days-calculator",
-    volumeEstimate: 40500,
-    howTo: [
-      "Pick the start and end dates.",
-      "Optionally enter how many public holidays fall in the range.",
-      "Read the business days, weekend days and total days.",
-    ],
-    faqs: [
-      { q: "Which days count as business days?", a: "Monday through Friday. Saturdays and Sundays are treated as weekend days and excluded from the business-day count." },
-      { q: "Does it know public holidays?", a: "Holidays vary by country and region, so you enter how many fall in your range and the tool subtracts them from the working-day total." },
-      { q: "Are both dates included?", a: "Yes. The count is inclusive of the start and end dates." },
-    ],
-    related: ["date-difference-calculator", "age-calculator", "time-duration-calculator"],
-  },
-  {
-    slug: "time-duration-calculator",
-    category: "convert",
-    name: "Time Duration Calculator",
-    h1: "Time Duration Calculator — Hours Between Times",
-    tagline: "Work out hours and minutes between a start and end time, minus breaks.",
-    title: "Time Duration Calculator — Hours Between Two Times",
-    description:
-      "Free time duration calculator. Find the hours and minutes between a start and end time, subtract breaks, handle overnight shifts and get decimal hours for timesheets.",
-    intro:
-      "Enter a start and end time to get the duration in hours and minutes, with a break deducted if you like. It handles overnight shifts (end time on the next day) and shows decimal hours — for example 7.50 — which is what payroll and timesheets usually need. Runs entirely in your browser.",
-    keywords: ["time duration calculator", "hours between two times", "time card calculator", "hours calculator"],
-    component: "time-duration-calculator",
-    volumeEstimate: 60500,
-    howTo: [
-      "Enter the start and end times.",
-      "Set any break in minutes and toggle overnight if the shift crosses midnight.",
-      "Read the net duration and decimal hours.",
-    ],
-    faqs: [
-      { q: "Can it handle overnight shifts?", a: "Yes. Tick the overnight option and an end time earlier than the start is treated as the next day, so a 22:00–06:00 shift comes out as 8 hours." },
-      { q: "What are decimal hours?", a: "Hours expressed as a decimal — 7 hours 30 minutes becomes 7.50. Payroll systems and invoices usually expect this format." },
-      { q: "How is the break applied?", a: "The break minutes you enter are subtracted from the gross duration to give the net working time." },
-    ],
-    related: ["date-difference-calculator", "business-days-calculator", "salary-to-hourly-calculator"],
   },
 ];
