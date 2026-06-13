@@ -95,4 +95,32 @@ export const convertTools: Tool[] = [
     ],
     related: ["time-converter", "timestamp-converter"],
   },
+  {
+    slug: "pdf-merge",
+    category: "convert",
+    name: "PDF Merge",
+    h1: "Merge PDF Files — Private, In Your Browser",
+    tagline: "Combine multiple PDFs into one file without uploading anything.",
+    title: "Merge PDF Files Online Free — No Upload, 100% Private",
+    description:
+      "Free PDF merger that runs entirely in your browser — your files are never uploaded. Reorder pages, combine unlimited PDFs and download the merged file.",
+    intro:
+      "Combine two or more PDFs into a single file — contracts, scans, invoices, chapters — without your documents ever leaving your computer. Unlike upload-based merge sites, everything here runs locally in your browser, so it works on confidential files, needs no account, has no file-size tricks, and is exactly as private as opening the file yourself. Add files, drag them into order, merge, download.",
+    keywords: ["pdf merge", "merge pdf files", "combine pdf", "pdf joiner", "merge pdf online free"],
+    component: "pdf-merge",
+    volumeEstimate: 1830000,
+    updated: "2026-06-13",
+    howTo: [
+      "Click the file picker and add two or more PDF files.",
+      "Reorder them with the ↑ ↓ buttons — the list order is the merge order.",
+      "Click Merge & download to save the combined PDF.",
+    ],
+    faqs: [
+      { q: "Are my PDFs uploaded to a server?", a: "No — that's the point of this tool. The merging runs in your browser with JavaScript (pdf-lib); your files never leave your device, so it's safe for contracts, medical and financial documents." },
+      { q: "Is there a file size or page limit?", a: "Only your device's memory. Typical documents merge instantly; very large scanned files (hundreds of MB) depend on your browser's available RAM." },
+      { q: "Can I merge password-protected PDFs?", a: "No — encrypted PDFs can't be read without the password. Remove the password first (e.g. print-to-PDF from the opened file), then merge." },
+      { q: "Does it preserve quality?", a: "Yes. Pages are copied losslessly into the new document — no re-rendering, no compression, no watermarks." },
+    ],
+    related: ["age-calculator", "temperature-converter"],
+  },
 ];

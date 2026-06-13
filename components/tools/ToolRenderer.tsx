@@ -69,6 +69,15 @@ import { SuperannuationCalculator } from "./SuperannuationCalculator";
 import { AgeCalculator } from "./AgeCalculator";
 import { SalaryToHourlyCalculator } from "./SalaryToHourlyCalculator";
 import { OvertimePayCalculator } from "./OvertimePayCalculator";
+import { UkSalaryCalculator } from "./UkSalaryCalculator";
+import { NationalInsuranceCalculator } from "./NationalInsuranceCalculator";
+import { StudentLoanRepaymentCalculator } from "./StudentLoanRepaymentCalculator";
+import { PdfMerge } from "./PdfMerge";
+import { TdsCalculator } from "./TdsCalculator";
+import { CapitalGainsTaxCalculator } from "./CapitalGainsTaxCalculator";
+import { RetirementCalculator } from "./RetirementCalculator";
+import { LoanPrepaymentCalculator } from "./LoanPrepaymentCalculator";
+import { YoutubeEarningsCalculator } from "./YoutubeEarningsCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -143,6 +152,15 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "age-calculator": AgeCalculator,
   "salary-to-hourly-calculator": SalaryToHourlyCalculator,
   "overtime-pay-calculator": OvertimePayCalculator,
+  "uk-salary-calculator": UkSalaryCalculator,
+  "national-insurance-calculator": NationalInsuranceCalculator,
+  "student-loan-repayment-calculator": StudentLoanRepaymentCalculator,
+  "pdf-merge": PdfMerge,
+  "tds-calculator": TdsCalculator,
+  "capital-gains-tax-calculator": CapitalGainsTaxCalculator,
+  "retirement-calculator": RetirementCalculator,
+  "loan-prepayment-calculator": LoanPrepaymentCalculator,
+  "youtube-earnings-calculator": YoutubeEarningsCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {
