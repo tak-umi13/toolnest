@@ -72,12 +72,9 @@ export default function AboutPage() {
         with a qualified professional or the official source.
       </p>
 
-      <h2>Contact</h2>
-      <p>
-        Found a bug, an outdated rate, or want a tool we don&apos;t have yet?
-        Email us at <a href="mailto:takumi6149@gmail.com">takumi6149@gmail.com</a>{" "}
-        — corrections are prioritised.
-      </p>
+      {/* Contact section temporarily removed at the owner's request — a new
+          contact email will be added back here later. Do not re-add the old
+          address until instructed. */}
 
       <p>
         <Link href="/tools">Browse all {TOOLS.length} tools →</Link>
