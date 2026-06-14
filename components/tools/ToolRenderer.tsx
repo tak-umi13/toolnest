@@ -143,6 +143,11 @@ import { ThirteenthMonthPay } from "./ThirteenthMonthPay";
 import { PakistanIncomeTax } from "./PakistanIncomeTax";
 import { MilitaryTimeConverter } from "./MilitaryTimeConverter";
 import { AspectRatioCalculator } from "./AspectRatioCalculator";
+import { ExponentCalculator } from "./ExponentCalculator";
+import { ScientificNotationConverter } from "./ScientificNotationConverter";
+import { FactorialCalculator } from "./FactorialCalculator";
+import { ModuloCalculator } from "./ModuloCalculator";
+import { PxToRem } from "./PxToRem";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -291,6 +296,11 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "income-tax-calculator-pakistan": PakistanIncomeTax,
   "military-time-converter": MilitaryTimeConverter,
   "aspect-ratio-calculator": AspectRatioCalculator,
+  "exponent-calculator": ExponentCalculator,
+  "scientific-notation-converter": ScientificNotationConverter,
+  "factorial-calculator": FactorialCalculator,
+  "modulo-calculator": ModuloCalculator,
+  "px-to-rem": PxToRem,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

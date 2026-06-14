@@ -805,4 +805,30 @@ export const devTools: Tool[] = [
     ],
     related: ["css-minifier", "color-picker", "json-formatter"],
   },
+  {
+    slug: "px-to-rem",
+    category: "dev",
+    name: "PX to REM Converter",
+    h1: "PX to REM Converter",
+    tagline: "Convert between px, rem and em for CSS using your root font size.",
+    title: "PX to REM Converter — px, rem & em for CSS",
+    description:
+      "Free px to rem converter. Convert between px, rem and em for CSS using a base font size (16px by default), with one-click copy. Runs in your browser.",
+    intro:
+      "Convert CSS units between px, rem and em using your root font size (16px by default). Enter a value in any unit and get the other two — 24px is 1.5rem at a 16px base. rem is relative to the root font size, which makes layouts scale cleanly with user settings. Runs in your browser.",
+    keywords: ["px to rem", "px to rem converter", "rem to px", "px to em"],
+    component: "px-to-rem",
+    volumeEstimate: 6600,
+    howTo: [
+      "Enter a value and pick its unit (px, rem or em).",
+      "Set your base (root) font size if it isn't 16px.",
+      "Copy the px, rem or em value you need.",
+    ],
+    faqs: [
+      { q: "How do you convert px to rem?", a: "Divide the pixel value by the root font size. At the default 16px base, 24px ÷ 16 = 1.5rem." },
+      { q: "What's the difference between rem and em?", a: "rem is always relative to the root (html) font size, while em is relative to the font size of the current element's parent, so em can compound through nesting. This tool shows em against the same base for reference." },
+      { q: "Why use rem instead of px?", a: "rem scales with the user's chosen root font size, so text and spacing respect accessibility settings — better for responsive, accessible layouts." },
+    ],
+    related: ["aspect-ratio-calculator", "css-minifier", "color-picker"],
+  },
 ];

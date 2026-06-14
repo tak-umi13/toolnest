@@ -207,4 +207,104 @@ export const mathTools: Tool[] = [
     ],
     related: ["decimal-to-fraction", "mean-median-mode-calculator", "percentage-calculator"],
   },
+  {
+    slug: "exponent-calculator",
+    category: "math",
+    name: "Exponent Calculator",
+    h1: "Exponent Calculator",
+    tagline: "Raise any base to any power, including negative and fractional exponents.",
+    title: "Exponent Calculator — Power of a Number (bⁿ)",
+    description:
+      "Free exponent calculator. Raise any base to any power, including negative exponents (reciprocals) and fractional exponents (roots). Shows the expanded form. Runs in your browser.",
+    intro:
+      "Raise a base to a power (base to the exponent). Works with negative exponents, which give reciprocals (2⁻¹ = 0.5), and fractional exponents, which give roots (9^0.5 = 3). For small whole exponents it also shows the expanded multiplication. Runs in your browser.",
+    keywords: ["exponent calculator", "power calculator", "exponents calculator", "raised to the power calculator"],
+    component: "exponent-calculator",
+    volumeEstimate: 18100,
+    howTo: [
+      "Enter the base.",
+      "Enter the exponent (power) — it can be negative or a decimal.",
+      "Read the result and copy it.",
+    ],
+    faqs: [
+      { q: "What does a negative exponent mean?", a: "A negative exponent is the reciprocal of the positive power: 2⁻³ = 1 ÷ 2³ = 1/8 = 0.125." },
+      { q: "What does a fractional exponent mean?", a: "A fractional exponent is a root: x^(1/2) is the square root of x, and x^(1/3) is the cube root. So 27^(1/3) = 3." },
+    ],
+    related: ["square-root-calculator", "scientific-notation-converter", "factorial-calculator"],
+  },
+  {
+    slug: "scientific-notation-converter",
+    category: "math",
+    name: "Scientific Notation Converter",
+    h1: "Scientific Notation Converter",
+    tagline: "Convert between standard numbers and scientific notation (a × 10ⁿ).",
+    title: "Scientific Notation Converter — Standard Form & Back",
+    description:
+      "Free scientific notation converter. Convert a number to scientific notation (a × 10ⁿ) and back to standard form. Accepts × 10^n and e-notation. Runs in your browser.",
+    intro:
+      "Convert a number into scientific notation — a value between 1 and 10 multiplied by a power of ten — or expand scientific notation back into a standard number. For example 149,600,000 becomes 1.496 × 10⁸. It accepts both '× 10^n' and e-notation (1.496e8). Useful for science, engineering and very large or small numbers. Runs in your browser.",
+    keywords: ["scientific notation converter", "standard form calculator", "scientific notation calculator", "convert to scientific notation"],
+    component: "scientific-notation-converter",
+    volumeEstimate: 4400,
+    howTo: [
+      "Choose standard → scientific or scientific → standard.",
+      "Enter the number or the notation.",
+      "Read and copy the converted value.",
+    ],
+    faqs: [
+      { q: "What is scientific notation?", a: "A way of writing numbers as a coefficient between 1 and 10 times a power of ten, like 6.02 × 10²³. It keeps very large or very small numbers compact and readable." },
+      { q: "What is e-notation?", a: "A shorthand used by calculators and computers where '× 10^' is replaced by 'e' — so 1.496 × 10⁸ is written 1.496e8. This tool accepts both forms." },
+    ],
+    related: ["exponent-calculator", "rounding-calculator", "decimal-to-fraction"],
+  },
+  {
+    slug: "factorial-calculator",
+    category: "math",
+    name: "Factorial Calculator",
+    h1: "Factorial Calculator",
+    tagline: "Compute n! exactly, even for large numbers, with big-integer math.",
+    title: "Factorial Calculator — Exact n! for Any Number",
+    description:
+      "Free factorial calculator. Compute n! exactly using big-integer math, even for large values, with the digit count and a scientific approximation. Runs in your browser.",
+    intro:
+      "Compute the factorial of a number — the product of all whole numbers from 1 up to n (and 0! = 1). The result is calculated with big-integer math, so even large factorials are exact rather than rounded, and a scientific approximation plus digit count are shown for big results. Useful for combinatorics and probability. Runs in your browser.",
+    keywords: ["factorial calculator", "n factorial calculator", "factorial of a number", "calculate factorial"],
+    component: "factorial-calculator",
+    volumeEstimate: 6600,
+    howTo: [
+      "Enter a non-negative whole number n.",
+      "Read the exact value of n! (and an approximation for large n).",
+      "Copy the full result.",
+    ],
+    faqs: [
+      { q: "What is a factorial?", a: "n! (n factorial) is the product of every whole number from 1 to n. For example 5! = 5 × 4 × 3 × 2 × 1 = 120. By definition, 0! = 1." },
+      { q: "Why use big-integer math?", a: "Factorials grow extremely fast — 21! already exceeds the largest integer JavaScript can store exactly. Big-integer math keeps every digit precise." },
+    ],
+    related: ["exponent-calculator", "prime-number-checker", "lcm-gcd-calculator"],
+  },
+  {
+    slug: "modulo-calculator",
+    category: "math",
+    name: "Modulo Calculator",
+    h1: "Modulo Calculator",
+    tagline: "Find the remainder (a mod b), with both truncated and floored conventions.",
+    title: "Modulo Calculator — Remainder of a ÷ b",
+    description:
+      "Free modulo calculator. Find the remainder of a divided by b, with the quotient and both the truncated and mathematical (floored) conventions for negative numbers.",
+    intro:
+      "Find a mod b — the remainder left after dividing a by b. The calculator shows the quotient and, for negative numbers, both common conventions: the truncated remainder used by JavaScript, C and Java (sign follows the dividend) and the mathematical floored mod (sign follows the divisor). Runs in your browser.",
+    keywords: ["modulo calculator", "mod calculator", "remainder calculator", "modulus calculator"],
+    component: "modulo-calculator",
+    volumeEstimate: 5400,
+    howTo: [
+      "Enter the dividend (a) and the divisor (b).",
+      "Read a mod b and the quotient.",
+      "For negatives, compare the truncated and floored results.",
+    ],
+    faqs: [
+      { q: "What is the modulo operation?", a: "Modulo gives the remainder after integer division. For example 17 mod 5 = 2, because 17 = 3 × 5 + 2." },
+      { q: "Why do negative numbers give different answers?", a: "Languages disagree: the truncated remainder (JavaScript, C, Java) takes the dividend's sign, while the mathematical floored mod takes the divisor's sign. −7 mod 3 is −1 truncated but 2 floored." },
+    ],
+    related: ["lcm-gcd-calculator", "prime-number-checker", "rounding-calculator"],
+  },
 ];
