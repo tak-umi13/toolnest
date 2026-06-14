@@ -14,11 +14,30 @@ const nextConfig = {
       "business-days-calculator",
       "time-duration-calculator",
     ];
-    return moved.map((slug) => ({
+    const list = moved.map((slug) => ({
       source: `/convert/${slug}`,
       destination: `/datetime/${slug}`,
       permanent: true,
     }));
+
+    // Domain migration: once NEXT_PUBLIC_SITE_URL points at the custom domain,
+    // permanently (301) redirect the old Vercel subdomain to it so search
+    // equity, links and bookmarks transfer to the new home. This stays inert
+    // until the env var is switched, so it's safe to ship ahead of time.
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "";
+    const OLD_HOST = "toolnest-lime.vercel.app";
+    const match = siteUrl.match(/^https?:\/\/([^/]+)/);
+    const newHost = match ? match[1] : "";
+    if (newHost && newHost !== OLD_HOST && !newHost.endsWith(".vercel.app")) {
+      list.push({
+        source: "/:path*",
+        has: [{ type: "host", value: OLD_HOST }],
+        destination: `https://${newHost}/:path*`,
+        permanent: true,
+      });
+    }
+
+    return list;
   },
 
   async headers() {
