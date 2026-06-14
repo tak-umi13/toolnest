@@ -298,3 +298,41 @@ percentage off calculator
 military time converter
 time calculator
 hours to minutes
+
+# Batch 10 — Health & Fitness category candidates
+calorie calculator
+bmr calculator
+tdee calculator
+body fat calculator
+ideal weight calculator
+macro calculator
+calories burned calculator
+water intake calculator
+pace calculator
+protein intake calculator
+maintenance calorie calculator
+one rep max calculator
+heart rate zone calculator
+army body fat calculator
+waist to hip ratio calculator
+body surface area calculator
+due date calculator
+pregnancy due date calculator
+ovulation calculator
+lean body mass calculator
+
+# Batch 10 — Education / grades (comparison)
+grade calculator
+final grade calculator
+test grade calculator
+weighted grade calculator
+semester grade calculator
+
+# Batch 10 — Generators / Random (comparison)
+username generator
+random word generator
+random letter generator
+random list generator
+decision wheel
+barcode generator
+random color generator

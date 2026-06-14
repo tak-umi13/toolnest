@@ -70,11 +70,18 @@ export default async function ToolPage({ params }: { params: Promise<{ category:
               <ToolRenderer component={tool.component} params={tool.params} />
             </div>
 
-            {/* YMYL trust signal: finance results are informational, and we say so. */}
+            {/* YMYL trust signal: finance & health results are informational, and we say so. */}
             {cat.id === "finance" && (
               <p className="muted small" style={{ marginTop: 10 }}>
                 Results are estimates for information only, not financial advice. See{" "}
                 <Link href="/about">how we build and verify our calculators</Link>.
+              </p>
+            )}
+            {cat.id === "health" && (
+              <p className="muted small" style={{ marginTop: 10 }}>
+                Results are general estimates for information only, not medical advice — consult a
+                qualified professional for health decisions. See{" "}
+                <Link href="/about">how we build our calculators</Link>.
               </p>
             )}
 

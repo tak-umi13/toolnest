@@ -72,6 +72,17 @@ export const categories: Category[] = [
     monetization: { tier: "Medium", method: "AdSense (display)", note: "Huge evergreen student/教育 volume at very low competition; display-ad play with cross-links to finance." },
   },
   {
+    id: "health",
+    name: "Health & Fitness",
+    title: "Free Health & Fitness Calculators — BMR, Macros, Body Fat & More",
+    description:
+      "Free health and fitness calculators: BMR & TDEE, macros, body fat, ideal weight, protein and water intake, one-rep max and body surface area. Instant, in your browser.",
+    intro:
+      "Quick, formula-based fitness and nutrition calculators — work out your daily calories and macros, estimate body fat and ideal weight, plan protein and water intake, and gauge strength. Each uses an established formula and runs instantly in your browser. These are general estimates for information only, not medical advice.",
+    emoji: "💪",
+    monetization: { tier: "Medium", method: "AdSense + affiliate", note: "High-volume evergreen health/fitness; supplement & fitness affiliate potential. YMYL — keep formulas sourced + disclaimers." },
+  },
+  {
     id: "finance",
     name: "Finance Calculators",
     title: "Free Finance Calculators (India) — EMI, SIP, GST & More",

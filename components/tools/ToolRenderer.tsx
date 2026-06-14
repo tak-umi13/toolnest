@@ -148,6 +148,14 @@ import { ScientificNotationConverter } from "./ScientificNotationConverter";
 import { FactorialCalculator } from "./FactorialCalculator";
 import { ModuloCalculator } from "./ModuloCalculator";
 import { PxToRem } from "./PxToRem";
+import { BmrCalculator } from "./BmrCalculator";
+import { MacroCalculator } from "./MacroCalculator";
+import { OneRepMaxCalculator } from "./OneRepMaxCalculator";
+import { BodyFatCalculator } from "./BodyFatCalculator";
+import { IdealWeightCalculator } from "./IdealWeightCalculator";
+import { ProteinIntakeCalculator } from "./ProteinIntakeCalculator";
+import { WaterIntakeCalculator } from "./WaterIntakeCalculator";
+import { BodySurfaceAreaCalculator } from "./BodySurfaceAreaCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -301,6 +309,14 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "factorial-calculator": FactorialCalculator,
   "modulo-calculator": ModuloCalculator,
   "px-to-rem": PxToRem,
+  "bmr-calculator": BmrCalculator,
+  "macro-calculator": MacroCalculator,
+  "one-rep-max-calculator": OneRepMaxCalculator,
+  "body-fat-calculator": BodyFatCalculator,
+  "ideal-weight-calculator": IdealWeightCalculator,
+  "protein-intake-calculator": ProteinIntakeCalculator,
+  "water-intake-calculator": WaterIntakeCalculator,
+  "body-surface-area-calculator": BodySurfaceAreaCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

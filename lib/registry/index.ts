@@ -8,6 +8,7 @@ import { colorTools } from "./tools/color";
 import { convertTools } from "./tools/convert";
 import { datetimeTools } from "./tools/datetime";
 import { mathTools } from "./tools/math";
+import { healthTools } from "./tools/health";
 import { financeTools } from "./tools/finance";
 import { seoTools } from "./tools/seo";
 
@@ -25,6 +26,7 @@ export const TOOLS: Tool[] = [
   ...convertTools,
   ...datetimeTools,
   ...mathTools,
+  ...healthTools,
   ...financeTools,
   ...seoTools,
 ];
