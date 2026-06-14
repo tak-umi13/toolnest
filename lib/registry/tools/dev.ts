@@ -779,4 +779,30 @@ export const devTools: Tool[] = [
     ],
     related: ["json-formatter", "json-to-typescript", "json-escape"],
   },
+  {
+    slug: "aspect-ratio-calculator",
+    category: "dev",
+    name: "Aspect Ratio Calculator",
+    h1: "Aspect Ratio Calculator",
+    tagline: "Resize dimensions to a ratio, or find the ratio of any width and height.",
+    title: "Aspect Ratio Calculator — Resize & Simplify Ratios",
+    description:
+      "Free aspect ratio calculator. Set a ratio like 16:9 and one dimension to solve the other, or enter any width and height to get the simplified ratio. Runs in your browser.",
+    intro:
+      "Keep images and video in proportion. Pick a ratio such as 16:9, 4:3 or 21:9 (or type your own), set either the width or the height, and the other dimension is calculated to match. Or enter any width and height to see their simplified aspect ratio. Handy for design, video, screens and thumbnails. Runs in your browser.",
+    keywords: ["aspect ratio calculator", "ratio calculator", "resize image ratio", "aspect ratio converter"],
+    component: "aspect-ratio-calculator",
+    volumeEstimate: 14800,
+    howTo: [
+      "Choose a ratio preset or type your own ratio.",
+      "Set either the width or the height in pixels.",
+      "Read the matching dimension and the simplified ratio.",
+    ],
+    faqs: [
+      { q: "What is an aspect ratio?", a: "The proportional relationship between width and height, written width:height — 16:9 means 16 units wide for every 9 tall. It stays the same no matter the pixel size." },
+      { q: "How do I keep an image in proportion when resizing?", a: "Lock the aspect ratio: set the new width and let the height be calculated from the ratio (or vice versa). This tool does that automatically." },
+      { q: "What's the simplified ratio of 1920×1080?", a: "16:9 — dividing both by their greatest common divisor (120) gives 16:9. The tool computes this for any dimensions." },
+    ],
+    related: ["css-minifier", "color-picker", "json-formatter"],
+  },
 ];

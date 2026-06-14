@@ -136,6 +136,13 @@ import { LcmGcdCalculator } from "./LcmGcdCalculator";
 import { PrimeNumberChecker } from "./PrimeNumberChecker";
 import { SquareRootCalculator } from "./SquareRootCalculator";
 import { RoundingCalculator } from "./RoundingCalculator";
+import { MutualFundCalculator } from "./MutualFundCalculator";
+import { PayeCalculatorSA } from "./PayeCalculatorSA";
+import { UifCalculator } from "./UifCalculator";
+import { ThirteenthMonthPay } from "./ThirteenthMonthPay";
+import { PakistanIncomeTax } from "./PakistanIncomeTax";
+import { MilitaryTimeConverter } from "./MilitaryTimeConverter";
+import { AspectRatioCalculator } from "./AspectRatioCalculator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -277,6 +284,13 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "prime-number-checker": PrimeNumberChecker,
   "square-root-calculator": SquareRootCalculator,
   "rounding-calculator": RoundingCalculator,
+  "mutual-fund-calculator": MutualFundCalculator,
+  "paye-calculator-south-africa": PayeCalculatorSA,
+  "uif-calculator": UifCalculator,
+  "13th-month-pay-calculator": ThirteenthMonthPay,
+  "income-tax-calculator-pakistan": PakistanIncomeTax,
+  "military-time-converter": MilitaryTimeConverter,
+  "aspect-ratio-calculator": AspectRatioCalculator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

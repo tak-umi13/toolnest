@@ -1357,4 +1357,137 @@ export const financeTools: Tool[] = [
     ],
     related: ["fire-calculator", "emergency-fund-calculator", "compound-interest-calculator"],
   },
+  {
+    slug: "mutual-fund-calculator",
+    category: "finance",
+    name: "Mutual Fund Calculator",
+    h1: "Mutual Fund Returns Calculator",
+    tagline: "Estimate mutual fund returns for a monthly SIP or a one-time lumpsum.",
+    title: "Mutual Fund Calculator — SIP & Lumpsum Returns",
+    description:
+      "Free mutual fund calculator. Estimate the maturity value of a monthly SIP or a lumpsum investment at an expected return rate, with invested amount and estimated gains.",
+    intro:
+      "Project how a mutual fund investment could grow. Choose a monthly SIP or a one-time lumpsum, set the expected annual return and the period, and see the estimated maturity value, the total you invest and the gains on top. Useful for planning equity, debt or hybrid fund goals. Returns are market-linked and not guaranteed — this is a planning estimate. Runs in your browser.",
+    keywords: ["mutual fund calculator", "mutual fund returns calculator", "sip calculator", "lumpsum calculator"],
+    component: "mutual-fund-calculator",
+    volumeEstimate: 201000,
+    howTo: [
+      "Choose a monthly SIP or a lumpsum.",
+      "Enter the amount, expected annual return and period.",
+      "Read the maturity value, invested amount and estimated gains.",
+    ],
+    faqs: [
+      { q: "How are mutual fund returns calculated?", a: "A SIP is treated as a monthly investment compounding at the expected annual rate; a lumpsum compounds annually. The maturity value assumes a constant rate, which real funds won't deliver exactly." },
+      { q: "What return rate should I assume?", a: "Use a conservative long-run estimate for the fund type — historically equity funds have varied widely year to year, so lower assumptions give a safer plan." },
+      { q: "Is the result guaranteed?", a: "No. Mutual fund returns are market-linked and fluctuate. Treat the figure as a planning estimate, not a promised amount." },
+    ],
+    related: ["sip-calculator", "lumpsum-calculator", "step-up-sip-calculator"],
+  },
+  {
+    slug: "paye-calculator-south-africa",
+    category: "finance",
+    name: "PAYE Calculator (South Africa)",
+    h1: "South Africa PAYE Calculator (2024/25)",
+    tagline: "Work out monthly PAYE income tax and take-home pay using SARS 2024/25 brackets.",
+    title: "PAYE Calculator South Africa — 2024/25 SARS Tax",
+    description:
+      "Free South Africa PAYE calculator. Work out your monthly income tax and net pay using the SARS 2024/2025 tax brackets and age rebates. Runs in your browser.",
+    intro:
+      "Calculate Pay As You Earn (PAYE) income tax on a South African salary using the SARS 2024/2025 tax brackets and age-based rebates. Enter your gross salary per month or per year, pick your age band, and see the PAYE withheld each month, your net pay and the effective tax rate. A planning estimate — it excludes UIF and medical or retirement credits. Runs in your browser.",
+    keywords: ["paye calculator", "paye calculator south africa", "sars tax calculator", "income tax calculator south africa"],
+    component: "paye-calculator-south-africa",
+    volumeEstimate: 14800,
+    updated: "2026-06-14",
+    updateNote: "SARS 2024/25 brackets",
+    howTo: [
+      "Enter your gross salary and choose per month or per year.",
+      "Select your age band for the correct rebate.",
+      "Read the monthly PAYE, net pay and effective rate.",
+    ],
+    faqs: [
+      { q: "What is PAYE?", a: "PAYE (Pay As You Earn) is the income tax your employer withholds from your salary each month and pays to SARS on your behalf." },
+      { q: "Which tax year does this use?", a: "The SARS 2024/2025 tax year (1 March 2024 to 28 February 2025), including the primary, secondary and tertiary age rebates." },
+      { q: "Does it include UIF?", a: "No. This calculates income tax (PAYE) only. UIF is a separate 1% deduction — use the UIF calculator for that." },
+    ],
+    related: ["uif-calculator", "salary-to-hourly-calculator", "income-tax-calculator"],
+  },
+  {
+    slug: "uif-calculator",
+    category: "finance",
+    name: "UIF Calculator",
+    h1: "UIF Calculator (South Africa)",
+    tagline: "Calculate the 1% UIF deduction and employer contribution from your salary.",
+    title: "UIF Calculator South Africa — Monthly Contribution",
+    description:
+      "Free South Africa UIF calculator. Work out the 1% employee UIF deduction and the matching employer contribution from a monthly salary, with the earnings ceiling applied.",
+    intro:
+      "Work out your monthly UIF (Unemployment Insurance Fund) contribution. The employee pays 1% of gross earnings and the employer adds another 1%, on monthly earnings up to a ceiling of R17,712 — so the maximum is R177.12 each. Enter your salary to see the employee deduction, the employer's share and the total. Runs in your browser.",
+    keywords: ["uif calculator", "uif contribution calculator", "uif deduction", "unemployment insurance fund calculator"],
+    component: "uif-calculator",
+    volumeEstimate: 8100,
+    updated: "2026-06-14",
+    updateNote: "R17,712 ceiling",
+    howTo: [
+      "Enter your monthly gross salary.",
+      "Read the 1% employee deduction and the employer's 1%.",
+      "See the total going to the UIF.",
+    ],
+    faqs: [
+      { q: "How much UIF do I pay?", a: "1% of your gross monthly earnings, matched by your employer's 1%, up to an earnings ceiling of R17,712 per month — so the most you contribute is R177.12 a month." },
+      { q: "Is the employer's 1% taken from my salary?", a: "No. Only your 1% is deducted from your pay; the employer pays its 1% on top, so 2% in total reaches the fund." },
+    ],
+    related: ["paye-calculator-south-africa", "salary-to-hourly-calculator", "overtime-pay-calculator"],
+  },
+  {
+    slug: "13th-month-pay-calculator",
+    category: "finance",
+    name: "13th Month Pay Calculator",
+    h1: "13th Month Pay Calculator (Philippines)",
+    tagline: "Compute your mandatory 13th month pay from your basic salary.",
+    title: "13th Month Pay Calculator Philippines — Free & Accurate",
+    description:
+      "Free 13th month pay calculator for the Philippines. Compute your mandatory 13th month pay from your basic salary and months worked, with the ₱90,000 tax-exempt cap.",
+    intro:
+      "Compute your 13th month pay under Philippine law: the total basic salary you earned during the year divided by 12. Enter your monthly basic salary, the months you worked, and any unpaid amount from absences. The tool shows your 13th month pay and the portion above the ₱90,000 tax-exempt cap. Basic salary excludes allowances and overtime. Runs in your browser.",
+    keywords: ["13th month pay calculator", "13th month pay", "13th month pay computation", "how to compute 13th month pay"],
+    component: "13th-month-pay-calculator",
+    volumeEstimate: 8100,
+    howTo: [
+      "Enter your monthly basic salary.",
+      "Enter the months you worked this year and any unpaid amount.",
+      "Read your 13th month pay and the taxable portion.",
+    ],
+    faqs: [
+      { q: "How is 13th month pay computed?", a: "It's the total basic salary you earned during the calendar year divided by 12. For a full year at a constant salary, that equals one month's basic pay." },
+      { q: "Is 13th month pay taxable?", a: "It's tax-exempt up to ₱90,000 (combined with other 13th-month-type benefits). Only the amount above ₱90,000 is taxable." },
+      { q: "Does basic salary include allowances?", a: "No. The computation uses basic salary only — it excludes allowances, overtime pay and other monetary benefits." },
+    ],
+    related: ["salary-to-hourly-calculator", "overtime-pay-calculator", "income-tax-calculator"],
+  },
+  {
+    slug: "income-tax-calculator-pakistan",
+    category: "finance",
+    name: "Income Tax Calculator (Pakistan)",
+    h1: "Pakistan Income Tax Calculator (2024-25)",
+    tagline: "Calculate salaried income tax and take-home pay using FY 2024-25 slabs.",
+    title: "Income Tax Calculator Pakistan — 2024-25 Salary Tax",
+    description:
+      "Free Pakistan income tax calculator. Calculate salaried income tax and monthly take-home pay using the Finance Act 2024 (tax year 2024-25) slabs. Runs in your browser.",
+    intro:
+      "Calculate income tax on a salaried income in Pakistan using the Finance Act 2024 slabs for tax year 2024-25. Enter your taxable salary per month or per year to see the tax due, your monthly take-home pay and the effective tax rate, including the 10% surcharge that applies above Rs 10,000,000. A planning estimate, not an FBR assessment. Runs in your browser.",
+    keywords: ["income tax calculator pakistan", "salary tax calculator pakistan", "pakistan income tax calculator", "fbr tax calculator"],
+    component: "income-tax-calculator-pakistan",
+    volumeEstimate: 5400,
+    updated: "2026-06-14",
+    updateNote: "Finance Act 2024 (TY 2024-25)",
+    howTo: [
+      "Enter your taxable salary and choose per month or per year.",
+      "Read the tax due, monthly take-home and effective rate.",
+    ],
+    faqs: [
+      { q: "Which tax year does this use?", a: "Tax year 2024-25, using the salaried-individual slabs set by the Finance Act 2024, with the 10% surcharge applied on taxable income above Rs 10,000,000." },
+      { q: "What income should I enter?", a: "Your taxable salary income — gross pay after any exempt allowances. The slabs apply to the annual taxable figure." },
+    ],
+    related: ["income-tax-calculator", "salary-calculator", "salary-to-hourly-calculator"],
+  },
 ];

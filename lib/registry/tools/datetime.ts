@@ -237,4 +237,30 @@ export const datetimeTools: Tool[] = [
     ],
     related: ["hours-calculator", "business-days-calculator", "date-difference-calculator"],
   },
+  {
+    slug: "military-time-converter",
+    category: "datetime",
+    name: "Military Time Converter",
+    h1: "Military Time Converter",
+    tagline: "Convert between military (24-hour) time and 12-hour AM/PM time.",
+    title: "Military Time Converter — 24-Hour to 12-Hour & Back",
+    description:
+      "Free military time converter. Convert 24-hour military time (like 1430) to 12-hour AM/PM time and back, instantly. Includes a quick reference. Runs in your browser.",
+    intro:
+      "Convert between military (24-hour) time and standard 12-hour AM/PM time, both ways. Type a military time like 1430 to get 2:30 PM, or enter 2:30 PM to get 1430. Military time runs from 0000 (midnight) to 2359 with no AM/PM, so there's never any ambiguity. Runs in your browser.",
+    keywords: ["military time converter", "military time chart", "24 hour time converter", "military time to standard time"],
+    component: "military-time-converter",
+    volumeEstimate: 40500,
+    howTo: [
+      "Choose military → 12-hour or 12-hour → military.",
+      "Type the time (e.g. 1430 or 2:30 PM).",
+      "Read and copy the converted time.",
+    ],
+    faqs: [
+      { q: "How do you read military time?", a: "The first two digits are the hour (00–23) and the last two are the minutes. 0000 is midnight, 1200 is noon, and 1430 is 2:30 PM. After 1259, subtract 12 from the hour for the PM time." },
+      { q: "What is 1800 in military time?", a: "1800 is 6:00 PM. Any hour from 1300 to 2359 is PM — subtract 12 to get the 12-hour hour (18 − 12 = 6)." },
+      { q: "Is midnight 0000 or 2400?", a: "Midnight is normally written 0000 (the start of the day). 2400 is sometimes used for the end of a day, but 0000 is the standard." },
+    ],
+    related: ["time-duration-calculator", "hours-calculator", "day-of-week-calculator"],
+  },
 ];
