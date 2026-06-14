@@ -7,6 +7,7 @@ export const SITE = {
   // No trailing slash. Override via NEXT_PUBLIC_SITE_URL in .env.local.
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
   tagline: "Fast, free, no-signup online tools",
+  email: "toolnest.app13@gmail.com",
   description:
     "A growing library of fast, free, no-signup tools — converters, calculators, generators, formatters and validators that just work in your browser.",
   twitter: "@toolnest",

@@ -36,8 +36,11 @@ export function Footer() {
         <hr className="div" />
         <p className="muted small center">
           © {new Date().getFullYear()} {SITE.name}. All tools run locally in your
-          browser — your data stays with you. ·{" "}
-          <Link href="/about">About &amp; methodology</Link>
+          browser — your data stays with you.
+          <br />
+          <Link href="/about">About</Link> ·{" "}
+          <Link href="/privacy">Privacy Policy</Link> ·{" "}
+          <Link href="/contact">Contact</Link>
         </p>
       </div>
     </footer>

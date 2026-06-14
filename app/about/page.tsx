@@ -72,9 +72,12 @@ export default function AboutPage() {
         with a qualified professional or the official source.
       </p>
 
-      {/* Contact section temporarily removed at the owner's request — a new
-          contact email will be added back here later. Do not re-add the old
-          address until instructed. */}
+      <h2>Contact</h2>
+      <p>
+        Found a bug, an outdated rate, or want a tool we don&apos;t have yet? Email us at{" "}
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or use our{" "}
+        <Link href="/contact">contact form</Link> — corrections are prioritised.
+      </p>
 
       <p>
         <Link href="/tools">Browse all {TOOLS.length} tools →</Link>
