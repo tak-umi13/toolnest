@@ -14,7 +14,14 @@ import { ToolSearch, type SearchItem } from "@/components/ToolSearch";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
 import { RecentlyUsed } from "@/components/RecentTools";
-import { SITE } from "@/lib/site";
+import { SITE, absoluteUrl } from "@/lib/site";
+import type { Metadata } from "next";
+
+// Explicit self-canonical so the homepage resolves to the apex domain (not www
+// or the old host) for search engines.
+export const metadata: Metadata = {
+  alternates: { canonical: absoluteUrl("/") },
+};
 
 export default function HomePage() {
   const searchItems: SearchItem[] = TOOLS.map((t) => ({

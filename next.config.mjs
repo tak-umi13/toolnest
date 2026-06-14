@@ -35,6 +35,16 @@ const nextConfig = {
         destination: `https://${newHost}/:path*`,
         permanent: true,
       });
+      // Canonicalise to the apex: 301 the www host to the bare domain so the
+      // two don't compete as duplicate content and link equity stays merged.
+      if (!newHost.startsWith("www.")) {
+        list.push({
+          source: "/:path*",
+          has: [{ type: "host", value: `www.${newHost}` }],
+          destination: `https://${newHost}/:path*`,
+          permanent: true,
+        });
+      }
     }
 
     return list;
