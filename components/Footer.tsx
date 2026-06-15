@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CATEGORIES, TOOLS, categoryPath, getToolsInCategory, toolPath } from "@/lib/registry";
+import { ARTICLES, CATEGORIES, TOOLS, articlePath, categoryPath, getToolsInCategory, toolPath } from "@/lib/registry";
 import { SITE } from "@/lib/site";
 
 // The footer is a sitewide internal-linking surface: linking the top tool in
@@ -32,6 +32,15 @@ export function Footer() {
               </div>
             );
           })}
+          <div>
+            <strong className="small">Guides</strong>
+            <Link href="/guides">All guides</Link>
+            {ARTICLES.slice(0, 5).map((a) => (
+              <Link key={`${a.category}/${a.slug}`} href={articlePath(a)}>
+                {a.h1}
+              </Link>
+            ))}
+          </div>
         </div>
         <hr className="div" />
         <p className="muted small center">
@@ -39,6 +48,7 @@ export function Footer() {
           browser — your data stays with you.
           <br />
           <Link href="/about">About</Link> ·{" "}
+          <Link href="/guides">Guides</Link> ·{" "}
           <Link href="/privacy">Privacy Policy</Link> ·{" "}
           <Link href="/contact">Contact</Link>
         </p>
