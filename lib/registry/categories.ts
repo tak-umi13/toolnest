@@ -104,4 +104,15 @@ export const categories: Category[] = [
     emoji: "🔍",
     monetization: { tier: "Very High", method: "Affiliate + SaaS upsell", note: "Highest RPM. Audience buys SEO SaaS — affiliate + freemium upsell to a paid suite." },
   },
+  {
+    id: "generators",
+    name: "Generators",
+    title: "Free Online Generators — Barcode, Username, Random & More",
+    description:
+      "Free online generators: barcode generator, username generator, random word, random letter, random color and random list picker. Instant, in your browser.",
+    intro:
+      "Generate what you need on the spot — scannable barcodes, usernames, random words and letters, color palettes, and random picks from your own list. Each runs instantly in your browser, with nothing uploaded.",
+    emoji: "🎲",
+    monetization: { tier: "Low", method: "AdSense (display)", note: "High-volume utility/traffic play (barcode, random tools); display ads + cross-links to dev/color." },
+  },
 ];

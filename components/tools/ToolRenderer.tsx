@@ -156,6 +156,12 @@ import { IdealWeightCalculator } from "./IdealWeightCalculator";
 import { ProteinIntakeCalculator } from "./ProteinIntakeCalculator";
 import { WaterIntakeCalculator } from "./WaterIntakeCalculator";
 import { BodySurfaceAreaCalculator } from "./BodySurfaceAreaCalculator";
+import { BarcodeGenerator } from "./BarcodeGenerator";
+import { UsernameGenerator } from "./UsernameGenerator";
+import { RandomWordGenerator } from "./RandomWordGenerator";
+import { RandomLetterGenerator } from "./RandomLetterGenerator";
+import { RandomColorGenerator } from "./RandomColorGenerator";
+import { RandomListGenerator } from "./RandomListGenerator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -317,6 +323,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "protein-intake-calculator": ProteinIntakeCalculator,
   "water-intake-calculator": WaterIntakeCalculator,
   "body-surface-area-calculator": BodySurfaceAreaCalculator,
+  "barcode-generator": BarcodeGenerator,
+  "username-generator": UsernameGenerator,
+  "random-word-generator": RandomWordGenerator,
+  "random-letter-generator": RandomLetterGenerator,
+  "random-color-generator": RandomColorGenerator,
+  "random-list-generator": RandomListGenerator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

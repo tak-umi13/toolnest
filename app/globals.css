@@ -305,6 +305,7 @@ select:focus-visible, textarea:focus-visible {
 [data-cat="health"] { --cat-accent: #ef4444; }
 [data-cat="finance"] { --cat-accent: #f59e0b; }
 [data-cat="seo"] { --cat-accent: #3b82f6; }
+[data-cat="generators"] { --cat-accent: #a855f7; }
 
 .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
