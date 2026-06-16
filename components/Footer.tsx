@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { ARTICLES, CATEGORIES, TOOLS, articlePath, categoryPath, getToolsInCategory, toolPath } from "@/lib/registry";
+import { ARTICLES, CATEGORIES, TOOLS, articlePath, categoryPath } from "@/lib/registry";
 import { SITE } from "@/lib/site";
 
-// The footer is a sitewide internal-linking surface: linking the top tool in
-// each category from every page pushes authority to the pages that monetize best.
+// Compact footer: category names link to each hub (one tidy column), with the
+// Guides list kept in full. Deeper tool links live on the category pages.
 export function Footer() {
   return (
     <footer className="site-footer">
@@ -18,20 +18,14 @@ export function Footer() {
               calculators, generators and validators that run right in your browser.
             </p>
           </div>
-          {CATEGORIES.map((c) => {
-            const top = getToolsInCategory(c.id).slice(0, 4);
-            return (
-              <div key={c.id}>
-                <strong className="small">{c.name}</strong>
-                <Link href={categoryPath(c)}>All {c.name.toLowerCase()}</Link>
-                {top.map((t) => (
-                  <Link key={t.slug} href={toolPath(t)}>
-                    {t.name}
-                  </Link>
-                ))}
-              </div>
-            );
-          })}
+          <div>
+            <strong className="small">Tools</strong>
+            {CATEGORIES.map((c) => (
+              <Link key={c.id} href={categoryPath(c)}>
+                {c.name}
+              </Link>
+            ))}
+          </div>
           <div>
             <strong className="small">Guides</strong>
             <Link href="/guides">All guides</Link>
