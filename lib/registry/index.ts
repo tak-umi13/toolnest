@@ -2,6 +2,7 @@ import type { Article, Category, Tool } from "./types";
 import { categories } from "./categories";
 import { financeArticles } from "./articles/finance";
 import { devArticles } from "./articles/dev";
+import { healthArticles } from "./articles/health";
 import { textTools } from "./tools/text";
 import { devTools } from "./tools/dev";
 import { colorTools } from "./tools/color";
@@ -35,7 +36,7 @@ export const TOOLS: Tool[] = [
 
 // Supporting-content guides (topical authority layer). One entry = one page at
 // /{category}/guides/{slug}, with metadata, schema and internal links included.
-export const ARTICLES: Article[] = [...financeArticles, ...devArticles];
+export const ARTICLES: Article[] = [...financeArticles, ...devArticles, ...healthArticles];
 
 // ---- Lookups -------------------------------------------------------------
 
