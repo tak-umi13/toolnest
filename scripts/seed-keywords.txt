@@ -336,3 +336,27 @@ random list generator
 decision wheel
 barcode generator
 random color generator
+
+# Batch 11 — SEO tools (client-side buildable)
+serp simulator
+serp preview
+google serp preview
+serp snippet generator
+schema markup generator
+json-ld generator
+faq schema generator
+structured data generator
+xml sitemap generator
+sitemap generator
+hreflang generator
+hreflang tag generator
+canonical tag generator
+meta robots generator
+robots meta tag generator
+htaccess redirect generator
+301 redirect generator
+open graph generator
+nofollow link generator
+title tag length checker
+meta description length checker
+og image size

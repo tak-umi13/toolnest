@@ -106,4 +106,105 @@ export const seoTools: Tool[] = [
     ],
     related: ["robots-txt-generator", "utm-builder", "keyword-density-checker"],
   },
+  {
+    slug: "faq-schema-generator",
+    category: "seo",
+    name: "FAQ Schema Generator",
+    h1: "FAQ Schema Generator (JSON-LD)",
+    tagline: "Turn questions and answers into valid FAQ structured data for rich results.",
+    title: "FAQ Schema Generator — FAQPage JSON-LD for Rich Results",
+    description:
+      "Free FAQ schema generator. Enter questions and answers to produce valid FAQPage JSON-LD structured data you can paste into your page — eligible for FAQ rich results.",
+    intro:
+      "Add your questions and answers and get clean, valid FAQPage structured data (JSON-LD) ready to paste into your page. Marking up an on-page FAQ this way makes it eligible for FAQ rich results in Google. The matching Q&As must be visible on the page. Everything is generated in your browser.",
+    keywords: ["faq schema generator", "faqpage json-ld", "faq structured data generator", "schema markup generator"],
+    component: "faq-schema-generator",
+    volumeEstimate: 1900,
+    howTo: [
+      "Add each question and its answer.",
+      "Copy the generated JSON-LD.",
+      "Paste it into the page where the same FAQ is visible.",
+    ],
+    faqs: [
+      { q: "Where do I put the FAQ schema?", a: "Inside a <script type=\"application/ld+json\"> tag in the page's <head> or body. The questions and answers must also be visible on the page itself." },
+      { q: "Will this guarantee FAQ rich results?", a: "No — valid schema makes a page eligible, but Google decides whether to show rich results. Follow Google's FAQ structured-data guidelines and use only genuine FAQs." },
+    ],
+    related: ["meta-tag-generator", "serp-simulator", "keyword-density-checker"],
+  },
+  {
+    slug: "serp-simulator",
+    category: "seo",
+    name: "SERP Simulator",
+    h1: "SERP Simulator — Google Snippet Preview",
+    tagline: "Preview how your title and description appear in Google search results.",
+    title: "SERP Simulator — Google Search Snippet Preview Tool",
+    description:
+      "Free SERP simulator. Preview how your page's title, URL and meta description appear in Google search results, with character limits and truncation warnings.",
+    intro:
+      "See how your page is likely to appear in Google's search results before you publish. Type your title tag, URL and meta description and the preview updates live, with character counts and warnings when a title (~60 chars) or description (~160 chars) will be cut off with an ellipsis. Google may rewrite snippets, so treat it as a guide. Runs in your browser.",
+    keywords: ["serp simulator", "serp preview", "google snippet preview", "serp snippet generator"],
+    component: "serp-simulator",
+    volumeEstimate: 720,
+    howTo: [
+      "Enter your title tag, page URL and meta description.",
+      "Watch the live Google-style preview and character counts.",
+      "Trim anything flagged as too long to avoid truncation.",
+    ],
+    faqs: [
+      { q: "How long should a title tag and meta description be?", a: "Aim for roughly 60 characters for the title and 160 for the description so they aren't truncated. Google actually measures pixel width, so very wide characters can be cut sooner." },
+      { q: "Why might Google show a different title?", a: "Google sometimes rewrites titles and snippets using page content or the query. A clear, accurate title that matches the page reduces the chance of a rewrite." },
+    ],
+    related: ["meta-tag-generator", "faq-schema-generator", "keyword-density-checker"],
+  },
+  {
+    slug: "canonical-tag-generator",
+    category: "seo",
+    name: "Canonical Tag Generator",
+    h1: "Canonical Tag Generator",
+    tagline: "Generate a rel=canonical link tag to prevent duplicate-content issues.",
+    title: "Canonical Tag Generator — rel=canonical Link Tag",
+    description:
+      "Free canonical tag generator. Enter a URL to get a valid rel=canonical link tag for your page's <head>, preventing duplicate-content issues from URL variants.",
+    intro:
+      "Enter a page's absolute URL to get a ready-to-paste rel=canonical link tag. The canonical tag tells search engines which URL is the preferred version of a page, consolidating signals and avoiding duplicate-content problems caused by tracking parameters, www/non-www or trailing-slash variants. Runs in your browser.",
+    keywords: ["canonical tag generator", "rel canonical generator", "canonical url tag", "canonical link generator"],
+    component: "canonical-tag-generator",
+    volumeEstimate: 720,
+    howTo: [
+      "Enter the page's full absolute URL.",
+      "Copy the generated canonical tag.",
+      "Paste it into that page's <head>.",
+    ],
+    faqs: [
+      { q: "What is a canonical tag for?", a: "It marks the preferred (canonical) URL of a page so search engines consolidate ranking signals there instead of splitting them across duplicate or near-duplicate URLs." },
+      { q: "Should a page point its canonical at itself?", a: "Usually yes. Most pages should have a self-referencing canonical with their own absolute URL; only point elsewhere when the page is genuinely a duplicate of another." },
+    ],
+    related: ["hreflang-tag-generator", "robots-txt-generator", "meta-tag-generator"],
+  },
+  {
+    slug: "hreflang-tag-generator",
+    category: "seo",
+    name: "Hreflang Tag Generator",
+    h1: "Hreflang Tag Generator",
+    tagline: "Generate hreflang tags for multilingual and multi-region pages.",
+    title: "Hreflang Tag Generator — Multilingual SEO Tags",
+    description:
+      "Free hreflang tag generator. Create rel=alternate hreflang link tags for each language/region version of a page, plus x-default, for international SEO.",
+    intro:
+      "Generate hreflang link tags that tell search engines which language or region version of a page to show each user. Add each version's hreflang code and URL, optionally set an x-default fallback, and copy the tags into the <head> of every version. Correct hreflang prevents the wrong-language page ranking in a given country. Runs in your browser.",
+    keywords: ["hreflang tag generator", "hreflang generator", "hreflang tags", "international seo tags"],
+    component: "hreflang-tag-generator",
+    volumeEstimate: 480,
+    howTo: [
+      "Add each language/region version with its hreflang code and URL.",
+      "Optionally set an x-default fallback URL.",
+      "Copy the tags into the <head> of every version.",
+    ],
+    faqs: [
+      { q: "What format are hreflang codes?", a: "An ISO 639-1 language code (e.g. en, fr, de), optionally with an ISO 3166-1 region (e.g. en-gb, en-us, pt-br). Use language only when the page targets a language regardless of country." },
+      { q: "Do all versions need the tags?", a: "Yes. hreflang must be reciprocal — every version should list all versions including itself, otherwise search engines may ignore the annotations." },
+      { q: "What is x-default?", a: "x-default specifies the fallback page for users whose language/region you don't explicitly target — often a language selector or your main international page." },
+    ],
+    related: ["canonical-tag-generator", "meta-tag-generator", "robots-txt-generator"],
+  },
 ];

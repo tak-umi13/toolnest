@@ -162,6 +162,10 @@ import { RandomWordGenerator } from "./RandomWordGenerator";
 import { RandomLetterGenerator } from "./RandomLetterGenerator";
 import { RandomColorGenerator } from "./RandomColorGenerator";
 import { RandomListGenerator } from "./RandomListGenerator";
+import { FaqSchemaGenerator } from "./FaqSchemaGenerator";
+import { SerpSimulator } from "./SerpSimulator";
+import { CanonicalTagGenerator } from "./CanonicalTagGenerator";
+import { HreflangTagGenerator } from "./HreflangTagGenerator";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -329,6 +333,10 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "random-letter-generator": RandomLetterGenerator,
   "random-color-generator": RandomColorGenerator,
   "random-list-generator": RandomListGenerator,
+  "faq-schema-generator": FaqSchemaGenerator,
+  "serp-simulator": SerpSimulator,
+  "canonical-tag-generator": CanonicalTagGenerator,
+  "hreflang-tag-generator": HreflangTagGenerator,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {
