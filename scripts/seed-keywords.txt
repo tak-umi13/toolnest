@@ -360,3 +360,35 @@ nofollow link generator
 title tag length checker
 meta description length checker
 og image size
+
+# Batch 12 — Cooking & Kitchen category candidates
+cooking measurement converter
+oven temperature converter
+cups to grams
+grams to cups
+cups to ml
+recipe scaler
+recipe converter
+tablespoons to cups
+teaspoons to tablespoons
+butter converter
+flour cups to grams
+sugar cups to grams
+ml to grams
+how many tablespoons in a cup
+
+# Batch 12 — Social Media category candidates
+engagement rate calculator
+hashtag generator
+twitter character counter
+tiktok money calculator
+instagram money calculator
+youtube money calculator
+social media image size
+follower growth calculator
+
+# Batch 12 — Image tools (KD test)
+image resizer
+image compressor
+crop image online
+favicon generator

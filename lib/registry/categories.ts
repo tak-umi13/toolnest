@@ -115,4 +115,15 @@ export const categories: Category[] = [
     emoji: "🎲",
     monetization: { tier: "Low", method: "AdSense (display)", note: "High-volume utility/traffic play (barcode, random tools); display ads + cross-links to dev/color." },
   },
+  {
+    id: "cooking",
+    name: "Cooking & Kitchen",
+    title: "Free Cooking & Kitchen Calculators — Cups to Grams, Oven Temp & More",
+    description:
+      "Free cooking and kitchen converters: cups to grams by ingredient, tablespoons to cups, oven temperature (°C/°F/gas mark) and a recipe scaler. Instant, in your browser.",
+    intro:
+      "Kitchen conversions made easy — turn cups into grams for any ingredient, switch between teaspoons, tablespoons and cups, convert oven temperatures, and scale a recipe to any number of servings. Each tool runs instantly in your browser.",
+    emoji: "🍳",
+    monetization: { tier: "Low", method: "AdSense (display)", note: "Massive evergreen, very-low-KD cooking-conversion volume (tbsp-to-cups 301k/KD5); display ads + recipe/affiliate potential." },
+  },
 ];

@@ -166,6 +166,9 @@ import { FaqSchemaGenerator } from "./FaqSchemaGenerator";
 import { SerpSimulator } from "./SerpSimulator";
 import { CanonicalTagGenerator } from "./CanonicalTagGenerator";
 import { HreflangTagGenerator } from "./HreflangTagGenerator";
+import { CupsToGrams } from "./CupsToGrams";
+import { RecipeConverter } from "./RecipeConverter";
+import { OvenTemperatureConverter } from "./OvenTemperatureConverter";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -337,6 +340,9 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "serp-simulator": SerpSimulator,
   "canonical-tag-generator": CanonicalTagGenerator,
   "hreflang-tag-generator": HreflangTagGenerator,
+  "cups-to-grams": CupsToGrams,
+  "recipe-converter": RecipeConverter,
+  "oven-temperature-converter": OvenTemperatureConverter,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {

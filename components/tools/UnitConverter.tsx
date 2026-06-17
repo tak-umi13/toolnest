@@ -18,6 +18,8 @@ const SETS: Record<string, { units: Record<string, number> }> = {
   energy: { units: { Joules: 1, Kilojoules: 1000, Calories: 4.184, Kilocalories: 4184, "Watt-hours": 3600, "Kilowatt-hours": 3600000 } },
   power: { units: { Watts: 1, Kilowatts: 1000, Megawatts: 1e6, "Horsepower (mechanical)": 745.699872, "Horsepower (metric)": 735.49875, "BTU/hour": 0.29307107, "Foot-pounds/sec": 1.3558179483 } },
   angle: { units: { Degrees: 1, Radians: 57.29577951308232, Gradians: 0.9, Turns: 360, Arcminutes: 1 / 60, Arcseconds: 1 / 3600 } },
+  // US cooking volumes, base = millilitre.
+  cookingvolume: { units: { Milliliters: 1, Teaspoons: 4.92892159, Tablespoons: 14.7867648, "Fluid ounces": 29.5735296, Cups: 236.5882365, Pints: 473.176473, Quarts: 946.352946, Liters: 1000 } },
 };
 
 export function UnitConverter({ params }: { params?: ToolParams }) {
