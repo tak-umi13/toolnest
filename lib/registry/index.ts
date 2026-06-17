@@ -14,6 +14,7 @@ import { financeTools } from "./tools/finance";
 import { seoTools } from "./tools/seo";
 import { generatorsTools } from "./tools/generators";
 import { cookingTools } from "./tools/cooking";
+import { socialTools } from "./tools/social";
 
 export type { Article, ArticleSection, Category, Tool, FAQ, MonetizationTier } from "./types";
 
@@ -34,6 +35,7 @@ export const TOOLS: Tool[] = [
   ...seoTools,
   ...generatorsTools,
   ...cookingTools,
+  ...socialTools,
 ];
 
 // Supporting-content guides (topical authority layer). One entry = one page at

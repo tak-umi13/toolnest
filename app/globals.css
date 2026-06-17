@@ -332,6 +332,7 @@ select:focus-visible, textarea:focus-visible {
 [data-cat="seo"] { --cat-accent: #3b82f6; }
 [data-cat="generators"] { --cat-accent: #a855f7; }
 [data-cat="cooking"] { --cat-accent: #f97316; }
+[data-cat="social"] { --cat-accent: #0ea5e9; }
 
 .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {

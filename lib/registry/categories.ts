@@ -126,4 +126,15 @@ export const categories: Category[] = [
     emoji: "🍳",
     monetization: { tier: "Low", method: "AdSense (display)", note: "Massive evergreen, very-low-KD cooking-conversion volume (tbsp-to-cups 301k/KD5); display ads + recipe/affiliate potential." },
   },
+  {
+    id: "social",
+    name: "Social Media",
+    title: "Free Social Media Tools — Hashtags, Engagement Rate, Creator Earnings",
+    description:
+      "Free social media tools: hashtag generator, engagement rate calculator, TikTok & Instagram earnings estimators, tweet character counter and image size cheat-sheet.",
+    intro:
+      "Practical tools for creators and marketers — generate hashtags, work out your engagement rate, estimate creator earnings, count tweet characters the way X does, and look up the right image size for every platform. Each runs instantly in your browser.",
+    emoji: "📱",
+    monetization: { tier: "Medium", method: "AdSense + affiliate", note: "Creator-economy audience; hashtag 49.5k/KD30, money calculators. Affiliate to creator SaaS / scheduling tools." },
+  },
 ];

@@ -169,6 +169,12 @@ import { HreflangTagGenerator } from "./HreflangTagGenerator";
 import { CupsToGrams } from "./CupsToGrams";
 import { RecipeConverter } from "./RecipeConverter";
 import { OvenTemperatureConverter } from "./OvenTemperatureConverter";
+import { HashtagGenerator } from "./HashtagGenerator";
+import { EngagementRateCalculator } from "./EngagementRateCalculator";
+import { TiktokMoneyCalculator } from "./TiktokMoneyCalculator";
+import { InstagramMoneyCalculator } from "./InstagramMoneyCalculator";
+import { TweetCharacterCounter } from "./TweetCharacterCounter";
+import { SocialMediaImageSizes } from "./SocialMediaImageSizes";
 
 export type ToolParams = Record<string, string | number | boolean>;
 
@@ -343,6 +349,12 @@ const REGISTRY: Record<string, ComponentType<{ params?: ToolParams }>> = {
   "cups-to-grams": CupsToGrams,
   "recipe-converter": RecipeConverter,
   "oven-temperature-converter": OvenTemperatureConverter,
+  "hashtag-generator": HashtagGenerator,
+  "engagement-rate-calculator": EngagementRateCalculator,
+  "tiktok-money-calculator": TiktokMoneyCalculator,
+  "instagram-money-calculator": InstagramMoneyCalculator,
+  "tweet-character-counter": TweetCharacterCounter,
+  "social-media-image-sizes": SocialMediaImageSizes,
 };
 
 export function ToolRenderer({ component, params }: { component: string; params?: ToolParams }) {
